@@ -4,7 +4,11 @@ author: "Eliot Mompean"
 date: "22/12/2021"
 csl: apa-with-abstract.csl
 bibliography: biblio.bib
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    theme: darkly
 ---
 
 ```{r setup, include=FALSE}
