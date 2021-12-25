@@ -1,0 +1,60 @@
+---
+title: "Guía para usar Biblioshiny"
+author: "Eliot Mompean"
+date: "22/12/2021"
+csl: apa-with-abstract.csl
+bibliography: biblio.bib
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introducción.
+
+El presente trabajo pretende ser una guía para aprender a utilizar las principales herramientas que ofrece bibliometrix para realizar un buen análisis bibliográfico. No somos pocos los alumnos de carreras investigadoras que, a la hora de enfrentarnos a la realización del TFG, optamos por una revisión bibliográfica sin tener la más mínima idea de como enfrentarnos al tema. Empezamos a conocer las principales bases de datos en unos pocos días y tras las primeras búsquedas es común encontrarnos con un volumen de información inabarcable para una mente humana.
+
+Son muchos los aspectos a tener en cuenta durante una revisión bibliográfica, pero partiremos de las siguientes bases:
+
+-   Sabes qué tema quieres tratar.
+-   Sabes en qué bases de datos tienes que buscar y como hacer los primeros filtrados con las herramientas que estos te proporcionan.
+-   Sabes como descargar dicha información y conoces el formato `BibTeX`.
+
+Por lo tanto, partimos de la base de que ya tienes la información que quieres para tu trabajo, pero careces de las herramientas para saber cuales son los artículos mas relevantes o como ha evolucionado este campo de estudio desde sus inicios.
+
+# Bibliometrix y el lenguaje R.
+
+La bibliometría es el estudio matemático y estadístico de las distintas características de un volumen de artículos académicos, libros etc [@bibliometrics]. La bibliometría resulta útil al ofrecer un análisis estructurado de un gran volumen de información para [@Aria2017]:
+
+-   Inferir tendencias o temas de moda.
+-   Identificar los aspectos mas estudiados.
+-   Identificar cambios de paradigma en la historia del estudio de dicho tema.
+-   Identificar los autores, revistas o instituciones que más han aportado a dicho campo.
+-   Ofrecer una imagen general del tema de estudio.
+
+Bibliometrix es un paquete de análisis bibliométrico que corre bajo lenguaje de programación R. El lenguaje de programación R es un lenguaje y un entorno para el cálculo estadístico y su representación gráfica. R ofrece una gran variedad de técnicas estadísticas (modelización lineal y no lineal, pruebas estadísticas clásicas, análisis de series temporales, clasificación, agrupación, ...) y gráficas, y es muy expansible [@whatisr]. Si bien R puede ofrecer herramientas estadísitcas similares a otros programas de este campo, la versatilidad de R reside en que es de código abierto, lo que significa que cualquiera puede [descargarlo gratuitamente](https://www.rstudio.com/products/rstudio/download/), acceder a su código fuente y elaborar sus propias herramientas. Tal es la versatilidad de R que este texto esta siendo escrito y será procesado a través de este lenguaje de programación.
+
+![Interfaz de Rstudio](/disco2/home/eliot/GuiaBibliometrix/rstudiointerfaz.JPG)
+
+Es esta versatilidad la que permitió a Massimo Aria y Corrado Cuccurullo crear un paquete de análisis bibliométrico que presenta la capacidad de sintetizar los resultados sobre las investigaciones científicas de un determinado campo de la ciencia y ofrecer vistosas e informativas representaciones gráficas [@bibrpack]. Uno de los problemas que puede representar RStudio para el usuario promedio es la necesidad de tener que empezar a familiarizarse con un nuevo lenguaje de programación. Sin embargo, esto no resulta un problema con bibliometrix porque sus autores han desarrollado una interfaz más amigable. Lo único que necesitarás hacer en Rstudio será cargar el paquete de bibliometrix ejecutando los siguientes comandos en la consola:
+
+    install.packages("bibliometrix")
+
+    library(bibliometrix)
+
+Y posteriormente ejecutar su interfaz llamada biblioshiny:
+
+    biblioshiny()
+    
+Cuando ejecutes este comando se te abrirá una pestaña de tu navegador predeterminado con la siguiente interfaz:
+
+![Interfaz de Biblioshiny](/disco2/home/eliot/GuiaBibliometrix/biblioshinyinterfaz.JPG)
+
+# Bases de datos. 
+
+Utilizaremos  para nuestra busqueda dos bases de datos: Scopus y Web of Science. A la hora de exportar los datos eligiremos el formato `BibTeX`, ya que es el que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual [aquí](https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html).
+
+# 
+
+# Bibliografía consultada.
