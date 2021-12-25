@@ -35,7 +35,7 @@ La bibliometría es el estudio matemático y estadístico de las distintas carac
 
 Bibliometrix es un paquete de análisis bibliométrico que corre bajo lenguaje de programación R. El lenguaje de programación R es un lenguaje y un entorno para el cálculo estadístico y su representación gráfica. R ofrece una gran variedad de técnicas estadísticas (modelización lineal y no lineal, pruebas estadísticas clásicas, análisis de series temporales, clasificación, agrupación, ...) y gráficas, y es muy expansible [@whatisr]. Si bien R puede ofrecer herramientas estadísitcas similares a otros programas de este campo, la versatilidad de R reside en que es de código abierto, lo que significa que cualquiera puede [descargarlo gratuitamente](https://www.rstudio.com/products/rstudio/download/), acceder a su código fuente y elaborar sus propias herramientas. Tal es la versatilidad de R que este texto esta siendo escrito y será procesado a través de este lenguaje de programación.
 
-![Interfaz de Rstudio](/disco2/home/eliot/GuiaBibliometrix/rstudiointerfaz.JPG)
+![Interfaz de Rstudio](rstudiointerfaz.JPG)
 
 Es esta versatilidad la que permitió a Massimo Aria y Corrado Cuccurullo crear un paquete de análisis bibliométrico que presenta la capacidad de sintetizar los resultados sobre las investigaciones científicas de un determinado campo de la ciencia y ofrecer vistosas e informativas representaciones gráficas [@bibrpack]. Uno de los problemas que puede representar RStudio para el usuario promedio es la necesidad de tener que empezar a familiarizarse con un nuevo lenguaje de programación. Sin embargo, esto no resulta un problema con bibliometrix porque sus autores han desarrollado una interfaz más amigable. Lo único que necesitarás hacer en Rstudio será cargar el paquete de bibliometrix ejecutando los siguientes comandos en la consola:
 
@@ -49,11 +49,17 @@ Y posteriormente ejecutar su interfaz llamada biblioshiny:
     
 Cuando ejecutes este comando se te abrirá una pestaña de tu navegador predeterminado con la siguiente interfaz:
 
-![Interfaz de Biblioshiny](/disco2/home/eliot/GuiaBibliometrix/biblioshinyinterfaz.JPG)
+![Interfaz de Biblioshiny](biblioshinyinterfaz.JPG)
 
-# Bases de datos. 
+# Bases de datos y como cargarlos. 
 
-Utilizaremos  para nuestra busqueda dos bases de datos: Scopus y Web of Science. A la hora de exportar los datos eligiremos el formato `BibTeX`, ya que es el que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual [aquí](https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html).
+Utilizaremos  para nuestra busqueda dos bases de datos: Scopus y Web of Science. Para nuestro ejemplo acudimos inicialmente a **Web of Science** y buscaremos información sobre [*Mutualistic Networks*](https://www.webofscience.com/wos/alldb/summary/965e996b-ce32-4096-b23b-3d5fc1090cd3-1b146a07/relevance/1). Poseo cierto conocimiento previo sobre este area, aportado gracias a artículos divulgativos que pueden encontrarse facilmente. Esto me permite realizar un filtrado de los resultados, ya que quiero enfocarme para mi TFG en el *corpus* teórico que ofrecen las redes mutualistas al estudio de los ecosistemas. Para ello eliminé los resultados que parecen desviarse demasiado de este tema, pero sin ser demasiado restrictivo, ya que el volumen de resultados original (199) tampoco es demasiado grande y un filtrado demasiado estricto podría dejarme con muy pocos datos para obtener información relevante en el posterior análisis. Sin embargo, hay que tener en cuenta que el filtrado de los datos inicial dependerá muchos de los intereses y situación de cada investigador. La busqueda quedó finalmente en [160 resultados](https://www.webofscience.com/wos/alldb/summary/96d9e399-8558-49a7-bcc4-23b8a83d4a6e-1b14ad06/relevance/1).
+
+A la hora de exportar los datos eligiremos el formato `BibTeX`, ya que es el que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual [aquí](https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html).
+
+En la primera pestaña denominada `Data` podemos cargar los datos a través de la opción `Import or Load Files`. La segunda opción llamada `Gather Data using APIs` permite recopilar la bibliografía directamente de las bases de datos correspondientes, pero solo permite recoger datos de **Pubmed** y **Dimensions**, lo que se sale de las bases de datos que queremos utilizar. 
+
+Para evitar tener que pasar por el uso de comandos de conversión en la consola seleccionaremos en **Please, choose what to do** la opción `Import raw files`, lo que significa que estamos importando datos que descargamos directamente de la base de datos correspondiente, sin realizar un proceso de conversión.  
 
 # 
 
