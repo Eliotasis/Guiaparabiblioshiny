@@ -114,4 +114,18 @@ En `Dataset>Main Information` obtenemos información cuantitativa sobre el set d
 
 ## Producción científica anual. 
 
+En `Data>Annual Scientific Production` nos muestra una gráfica que enfrenta número de artículos por año. Esta gráfica es muy ilustrativa del desarrollo en popularidad del tema de estudio. Sin embargo, aunque la tendencia general es al alza, el último año (2022) solo presenta un artículo, lo cual tiene sentido porque es el único artículo que tiene fecha de publicación a futuro. El presente año, 2021, también presenta una tendencia ligeramente menor a la esperada. Esto puede deberse a que aun pueden existir artículos que no se hayan introducido en la base de datos. Para evitar que estos dos años nos falseen la tendencia, los eliminaremos del análisis a través de la pestaña `Filter`, donde reduciremos el marco temporal a 2002:2020 y pulsaremos **Apply**. Si volvemos a `Data>Annual Scientific Production` no encontramos ya los dos últimos años. [^NOTA]
+
+
+[^NOTA]: A la izquierda observamos el ratio de crecimiento anual. ¿Como se calcula? Nadie lo explica. En internet econtraras que es, dentro de tu marco temporal: $(Nº de publicaciones el ultimo año]-Nº de publuicaciones el primer año/Nº de publuicaciones el primer año)*100$ Pero, obviamente, eso no explica el 21.2%. Las guías de Bibliometrix, como de costumbre, no lo explican, igual que el Average years from publication. 
+
+El diagrama nos permite observar que el tema de estudio presenta unos años iniciales de producción científica modesta, con uno o dos artículos por año entre 2002 y 2006.  Posteriormente se produce la explosión, con picos productivos en 2009, 2014, 2016 y 2020, con 12, 25, 27 y 32 documentos respectivamente. Por lo tanto, es probable que en esos años previos encontremos algún o algunos artículos muy citados que resultaran ser la semilla de todo un campo de estudio. Al examinar estos años encontramos dos artículos muy citados:
+
+- Invariant properties in coevolutionary networks of plant–animal links. Jordano, Bascompte y Olessen. 2003. Con 546 citas. 
+- Geographic patterns in plant–pollinator mutualistic networks. Olessen y Jordano. 2002. Con 395 citas. 
+Un buen punto de partida para nuestra lectura podrían ser estos dos artículos. 
+
+
+## Diagrama de tres campos. 
+
 # Bibliografía consultada.
