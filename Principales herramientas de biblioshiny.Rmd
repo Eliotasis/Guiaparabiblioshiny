@@ -57,14 +57,61 @@ Cuando ejecutes este comando se te abrirá una pestaña de tu navegador predeter
 
 # Bases de datos y como cargarlos. 
 
-Utilizaremos  para nuestra busqueda dos bases de datos: Scopus y Web of Science. Para nuestro ejemplo acudimos inicialmente a **Web of Science** y buscaremos información sobre [*Mutualistic Networks*](https://www.webofscience.com/wos/alldb/summary/965e996b-ce32-4096-b23b-3d5fc1090cd3-1b146a07/relevance/1). Poseo cierto conocimiento previo sobre este area, aportado gracias a artículos divulgativos que pueden encontrarse facilmente. Esto me permite realizar un filtrado de los resultados, ya que quiero enfocarme para mi TFG en el *corpus* teórico que ofrecen las redes mutualistas al estudio de los ecosistemas. Para ello eliminé los resultados que parecen desviarse demasiado de este tema, pero sin ser demasiado restrictivo, ya que el volumen de resultados original (199) tampoco es demasiado grande y un filtrado demasiado estricto podría dejarme con muy pocos datos para obtener información relevante en el posterior análisis. Sin embargo, hay que tener en cuenta que el filtrado de los datos inicial dependerá muchos de los intereses y situación de cada investigador. La busqueda quedó finalmente en [160 resultados](https://www.webofscience.com/wos/alldb/summary/96d9e399-8558-49a7-bcc4-23b8a83d4a6e-1b14ad06/relevance/1).
+Utilizaremos  para nuestra busqueda dos bases de datos: Scopus y Web of Science (WOS). Scopus es más amigable con el usuario novato y da la posibilidad de buscar tanto hacia adelante como hacia atrás a partir de una cita concreta. Ambos buscadores almacenan información de artículos de muy diversas disciplinas, lo que permite al investigador buscar fácilmente fuera de su campo de estudio. WOS, por su parte, presenta una mayor profunidad de cobertura, ya que la base de datos completa de WOS se remonta a 1945 y la de Scopus a 1966. El uso de estas dos bases de datos nos dará un volumen de información lo suficientemente completo para nuestra investigación[@Burnham2006]. 
 
-A la hora de exportar los datos eligiremos el formato `BibTeX`, ya que es el que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual [aquí](https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html).
+A la hora de exportar los datos eligiremos el formato `plaintext`(WOS) o `BibTeX`(Scopus), ya que son los que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual [aquí](https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html).
+
+## Scopus. 
+
+Acudimos a **Scopus** y buscamos información sobre *Mutualistic Newtwork* en **Article Title, Absrtract and Keywords**. El primer resultado nos arroja 406 resultados (TITLE-ABS-KEY ( "mutualistic network" )), pero realizaremos un filtrado a través del apartado **Subject Area** de aquellas disciplinas que se salen de nuestro campo de estudio, en nuestro caso queremos enfocarnos en el estudio de los ecosistemas. Tras el filtrado, la busqueda avanzada queda así:
+
+TITLE-ABS-KEY ( "mutualistic network" )  AND  ( EXCLUDE ( SUBJAREA ,  "MULT" )  OR  EXCLUDE ( SUBJAREA ,  "PHYS" )  OR  EXCLUDE ( SUBJAREA ,  "IMMU" )  OR  EXCLUDE ( SUBJAREA ,  "MATH" )  OR  EXCLUDE ( SUBJAREA ,  "COMP" )  OR  EXCLUDE ( SUBJAREA ,  "ENGI" )  OR  EXCLUDE ( SUBJAREA ,  "NEUR" )  OR  EXCLUDE ( SUBJAREA ,  "CHEM" )  OR  EXCLUDE ( SUBJAREA ,  "CENG" )  OR  EXCLUDE ( SUBJAREA ,  "MATE" )  OR  EXCLUDE ( SUBJAREA ,  "MEDI" )  OR  EXCLUDE ( SUBJAREA ,  "DECI" )  OR  EXCLUDE ( SUBJAREA ,  "PHAR" )  OR  EXCLUDE ( SUBJAREA ,  "PSYC" )  OR  EXCLUDE ( SUBJAREA ,  "SOCI" )  OR  EXCLUDE ( SUBJAREA ,  "ECON" ) ) [^1]
+
+[^1]: La búsqueda avanzada en Scopus implica el empleo de comandos de búsqueda basados en códigos, y está destinada a realizar búsquedas muy complejas, que exijan tal combinación de elementos, que las anteriores opciones de búsqueda no sean efectivas. Dado que Scopus no permite compartir busquedas a través de enlaces, comparto aquí el código de la busqueda avanzada. Con pegar este texto en la barra de busqueda deberías obtener los mismos resultados. 
+
+Descargamos la bibliografía en formato `BibTeX` con toda la información que nos permite Scopus (Citation information, Bibliographical information, Abstract & keywords, Funding details y Other Information).
+
+## Web of Science. 
+
+Acudimos a **Web of Science** y buscamos información sobre [*Mutualistic Networks*](https://www.webofscience.com/wos/alldb/summary/965e996b-ce32-4096-b23b-3d5fc1090cd3-1b146a07/relevance/1) en **Topic**. Poseo cierto conocimiento previo sobre este area, aportado gracias a artículos divulgativos que pueden encontrarse facilmente. Esto me permite realizar un filtrado de los resultados, ya que quiero enfocarme para mi TFG en el *corpus* teórico que ofrecen las redes mutualistas al estudio de los ecosistemas. Para ello eliminé los resultados que parecen desviarse demasiado de este tema, pero sin ser demasiado restrictivo, ya que el volumen de resultados original (199) tampoco es demasiado grande y un filtrado demasiado estricto podría dejarme con muy pocos datos para obtener información relevante en el posterior análisis. Sin embargo, hay que tener en cuenta que el filtrado de los datos inicial dependerá muchos de los intereses y situación de cada investigador. La busqueda quedó finalmente en [160 resultados](https://www.webofscience.com/wos/alldb/summary/96d9e399-8558-49a7-bcc4-23b8a83d4a6e-1b14ad06/relevance/1).
+
+# Importar datos a biblioshiny. 
 
 En la primera pestaña denominada `Data` podemos cargar los datos a través de la opción `Import or Load Files`. La segunda opción llamada `Gather Data using APIs` permite recopilar la bibliografía directamente de las bases de datos correspondientes, pero solo permite recoger datos de **Pubmed** y **Dimensions**, lo que se sale de las bases de datos que queremos utilizar. 
 
 Para evitar tener que pasar por el uso de comandos de conversión en la consola seleccionaremos en **Please, choose what to do** la opción `Import raw files`, lo que significa que estamos importando datos que descargamos directamente de la base de datos correspondiente, sin realizar un proceso de conversión.  
 
-# 
+**ARREGLAR EL PROBLEMA DE IMPORTACION EN BIBLIOSHINY CON WOS**
+
+# Principales herramientas de Biblioshiny. 
+
+## Información principal. 
+
+En `Dataset>Main Information` obtenemos información cuantitativa sobre el set de artículos que hemos cargado a través de una tabla.  La tabla ofrece una gran cantidad de información, pero a primera vista nos fijaremos en los siguientes elementos
+
+| biblioshiny for bibliometrix         	|           	|
+|--------------------------------------	|-----------	|
+| Description                          	| Results   	|
+| MAIN INFORMATION ABOUT DATA          	|           	|
+| Timespan                             	| 2002:2022 	|
+| Documents                            	| 269       	|
+| Average years from publication       	| 5.67      	|
+| AUTHORS COLLABORATION                	|           	|
+| Single-authored documents            	| 21        	|
+| Authors per Document                 	| 2.83      	|
+| Co-Authors per Documents             	| 4.25      	|
+| Collaboration Index                  	| 3         	|
+
+- **Timespan**: Define el marco temporal en el que estos artículos han sido publicados. En nuestro caso el estudio de redes mutualistas es bastante reciente, el primer artículo aparece en 2002 y el último en 2022 [^2]. 
+
+[^2]: Algunos artículos pueden presentarse como borradores pendientes de revisión, con fechas de publicación a futuro. 
+
+- **Documents**: Define el total de documentos de nuestro set, en nuestro caso 269 documentos. 
+- **Average years from publication**: NO ENTIENDO QUE ES ESTO.  
+- **Authors per Document**: Número promedio de autores por cada documento. Nuestro set de artículos presenta un número de casi 3 autores por documento, lo que es relativamente bajo. 
+- **Co-Author per Documents**: Si encontramos mas de un autor en un artículo, dos o más pueden considerarse coautores si han realizado una aportación similar a la elaboración del artículo. En nuestro caso es relativamente alta, 4 coautores por documento. 
+- **Collaboration Index**: El índice de colaboración se calcula como el total de autores de artículos con varios autores/total de artículos con varios autores[@massimoaria_corradocuccurullo]. En nuestro caso, del total de artículos con coautoría, la mayoría tienen 3 coautores. 
+
+## Producción científica anual. 
 
 # Bibliografía consultada.

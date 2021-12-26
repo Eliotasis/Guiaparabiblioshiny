@@ -196,8 +196,16 @@ pre code {
 <ul>
 <li><a href="#introducción.">Introducción.</a></li>
 <li><a href="#bibliometrix-y-el-lenguaje-r.">Bibliometrix y el lenguaje R.</a></li>
-<li><a href="#bases-de-datos-y-como-cargarlos.">Bases de datos y como cargarlos.</a></li>
-<li><a href="#section"></a></li>
+<li><a href="#bases-de-datos-y-como-cargarlos.">Bases de datos y como cargarlos.</a>
+<ul>
+<li><a href="#scopus.">Scopus.</a></li>
+<li><a href="#web-of-science.">Web of Science.</a></li>
+</ul></li>
+<li><a href="#importar-datos-a-biblioshiny.">Importar datos a biblioshiny.</a></li>
+<li><a href="#principales-herramientas-de-biblioshiny.">Principales herramientas de Biblioshiny.</a>
+<ul>
+<li><a href="#información-principal.">Información principal.</a></li>
+</ul></li>
 <li><a href="#bibliografía-consultada.">Bibliografía consultada.</a></li>
 </ul>
 </div>
@@ -242,22 +250,106 @@ library(bibliometrix)</code></pre>
 </div>
 <div id="bases-de-datos-y-como-cargarlos." class="section level1">
 <h1>Bases de datos y como cargarlos.</h1>
-<p>Utilizaremos para nuestra busqueda dos bases de datos: Scopus y Web of Science. Para nuestro ejemplo acudimos inicialmente a <strong>Web of Science</strong> y buscaremos información sobre <a href="https://www.webofscience.com/wos/alldb/summary/965e996b-ce32-4096-b23b-3d5fc1090cd3-1b146a07/relevance/1"><em>Mutualistic Networks</em></a>. Poseo cierto conocimiento previo sobre este area, aportado gracias a artículos divulgativos que pueden encontrarse facilmente. Esto me permite realizar un filtrado de los resultados, ya que quiero enfocarme para mi TFG en el <em>corpus</em> teórico que ofrecen las redes mutualistas al estudio de los ecosistemas. Para ello eliminé los resultados que parecen desviarse demasiado de este tema, pero sin ser demasiado restrictivo, ya que el volumen de resultados original (199) tampoco es demasiado grande y un filtrado demasiado estricto podría dejarme con muy pocos datos para obtener información relevante en el posterior análisis. Sin embargo, hay que tener en cuenta que el filtrado de los datos inicial dependerá muchos de los intereses y situación de cada investigador. La busqueda quedó finalmente en <a href="https://www.webofscience.com/wos/alldb/summary/96d9e399-8558-49a7-bcc4-23b8a83d4a6e-1b14ad06/relevance/1">160 resultados</a>.</p>
-<p>A la hora de exportar los datos eligiremos el formato <code>BibTeX</code>, ya que es el que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual <a href="https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html">aquí</a>.</p>
+<p>Utilizaremos para nuestra busqueda dos bases de datos: Scopus y Web of Science (WOS). Scopus es más amigable con el usuario novato y da la posibilidad de buscar tanto hacia adelante como hacia atrás a partir de una cita concreta. Ambos buscadores almacenan información de artículos de muy diversas disciplinas, lo que permite al investigador buscar fácilmente fuera de su campo de estudio. WOS, por su parte, presenta una mayor profunidad de cobertura, ya que la base de datos completa de WOS se remonta a 1945 y la de Scopus a 1966. El uso de estas dos bases de datos nos dará un volumen de información lo suficientemente completo para nuestra investigación<span class="citation">(Burnham, 2006)</span>.</p>
+<p>A la hora de exportar los datos eligiremos el formato <code>plaintext</code>(WOS) o <code>BibTeX</code>(Scopus), ya que son los que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual <a href="https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html">aquí</a>.</p>
+<div id="scopus." class="section level2">
+<h2>Scopus.</h2>
+<p>Acudimos a <strong>Scopus</strong> y buscamos información sobre <em>Mutualistic Newtwork</em> en <strong>Article Title, Absrtract and Keywords</strong>. El primer resultado nos arroja 406 resultados (TITLE-ABS-KEY ( “mutualistic network” )), pero realizaremos un filtrado a través del apartado <strong>Subject Area</strong> de aquellas disciplinas que se salen de nuestro campo de estudio, en nuestro caso queremos enfocarnos en el estudio de los ecosistemas. Tras el filtrado, la busqueda avanzada queda así:</p>
+<p>TITLE-ABS-KEY ( “mutualistic network” ) AND ( EXCLUDE ( SUBJAREA , “MULT” ) OR EXCLUDE ( SUBJAREA , “PHYS” ) OR EXCLUDE ( SUBJAREA , “IMMU” ) OR EXCLUDE ( SUBJAREA , “MATH” ) OR EXCLUDE ( SUBJAREA , “COMP” ) OR EXCLUDE ( SUBJAREA , “ENGI” ) OR EXCLUDE ( SUBJAREA , “NEUR” ) OR EXCLUDE ( SUBJAREA , “CHEM” ) OR EXCLUDE ( SUBJAREA , “CENG” ) OR EXCLUDE ( SUBJAREA , “MATE” ) OR EXCLUDE ( SUBJAREA , “MEDI” ) OR EXCLUDE ( SUBJAREA , “DECI” ) OR EXCLUDE ( SUBJAREA , “PHAR” ) OR EXCLUDE ( SUBJAREA , “PSYC” ) OR EXCLUDE ( SUBJAREA , “SOCI” ) OR EXCLUDE ( SUBJAREA , “ECON” ) )<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>Descargamos la bibliografía en formato <code>BibTeX</code> con toda la información que nos permite Scopus (Citation information, Bibliographical information, Abstract &amp; keywords, Funding details y Other Information).</p>
+</div>
+<div id="web-of-science." class="section level2">
+<h2>Web of Science.</h2>
+<p>Acudimos a <strong>Web of Science</strong> y buscamos información sobre <a href="https://www.webofscience.com/wos/alldb/summary/965e996b-ce32-4096-b23b-3d5fc1090cd3-1b146a07/relevance/1"><em>Mutualistic Networks</em></a> en <strong>Topic</strong>. Poseo cierto conocimiento previo sobre este area, aportado gracias a artículos divulgativos que pueden encontrarse facilmente. Esto me permite realizar un filtrado de los resultados, ya que quiero enfocarme para mi TFG en el <em>corpus</em> teórico que ofrecen las redes mutualistas al estudio de los ecosistemas. Para ello eliminé los resultados que parecen desviarse demasiado de este tema, pero sin ser demasiado restrictivo, ya que el volumen de resultados original (199) tampoco es demasiado grande y un filtrado demasiado estricto podría dejarme con muy pocos datos para obtener información relevante en el posterior análisis. Sin embargo, hay que tener en cuenta que el filtrado de los datos inicial dependerá muchos de los intereses y situación de cada investigador. La busqueda quedó finalmente en <a href="https://www.webofscience.com/wos/alldb/summary/96d9e399-8558-49a7-bcc4-23b8a83d4a6e-1b14ad06/relevance/1">160 resultados</a>.</p>
+</div>
+</div>
+<div id="importar-datos-a-biblioshiny." class="section level1">
+<h1>Importar datos a biblioshiny.</h1>
 <p>En la primera pestaña denominada <code>Data</code> podemos cargar los datos a través de la opción <code>Import or Load Files</code>. La segunda opción llamada <code>Gather Data using APIs</code> permite recopilar la bibliografía directamente de las bases de datos correspondientes, pero solo permite recoger datos de <strong>Pubmed</strong> y <strong>Dimensions</strong>, lo que se sale de las bases de datos que queremos utilizar.</p>
 <p>Para evitar tener que pasar por el uso de comandos de conversión en la consola seleccionaremos en <strong>Please, choose what to do</strong> la opción <code>Import raw files</code>, lo que significa que estamos importando datos que descargamos directamente de la base de datos correspondiente, sin realizar un proceso de conversión.</p>
+<p><strong>ARREGLAR EL PROBLEMA DE IMPORTACION EN BIBLIOSHINY CON WOS</strong></p>
 </div>
-<div id="section" class="section level1">
-<h1></h1>
+<div id="principales-herramientas-de-biblioshiny." class="section level1">
+<h1>Principales herramientas de Biblioshiny.</h1>
+<div id="información-principal." class="section level2">
+<h2>Información principal.</h2>
+<p>En <code>Dataset&gt;Main Information</code> obtenemos información cuantitativa sobre el set de artículos que hemos cargado a través de una tabla. La tabla ofrece una gran cantidad de información, pero a primera vista nos fijaremos en los siguientes elementos</p>
+<table>
+<thead>
+<tr class="header">
+<th>biblioshiny for bibliometrix</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Description</td>
+<td>Results</td>
+</tr>
+<tr class="even">
+<td>MAIN INFORMATION ABOUT DATA</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Timespan</td>
+<td>2002:2022</td>
+</tr>
+<tr class="even">
+<td>Documents</td>
+<td>269</td>
+</tr>
+<tr class="odd">
+<td>Average years from publication</td>
+<td>5.67</td>
+</tr>
+<tr class="even">
+<td>AUTHORS COLLABORATION</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Single-authored documents</td>
+<td>21</td>
+</tr>
+<tr class="even">
+<td>Authors per Document</td>
+<td>2.83</td>
+</tr>
+<tr class="odd">
+<td>Co-Authors per Documents</td>
+<td>4.25</td>
+</tr>
+<tr class="even">
+<td>Collaboration Index</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Timespan</strong>: Define el marco temporal en el que estos artículos han sido publicados. En nuestro caso el estudio de redes mutualistas es bastante reciente, el primer artículo aparece en 2002 y el último en 2022.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></li>
+</ul>
+<ul>
+<li><strong>Documents</strong>: Define el total de documentos de nuestro set, en nuestro caso 269 documentos.</li>
+<li><strong>Average years from publication</strong>: Define el año en el que mas publicaciones se hicieron sobre este tema. En nuestro caso, 5.67 despues del ínicio de nuestro marco temporal de publicaciones, es decir, 2002+5.67 años, alrededor de 2007. Este apartado nos permite localizar el año donde el tema fue más popular, aunque esto lo podremos confirmar posteriormente con ciertas representaciones gráficas.</li>
+<li><strong>Authors per Document</strong>: Número promedio de autores por cada documento. Nuestro set de artículos presenta un número de casi 3 autores por documento, lo que es relativamente bajo.</li>
+<li><strong>Co-Author per Documents</strong>: Si encontramos mas de un autor en un artículo, dos o más pueden considerarse coautores si han realizado una aportación similar a la elaboración del artículo. En nuestro caso es relativamente alta, 4 coautores por documento.</li>
+<li><strong>Collaboration Index</strong>: El índice de colaboración se calcula como el total de autores de artículos con varios autores/total de artículos con varios autores<span class="citation">(Aria &amp; Cuccurullo, n.d.)</span>. En nuestro caso, del total de artículos con coautoría, la mayoría tienen 3 coautores. #</li>
+</ul>
+</div>
 </div>
 <div id="bibliografía-consultada." class="section level1 unnumbered">
 <h1 class="unnumbered">Bibliografía consultada.</h1>
 <div id="refs" class="references csl-bib-body hanging-indent" line-spacing="2">
+<div id="ref-massimoaria_corradocuccurullo" class="csl-entry">
+Aria, M., &amp; Cuccurullo, C. (n.d.). In <em>A brief introduction to bibliometrix</em>. <a href="https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html">https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html</a>
+</div>
 <div id="ref-Aria2017" class="csl-entry">
 Aria, M., &amp; Cuccurullo, C. (2017). Bibliometrix : An r-tool for comprehensive science mapping analysis. <em>Journal of Informetrics</em>, <em>11</em>(4), 959–975. <a href="https://doi.org/10.1016/j.joi.2017.08.007">https://doi.org/10.1016/j.joi.2017.08.007</a>
 </div>
 <div id="ref-bibrpack" class="csl-entry">
 <em>Bibliometrix r package</em>. <a href="https://www.bibliometrix.org/index.html#contacts3-19">https://www.bibliometrix.org/index.html#contacts3-19</a>.
+</div>
+<div id="ref-Burnham2006" class="csl-entry">
+Burnham, J. F. (2006). Scopus database: A review. <em>Biomedical Digital Libraries</em>, <em>3</em>(1). <a href="https://doi.org/10.1186/1742-5581-3-1">https://doi.org/10.1186/1742-5581-3-1</a>
 </div>
 <div id="ref-whatisr" class="csl-entry">
 What is r? (n.d.). In <em>R</em>. <a href="https://www.r-project.org/about.html">https://www.r-project.org/about.html</a>
@@ -266,6 +358,13 @@ What is r? (n.d.). In <em>R</em>. <a href="https://www.r-project.org/about.html"
 Wikipedia contributors. (2021). <em>Bibliometrics — <span>Wikipedia</span><span>,</span> the free encyclopedia</em>. <a href="https://en.wikipedia.org/w/index.php?title=Bibliometrics&amp;oldid=1057764354">https://en.wikipedia.org/w/index.php?title=Bibliometrics&amp;oldid=1057764354</a>
 </div>
 </div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>La búsqueda avanzada en Scopus implica el empleo de comandos de búsqueda basados en códigos, y está destinada a realizar búsquedas muy complejas, que exijan tal combinación de elementos, que las anteriores opciones de búsqueda no sean efectivas. Dado que Scopus no permite compartir busquedas a través de enlaces, comparto aquí el código de la busqueda avanzada. Con pegar este texto en la barra de busqueda deberías obtener los mismos resultados.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Algunos artículos pueden presentarse como borradores pendientes de revisión, con fechas de publicación a futuro.<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
 
