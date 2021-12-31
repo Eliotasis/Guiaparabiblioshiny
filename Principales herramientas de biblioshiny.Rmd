@@ -3,12 +3,12 @@ title: "Guía para usar Biblioshiny"
 author: "Eliot Mompean"
 date: "22/12/2021"
 csl: apa-with-abstract.csl
-bibliography: biblio.bib
+bibliography: bib/biblio.bib
 output: 
   html_document:
     toc: true
     toc_depth: 3
-    theme: darkly
+    theme: default
 ---
 
 ```{r setup, include=FALSE}
@@ -125,7 +125,62 @@ El diagrama nos permite observar que el tema de estudio presenta unos años inic
 - Geographic patterns in plant–pollinator mutualistic networks. Olessen y Jordano. 2002. Con 395 citas. 
 Un buen punto de partida para nuestra lectura podrían ser estos dos artículos. 
 
+Entre la información principal también puede ser interesante observar cuales son los paises más productivos. Para ello podemos acudir a la pestaña `Authors>Country Scientific Production` donde te ofrece un Mapa Mundi donde los países mas productivos aparecen coloreados en tonos de azul más intenso. 
 
-## Diagrama de tres campos. 
+[Diagrama de la producción científica por paises.]()
+
+
+
+# Artículos más relevtantes.
+
+## Artículos más citados. 
+
+Una primera aproximación a averiguar cuales son los artículos más relevantes puede ser observar cuales son los artículos más citados. En `Documents>Most Global Cited Documents` encontrarás un diagrama de barras con los artículos más citados. 
+
+![Diagrama de barras de los artículos mas citados.](MostGlobalCitedDocuments.png)
+
+#Fuentes mas relevantes. 
+
+## Ley de bradford. 
+
+Podemos realizar un cálculo de las resvistas que forman parte del "núcleo" a través de la ley de bradford, que se encuentra en `Sources>Bradford´s law`. Pero ¿Qués es la ley de Bradford?¿En qué consiste? La siguiente explicación es una adaptación de las páginas 95-98 de @Nicola2009.
+
+La ley de bradford propone que si ordenamos las revistas en orden decreciente de procutividad (nº de artículos publicados) observaremos que existe un "núcleo" de revistas que acumulan la mayor parte de los artículos de nuestro tema de estudio, mientras que el resto de los artículos se diespersan entre un número mucho mayor de revistas menos productivas. Cuando Samuel Bradford estudiaba un caso práctico con bibliografía sobre geofísica observo que: 
+
+1. Existia un grupo de 9 revistas que acumulaban en total 429 artículos. 
+2. Un segundo grupo de 59 revistas que acumulanan 499 artículos y
+3. Un tercer grupo de 258 revistas que acumulaban 404 artículos. 
+
+Los tres grupos presentan un número similar de artículos a sus espaldas, pero el segundo y el tercer grupo presentan un número de revistas mucho mayor, lo que provoca que esos artículos se encuentren mas dispersos. El número de revistas de cada grupo puede ser expresado como una proporción del primer grupo, es decir 9:
+
+1. $9$ revistas del primer grupo.
+2. $9*5$ revistas del segundo grupo ($9*5=45$ aproximadamente 59).
+3. $9*5*5=9*5^2$ revistas del tercer grupo ($9*5^2=225$ aproximadamente 258).
+
+Así, las proporciones entre los grupos podrían excribirse como:
+
+$9:9*5:9*5^2$
+
+Podemos escribir este caso partícular como una ley general para un conjunto de artículos de una muestra bibliográfica dividiendo cada elemento por $9$ y tomando el factor $5$ como cualquier número $m$, ya que no necesariamente tiene que ser 5. La ecuación queda de la siguiente manera:
+
+$1:m:m^2$
+
+La secuencia de proporciones anterior equivale a decir que el grueso de los artículos sobre un tema determinado se concentra en un pequeño conjunto de revistas del núcleo y luego se dispersa por otras revistas hasta tal punto que, si el conjunto de artículos relevantes se subdivide en grupos o zonas que contienen el mismo número de artículos que el núcleo, se necesitará un número exponencialmente creciente de revistas para llenar las zonas sucesivas.
+
+Por lo tanto, la ley de Bradford nos puede dar información relevante sobre cuáles son las revistas científicas más importantes en nuestro campo, lo que puede guiar nuestra busqueda bibliográfica y prestar atrención a dichas fuentes. 
+
+![Diagrama de la Ley de Bradford](BradfordsLaw.png)
+
+La pestaña `plot` nos ofrece una tabla con la misma información representada en el diagrama. Podemos observar como la cantidad de fuentes en las zonas 2 y 3 es considerablemente mayor que las de la zona 1, lo que valida las conclusiones de Bradford. La siguiente tabla muestra las fuentes que se encuentran en la zona 1, y por lo tanto a las que deberemos prestar mas atención:
+
+|                                           	|      	|      	|         	|        	|
+|----------------------------------------------------------------------------	|------	|------	|---------	|--------	|
+| SO                                                                         	| Rank 	| Freq 	| cumFreq 	| Zone   	|
+| OIKOS                                                                      	| 1    	| 32   	| 32      	| Zone 1 	|
+| ECOLOGY                                                                    	| 2    	| 27   	| 59      	| Zone 1 	|
+| ECOLOGY LETTERS                                                            	| 3    	| 22   	| 81      	| Zone 1 	|
+| JOURNAL OF ANIMAL ECOLOGY                                                  	| 4    	| 17   	| 98      	| Zone 1 	|
+
+
 
 # Bibliografía consultada.

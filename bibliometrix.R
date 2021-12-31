@@ -1,14 +1,21 @@
 library(bibliometrix)
 biblioshiny()
 
-file <- savedrecs_4_
+
+file <- "bib/mutualisticNetworkMULTPHYSIMMU.bib"
 file
 
-M <- convert2df(file, dbsource = "wos", format = "plaintext")
+file2<-"bib/mnwosFake.txt"
+file2
+
+M <- convert2df(file, dbsource = "scopus", format = "bibtex") #formato plaintext
 M
 
-file <- savedrecs_1_
-M    <- convert2df( file, dbsource = "wos", format = "bibtex" )
+
+M2    <- convert2df( file2, dbsource = "wos", format = "plaintext" )#formato bibtex
 head( M[ "TC" ] )
 
+summary(M)
+
+ln -s ~\Guiaparabiblioshiny\mnwos.txt
 
