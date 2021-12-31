@@ -8,7 +8,7 @@ output:
   html_document:
     toc: true
     toc_depth: 3
-    theme: default
+    theme: darkly
 ---
 
 ```{r setup, include=FALSE}
@@ -181,6 +181,22 @@ La pestaña `plot` nos ofrece una tabla con la misma información representada e
 | ECOLOGY LETTERS                                                            	| 3    	| 22   	| 81      	| Zone 1 	|
 | JOURNAL OF ANIMAL ECOLOGY                                                  	| 4    	| 17   	| 98      	| Zone 1 	|
 
+## Índice H, G y M, aplicado a fuentes. 
 
+El índice H fue propuesto por Hirsch [-@Hirsch2005] es un número que pretende resumir el impacto que tiene un investigador dentro de su campo de estudio. El número h de un investigador es el número de artículos publicados por dicho investigador que tienen un número igual o mayor de citas. Por ejemplo, un investigador puede tener un total de 6 artículos donde tiene 6 o más citas, por debajo podríamos encontrar tal vez 12 artículos que tienen menos de 12 citas y por lo tanto no puede utilizarse como índice H. Intuitivamente podemos entender que cuanto mayor sea el índice H mayor será el impacto de dicho autor. Para hacernos una idea, según el citado artículo de Hirsch [-@Hirsch2005], los premios nobel de física suelen presentar un índice H de 35-39. 
+
+Sin embargo, podrás darte cuenta de que el índice H es propuesto inicialmente para medir impacto de autores, mientras que biblioshiny propone estos índices para medir impacto de revistas. Matemáticamente no existe impedimento, ya que tanto autores como revistas son elementos de una bibliografía de los que se pueden contar artículos publicados y sus citaciones. Biblioshiny nos enseña un diagrama con 20 revistas, pero debido a que a partir de la decimo segunda nos aparecen un total de 10 revistas con índice H de 3, reducimos el total de revistas que aparecen a 12 para sobrecargar menos con información redundante. La tabla resultante es la siguiente: 
+
+![Diagrama índice H de revistas](SourceImpactByHIndex.png)
+
+Indice G
+
+Indice M
+
+Comparar los 3 indices junto con la ley de bradford y sacar conlcusiones. 
+
+## Autores mas relevantes. 
+
+## Cluestering o agrupamiento. 
 
 # Bibliografía consultada.
