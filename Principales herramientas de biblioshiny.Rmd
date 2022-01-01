@@ -167,7 +167,7 @@ $1:m:m^2$
 
 La secuencia de proporciones anterior equivale a decir que el grueso de los artículos sobre un tema determinado se concentra en un pequeño conjunto de revistas del núcleo y luego se dispersa por otras revistas hasta tal punto que, si el conjunto de artículos relevantes se subdivide en grupos o zonas que contienen el mismo número de artículos que el núcleo, se necesitará un número exponencialmente creciente de revistas para llenar las zonas sucesivas.
 
-Por lo tanto, la ley de Bradford nos puede dar información relevante sobre cuáles son las revistas científicas más importantes en nuestro campo, lo que puede guiar nuestra busqueda bibliográfica y prestar atrención a dichas fuentes. 
+Por lo tanto, la ley de Bradford nos puede dar información relevante sobre cuáles son las revistas científicas más importantes en nuestro campo, lo que puede guiar nuestra busqueda bibliográfica y prestar atrención a dichas fuentes. En biblishiny puedes aplicar la ley de bradford en la pestaña `Sources>Bradford's Law`.
 
 ![Diagrama de la Ley de Bradford](BradfordsLaw.png)
 
@@ -181,19 +181,30 @@ La pestaña `plot` nos ofrece una tabla con la misma información representada e
 | ECOLOGY LETTERS                                                            	| 3    	| 22   	| 81      	| Zone 1 	|
 | JOURNAL OF ANIMAL ECOLOGY                                                  	| 4    	| 17   	| 98      	| Zone 1 	|
 
-## Índice H. 
+## Índice $h$. 
 
-El índice H fue propuesto por Hirsch [-@Hirsch2005] es un número que pretende resumir el impacto que tiene un investigador dentro de su campo de estudio. El número h de un investigador es el número de artículos publicados por dicho investigador que tienen un número igual o mayor de citas. Por ejemplo, un investigador puede tener un total de 6 artículos donde tiene 6 o más citas, por debajo podríamos encontrar tal vez 12 artículos que tienen menos de 12 citas y por lo tanto no puede utilizarse como índice H. Intuitivamente podemos entender que cuanto mayor sea el índice H mayor será el impacto de dicho autor. Para hacernos una idea, según el citado artículo de Hirsch [-@Hirsch2005], los premios nobel de física suelen presentar un índice H de 35-39. 
+El índice $h$ fue propuesto por Hirsch [-@Hirsch2005] es un número que pretende resumir el impacto que tiene un investigador dentro de su campo de estudio. El número h de un investigador es el número de artículos publicados por dicho investigador que tienen un número igual o mayor de citas. Por ejemplo, un investigador puede tener un total de 6 artículos donde tiene 6 o más citas, por debajo podríamos encontrar tal vez 12 artículos que tienen menos de 12 citas y por lo tanto no puede utilizarse como índice $h$. Intuitivamente podemos entender que cuanto mayor sea el índice *H* mayor será el impacto de dicho autor. Para hacernos una idea, según el citado artículo de Hirsch [-@Hirsch2005], los premios nobel de física suelen presentar un índice $h$ de 35-39. 
 
-Sin embargo, podrás darte cuenta de que el índice H es propuesto inicialmente para medir impacto de autores, mientras que biblioshiny propone estos índices para medir impacto de revistas. Matemáticamente no existe impedimento, ya que tanto autores como revistas son elementos de una bibliografía de los que se pueden contar artículos publicados y sus citaciones. Biblioshiny nos enseña un diagrama con 20 revistas, pero debido a que a partir de la decimo segunda nos aparecen un total de 10 revistas con índice H de 3, reducimos el total de revistas que aparecen a 12 para sobrecargar menos con información redundante. La tabla resultante es la siguiente: 
+Sin embargo, podrás darte cuenta de que el índice H es propuesto inicialmente para medir impacto de autores, mientras que biblioshiny propone estos índices para medir impacto de revistas. Matemáticamente no existe impedimento, ya que tanto autores como revistas son elementos de una bibliografía de los que se pueden contar artículos publicados y sus citaciones. Biblioshiny nos enseña un diagrama con 20 revistas, pero debido a que a partir de la décimo segunda nos aparecen un total de 10 revistas con índice H de 3, reducimos el total de revistas que aparecen a 12 para sobrecargar menos con información redundante. La tabla resultante es la siguiente: 
 
-![Diagrama índice H de revistas](SourceImpactByHIndex.png)
+![Diagrama índice $h$ de revistas](SourceImpactByHIndex.png)
 
-El índice H de las fuentes, así como la ley de bradford, nos vuelve a indicar que las fuentes a las que debemos prestar mas antención son ECOLOGY, OIKOS, ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. La ley de bradford nos informaba de que estas revistas son las que forman parte del núcleo de la investigación, mientras que el índice H nos informa de que, además, son las que tienen más impacto. 
+El índice *h* de las fuentes, así como la ley de bradford, nos vuelve a indicar que las fuentes a las que debemos prestar mas antención son ECOLOGY, OIKOS, ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. La ley de bradford nos informaba de que estas revistas son las que forman parte del núcleo de la investigación, mientras que el índice H nos informa de que, además, son las que tienen más impacto. 
 
-## Índice G.
+## Índice $g$.
 
+Una de las desventajas del índice H es que, así como desprecia aquellos artículos muy poco citados, lo cual es ventajoso, minusvalora aquellos artículos que presentan muchísimas citas y que pueden haber sido muy influyentes en el campo de estudio que estamos analizando. Por ejemplo, supongamos que un autor tiene un índice $h$ de 15, esto quiere decir que tiene un total de 15 artículos que han sido citados al menos 15 veces. Si el autor escribe un artículo que tiene muchísima repercusión y adquiere muchísimas citas, pongamos 50,  el recálculo del índice $h$ no nos informará de este impacto, porque este nuevo artículo pasará directamente a la cima de sus artículos más citados.  
 
+Debido a la necesidad de darle más importancia a los artículos que son muy citados, Egghe [-@Egghe2006] ideó el índice $g$. El índice $g$ se calcula de manera muy similar al índice $h$, primero se ordenan todos los artículos desde los más citados a los menos citados. Ahora, en vez de buscar aquel grupo de $h$ artículos con $h$ o más citas, buscamos aquel grupo de $h$ artículos que tenga $h^2$ o más citas, en adelante $g$ citas. ¿Qué obtenemos elevando las citas al cuadrado? Cuando elevas un número pequeño al cuadrado este hace más grande, pero si elevas un número grande al cuadrado este se hace muchísimo más grande. Por ejemplo, $2^2=4$ donde $4$ es el doble que $2$, pero $100^2=10.000$ donde $10.000$ es cien veces más que $100$. Con esto conseguimos dos cosas interesantes: 
+
+- Le damos más valor a los artículos muy citados. 
+- Ganamos precisión al comparar autores que presentan muchisimas citas. 
+
+Este segundo aspecto lo podemos observar con nuestro ejemplo, si entramos en `Sources>Source Local Impact` y en el menú desplegable `Impact measure` elegimos `G-Index`, obtendremos un diagrama similar al obtenido cuando medíamos el índice $h$ pero para el índice $g$. 
+
+![Diagrama índice $g$ de revistas](SourceImpactByGIndex.png)
+
+Podemos observar que ahora las dos revistas más citadas aparecen más separadas entre sí, mientras que las menos citadas no han cambiado mucho. Hemos ganado precisión para discernir entre las revistas más citadas, mientras que con el índice $h$ ECOLOGY tiene más impacto que OIKOS, pero por poca diferencia, con el índice $g$ observamos que OIKOS tiene más impacto con bastante más diferencia. Probablemente, OIKOS tiene algunos artículos muy citados que hacen que gane la carrera en el índice $g$. 
 
 ## Índice M. 
 
@@ -228,6 +239,6 @@ b) A través de la cantidad de citas que recibe.
 
 c) A través de la cantidad de trabajos que publica. 
 
-## Cluestering o agrupamiento. 
+# Cluestering o agrupamiento. 
 
 # Bibliografía consultada.
