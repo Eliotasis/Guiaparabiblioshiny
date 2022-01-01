@@ -83,41 +83,70 @@ Para evitar tener que pasar por el uso de comandos de conversión en la consola 
 
 **ARREGLAR EL PROBLEMA DE IMPORTACION EN BIBLIOSHINY CON WOS**
 
+# Filtrar datos con Biblioshiny. 
+
+Biblioshiny nos permite eliminar algunos datos de nuestra dependiendo de nuestros intereses a través de la pestaña `Filter`. Entre las opciones que nos ofrece nos permite filtrar por:
+
+- Tipo de documento. 
+- Año de publicación. 
+- Total de citaciones. 
+- Zonas de la ley de bradford. 
+
+En nuestro caso eliminaremos las fuentes de 2021 y 2022 ya que parecen desvirtuar algunas gráficas y tendencias. Los últimos años de nuestra muestra puede ser oportuno eliminarlos ya que son años susceptibles de cambiar. 
+ 
 # Principales herramientas de Biblioshiny. 
 
 ## Información principal. 
 
-En `Dataset>Main Information` obtenemos información cuantitativa sobre el set de artículos que hemos cargado a través de una tabla.  La tabla ofrece una gran cantidad de información, pero a primera vista nos fijaremos en los siguientes elementos
+En `Dataset>Main Information` obtenemos información cuantitativa sobre el set de artículos que hemos cargado a través de una tabla. 
 
 | biblioshiny for bibliometrix         	|           	|
 |--------------------------------------	|-----------	|
 | Description                          	| Results   	|
 | MAIN INFORMATION ABOUT DATA          	|           	|
-| Timespan                             	| 2002:2022 	|
-| Documents                            	| 269       	|
-| Average years from publication       	| 5.67      	|
+| Timespan                             	| 2002:2020 	|
+| Sources (Journals, Books, etc)       	| 84        	|
+| Documents                            	| 242       	|
+| Average years from publication       	| 7.3       	|
+| Average citations per documents      	| 51.18     	|
+| Average citations per year per doc   	| 4.929     	|
+| References                           	| 12555     	|
+| DOCUMENT TYPES                       	|           	|
+| article                              	| 216       	|
+| book                                 	| 2         	|
+| book chapter                         	| 8         	|
+| editorial                            	| 1         	|
+| letter                               	| 3         	|
+| note                                 	| 2         	|
+| review                               	| 9         	|
+| short survey                         	| 1         	|
+| DOCUMENT CONTENTS                    	|           	|
+| Keywords Plus (ID)                   	| 881       	|
+| Author's Keywords (DE)               	| 720       	|
+| AUTHORS                              	|           	|
+| Authors                              	| 690       	|
+| Author Appearances                   	| 1010      	|
+| Authors of single-authored documents 	| 16        	|
+| Authors of multi-authored documents  	| 674       	|
 | AUTHORS COLLABORATION                	|           	|
-| Single-authored documents            	| 21        	|
-| Authors per Document                 	| 2.83      	|
-| Co-Authors per Documents             	| 4.25      	|
-| Collaboration Index                  	| 3         	|
+| Single-authored documents            	| 20        	|
+| Documents per Author                 	| 0.351     	|
+| Authors per Document                 	| 2.85      	|
+| Co-Authors per Documents             	| 4.17      	|
+| Collaboration Index                  	| 3.04      	|
+
+De esta tabla extraemos que tenemos un total de 242 documentos de los años entre 2002 y 2020 y que son mayormente artículos científicos. Entre los tipos de archivos minoritarios podemos destacar los capítulos de libros y las revisiones, con 8 y 9 documentos respectivamente. La mayoría de los autores se encuentran en documentos con múltiples autores y muchos de ellos presente coautoría, con 4.17 coautores por documento. 
+
 
 - **Timespan**: Define el marco temporal en el que estos artículos han sido publicados. En nuestro caso el estudio de redes mutualistas es bastante reciente, el primer artículo aparece en 2002 y el último en 2022 [^2]. 
 
 [^2]: Algunos artículos pueden presentarse como borradores pendientes de revisión, con fechas de publicación a futuro. 
 
-- **Documents**: Define el total de documentos de nuestro set, en nuestro caso 269 documentos. 
-- **Average years from publication**: NO ENTIENDO QUE ES ESTO.  
-- **Authors per Document**: Número promedio de autores por cada documento. Nuestro set de artículos presenta un número de casi 3 autores por documento, lo que es relativamente bajo. 
-- **Co-Author per Documents**: Si encontramos mas de un autor en un artículo, dos o más pueden considerarse coautores si han realizado una aportación similar a la elaboración del artículo. En nuestro caso es relativamente alta, 4 coautores por documento. 
-- **Collaboration Index**: El índice de colaboración se calcula como el total de autores de artículos con varios autores/total de artículos con varios autores[@massimoaria_corradocuccurullo]. En nuestro caso, del total de artículos con coautoría, la mayoría tienen 3 coautores. 
-
 ## Producción científica anual. 
 
-En `Data>Annual Scientific Production` nos muestra una gráfica que enfrenta número de artículos por año. Esta gráfica es muy ilustrativa del desarrollo en popularidad del tema de estudio. Sin embargo, aunque la tendencia general es al alza, el último año (2022) solo presenta un artículo, lo cual tiene sentido porque es el único artículo que tiene fecha de publicación a futuro. El presente año, 2021, también presenta una tendencia ligeramente menor a la esperada. Esto puede deberse a que aun pueden existir artículos que no se hayan introducido en la base de datos. Para evitar que estos dos años nos falseen la tendencia, los eliminaremos del análisis a través de la pestaña `Filter`, donde reduciremos el marco temporal a 2002:2020 y pulsaremos **Apply**. Si volvemos a `Data>Annual Scientific Production` no encontramos ya los dos últimos años. [^NOTA]
+En `Data>Annual Scientific Production` nos muestra una gráfica que enfrenta número de artículos por año. Esta gráfica es muy ilustrativa del desarrollo en popularidad del tema de estudio. 
 
-
-[^NOTA]: A la izquierda observamos el ratio de crecimiento anual. ¿Como se calcula? Nadie lo explica. En internet econtraras que es, dentro de tu marco temporal: $(Nº de publicaciones el ultimo año]-Nº de publuicaciones el primer año/Nº de publuicaciones el primer año)*100$ Pero, obviamente, eso no explica el 21.2%. Las guías de Bibliometrix, como de costumbre, no lo explican, igual que el Average years from publication. 
+![Diagrama de la producción científica anual](AnnualScientificProduction.png)
 
 El diagrama nos permite observar que el tema de estudio presenta unos años iniciales de producción científica modesta, con uno o dos artículos por año entre 2002 y 2006.  Posteriormente se produce la explosión, con picos productivos en 2009, 2014, 2016 y 2020, con 12, 25, 27 y 32 documentos respectivamente. Por lo tanto, es probable que en esos años previos encontremos algún o algunos artículos muy citados que resultaran ser la semilla de todo un campo de estudio. Al examinar estos años encontramos dos artículos muy citados:
 
@@ -125,9 +154,7 @@ El diagrama nos permite observar que el tema de estudio presenta unos años inic
 - Geographic patterns in plant–pollinator mutualistic networks. Olessen y Jordano. 2002. Con 395 citas. 
 Un buen punto de partida para nuestra lectura podrían ser estos dos artículos. 
 
-Entre la información principal también puede ser interesante observar cuales son los paises más productivos. Para ello podemos acudir a la pestaña `Authors>Country Scientific Production` donde te ofrece un Mapa Mundi donde los países mas productivos aparecen coloreados en tonos de azul más intenso. 
-
-![Diagrama de la producción científica por paises.](CountryScientificProduction.png)
+A la izquierda nos encontramos un ratio de crecimiento anual del 21.23% que es calculado utilizando la fórmula para el Compound annual growth rate (CAGR) utilizado mayormente en economía.  
 
 ## Media de citaciones al año.
 
@@ -224,6 +251,10 @@ Resumidamente podemos decir que las cuatro revistas mas importantes de nuestra m
 
 ### Producción científica de los países. 
 
+Entre la información principal también puede ser interesante observar cuales son los paises más productivos. Para ello podemos acudir a la pestaña `Authors>Country Scientific Production` donde te ofrece un Mapa Mundi donde los países mas productivos aparecen coloreados en tonos de azul más intenso. 
+
+![Diagrama de la producción científica por paises.](CountryScientificProduction.png)
+
 ## Documentos. 
 
 ### Documentos globalmente más citados. 
@@ -294,6 +325,86 @@ c) A través de la cantidad de trabajos que publica.
 # Cluestering o agrupamiento.
 
 # Anexos. 
+
+## Información principal. 
+
+- **Timespan**: Año del primer y el último artículo publicado.                             	
+- **Sources (Journals, Books, etc)**: Fuentes de las que provienen los documentos, revistas, libros etc. 
+- **Documents**:total de documentos                            	
+- **Average years from publication**: Promedio de años entre la publicación de un documento y sus primeras citas.     
+- **Average citations per documents**: Promedio de citas por documento.  
+
+$$
+\text{Average citations per documents}=\frac{\text{total de citas}}{\text{total de documentos}}
+$$
+
+
+- **Average citations per year per doc**: Promedio de citas por año y por documento. 
+
+$$
+\text{Average citations per year per doc}=\frac{\text{total de citas}}{\text{total de documentos}*\text{duracion en años del marco temporal}}
+$$
+
+- **References**: Total de citas en toda la muestra.                      
+- **article**: Total de artículos.                               
+- **book**: Total de libros.                                 
+- **book chapter**: Total de capítulos de libros.                          
+- **editorial**: Total de editoriales.                            
+- **letter**: Total de cartas.
+- **note**: Total de notas.                                 	
+- **review** Total de revisiones.                                	
+- **short survey**: Total de estudios breves.                          
+- **Keywords Plus (ID)**: Total de palabras clave plus. Las palabras clave plus son palabras clave generadas automáticamente por la base de datos en cuestión a partir de las palabras más comunes que aparecen en los títulos de los artículos citados. 
+- **Author's Keywords (DE)**: Total de palabras clave de autores. Las palabras clave de autores son las palabras clave que son indexadas manualmente por los propios autores de los artículos. 
+- **Authors**: Total de autores.                               
+- **Author Appearances**: Total de veces que los autores aparecen como tal en los documentos.                 
+- **Authors of single-authored documents**: Total de autores que aparecen en documentos con un solo autor. 
+- **Authors of multi-authored documents** Total de autores que aparecen en documentos con múltiples autores.	- **Single-authored documents** Total de documentos con un solo autor.           
+- **Documents per Author**: Documentos por autor. 
+
+$$
+\text{Documents per Author}=\frac{\text{total de documetnos}}{\text{total de autores}}
+$$
+
+- **Authors per Document**: Autores por documento. 
+
+$$
+\text{Authors per Document}=\frac{\text{total de autores}}{\text{total de documentos}}
+$$
+
+- **Co-Authors per Documents**: Coautores por documento. 
+
+$$
+\text{Co-Authors per Documents}=\frac{\text{total de coautores}}{\text{total de documentos}}
+$$
+
+- Collaboration Index: Índice de colaboración. 
+
+$$
+\text{Collaboration Index}=\frac{\text{total de coautores}}{\text{total de documentos con coautoría}}
+$$
+
+## Ratio de crecimiento anual compuesto. 
+
+El cálculo del ratio de crecimiento en la producción científica anual se realiza a través de la ecuación para el cálculo del ratio de crecimiento anual compuesto($CAGR$): 
+
+$$
+CAGR(t_0, t_n)=\left({\frac{V(t_n)}{V(t_0)}}\right)^{\frac{1}{t_n-t_0}}-1
+$$
+
+$CAGR$ puede tomar valores positivos, negativos o 0, para lo cual:
+
+$$
+CAGR>0; crecimiento
+$$
+
+$$
+CAGR=0; estable
+$$
+
+$$
+CAGR<0; decrecimiento
+$$
 
 ## Ley de bradford. 
 
