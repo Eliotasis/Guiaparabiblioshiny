@@ -127,7 +127,7 @@ Un buen punto de partida para nuestra lectura podrían ser estos dos artículos.
 
 Entre la información principal también puede ser interesante observar cuales son los paises más productivos. Para ello podemos acudir a la pestaña `Authors>Country Scientific Production` donde te ofrece un Mapa Mundi donde los países mas productivos aparecen coloreados en tonos de azul más intenso. 
 
-[Diagrama de la producción científica por paises.]()
+![Diagrama de la producción científica por paises.](CountryScientificProduction.png)
 
 
 
@@ -181,7 +181,7 @@ La pestaña `plot` nos ofrece una tabla con la misma información representada e
 | ECOLOGY LETTERS                                                            	| 3    	| 22   	| 81      	| Zone 1 	|
 | JOURNAL OF ANIMAL ECOLOGY                                                  	| 4    	| 17   	| 98      	| Zone 1 	|
 
-## Índice H, G y M, aplicado a fuentes. 
+## Índice H. 
 
 El índice H fue propuesto por Hirsch [-@Hirsch2005] es un número que pretende resumir el impacto que tiene un investigador dentro de su campo de estudio. El número h de un investigador es el número de artículos publicados por dicho investigador que tienen un número igual o mayor de citas. Por ejemplo, un investigador puede tener un total de 6 artículos donde tiene 6 o más citas, por debajo podríamos encontrar tal vez 12 artículos que tienen menos de 12 citas y por lo tanto no puede utilizarse como índice H. Intuitivamente podemos entender que cuanto mayor sea el índice H mayor será el impacto de dicho autor. Para hacernos una idea, según el citado artículo de Hirsch [-@Hirsch2005], los premios nobel de física suelen presentar un índice H de 35-39. 
 
@@ -189,13 +189,44 @@ Sin embargo, podrás darte cuenta de que el índice H es propuesto inicialmente 
 
 ![Diagrama índice H de revistas](SourceImpactByHIndex.png)
 
-Indice G
+El índice H de las fuentes, así como la ley de bradford, nos vuelve a indicar que las fuentes a las que debemos prestar mas antención son ECOLOGY, OIKOS, ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. La ley de bradford nos informaba de que estas revistas son las que forman parte del núcleo de la investigación, mientras que el índice H nos informa de que, además, son las que tienen más impacto. 
 
-Indice M
+## Índice G.
+
+
+
+## Índice M. 
+
+
+
+
+| biblioshiny for bibliometrix                                           	|         	|         	|                   	|        	|    	|          	|
+|------------------------------------------------------------------------	|---------	|---------	|-------------------	|--------	|----	|----------	|
+| Element                                                                	| h_index 	| g_index 	| m_index           	| TC     	| NP 	| PY_start 	|
+| ECOLOGY                                                                	| 19      	| 25      	| 0.904761904761905 	| 2014   	| 25 	| 2002     	|
+| OIKOS                                                                  	| 18      	| 30      	| 1                 	| 1116   	| 30 	| 2005     	|
+| ECOLOGY LETTERS                                                        	| 15      	| 19      	| 0.75              	| 2101   	| 19 	| 2003     	|
+| JOURNAL OF ANIMAL ECOLOGY                                              	| 12      	| 15      	| 0.666666666666667 	| 1395   	| 15 	| 2005     	|
+| JOURNAL OF ECOLOGY                                                     	| 6       	| 7       	| 0.6               	| 155    	| 7  	| 2013     	|
+| OECOLOGIA                                                              	| 6       	| 8       	| 0.428571428571429 	| 138    	| 8  	| 2009     	|
+| BASIC AND APPLIED ECOLOGY                                              	| 5       	| 6       	| 0.3125            	| 171    	| 6  	| 2007     	|
+| ECOLOGY AND EVOLUTION                                                  	| 5       	| 6       	| 0.625             	| 83     	| 6  	| 2015     	|
+| GLOBAL ECOLOGY AND BIOGEOGRAPHY                                        	| 5       	| 5       	| 0.555555555555556 	| 208    	| 5  	| 2014     	|
+| AMERICAN NATURALIST                                                    	| 4       	| 4       	| 0.266666666666667 	| 170    	| 4  	| 2008     	|
+| ACTA OECOLOGICA                                                        	| 3       	| 4       	| 0.25              	| 34     	| 4  	| 2011     	|
+| ADVANCES IN ECOLOGICAL RESEARCH                                        	| 3       	| 3       	| 0.230769230769231 	| 141    	| 3  	| 2010     	|
 
 Comparar los 3 indices junto con la ley de bradford y sacar conlcusiones. 
 
-## Autores mas relevantes. 
+# Autores más relevantes. 
+
+Identificar a los autores con mas impacto puede hacerse desde distintas estrategias(@Galvez2006):
+
+a) Medir el impacto de las fuentes en las que publica, para lo cuál puedes ver el apartado [Fuentes más relevantes](#Fuentes-mas-relevantes.). 
+
+b) A través de la cantidad de citas que recibe. 
+
+c) A través de la cantidad de trabajos que publica. 
 
 ## Cluestering o agrupamiento. 
 
