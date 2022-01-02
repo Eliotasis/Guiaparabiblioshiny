@@ -158,15 +158,38 @@ A la izquierda nos encontramos un ratio de crecimiento anual del 21.23% que es c
 
 ## Media de citaciones al año.
 
+En la pestaña `Dataset>Average Citations per Year` encontramos un diagrama con el número de citaciones promedio que recibió nuestras citaciones promedio cada año. En nuestros datos podemos observar que existen picos de citaciones en los primeros años de las publicaciones, lo que nos indica que existen artículos muy influyentes en dichos años. 
+
+![Diagrama del promedio de citaciones al año](AverageCitationsPerYear.png)
+
 ## Diagrama de tres campos. 
+
+En la pestaña `Dataset>Three-Fields Plot` encontramos el diagrama de tres campos, una representación grafíca que permite mostrar en tres columnas separadas algunos de los campos asociados a cualquier documento (autores, palabras clave, titulos, fuentes etc.) e interconectarlos en función de si presentan una relación visible en nuestra muestra bibliográfica. Por ejemplo, un autor puede ser conectados con los artículos que cita, con las palabras clave que utiliza o con las fuentes en las que aparece. El menú desplegable de la izquierda nos permite elegir los elementos que ponemos en cada campo, lo que se presta a realizar múltiples combinaciones para observar las distintas redes. Propongo como ejemplo la representación de `References` en la izquierda, `Authors` en el centro y `Keywords Plus` en la derecha. Recomiendo reducir el número de unidades por campo a 10, para reducir la cantidad de datos representados y que resulte menos confuso.
+
+![Diagrama de tres campos representando a la izquierda las referencias, en el centro los autores y a la derecha palabras clave plus](ThreeFieldsPlot.png)
+
+Esta representación nos permite observar de un vistazo cuales son las referencias mas citadas, con qué autores conecta y qué palabras clave tiene relacion. Los puntos débiles de esta combinación es que la longitud de los títulos de las referncias solapan con con el campo central, lo que resulta confuso. Recomiendo interactuar con el diagrama colocando el ratón sobre las distintas unidades representadas, ya que con esta acción se acentúan las interacciones de dichos elementos y permite sacar mejores conclsuiones. 
+
 
 ## Fuentes. 
 
+Una fuente es una revista, libro, capítulo de libro, conferencia o cualquiera que sea el origen de dicha información. El análisis de las fuentes puede ser interesante para observar cuales son las que más impacto tienen en nuestro campo de estudio y puede guiar busquedas futuras. Identificar cuales son las fuentes más relevantes puede hacerse siguiendo múltiples estrategias, biblioshiny nos ofrece 5 herramientas distintas para medir distintas características de lo que se puede considerar una fuente importante. 
+
 ### Fuentes más relevantes. 
 
+En la pestaña `Sources>Most relevant Sources` nos muestra la cantidad de documentos que presentan las fuentes de nuestra muesta bibliográfica. 
 
+![Diagrama del número de documentos de cada una de las fuentes](MostRelevantSources.png)
+
+Tomando como criterio de importancia el número de documentos, las revistas OIKOS, ECOLOGY, ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY son las fuentes con mas relevancia. 
 
 ### Fuentes localmente más citadas. 
+
+En la pestaña `Sources>Most Local Cited Sources` nos muestra un diagrama con las fuentes localmente más citadas. Las fuentes localmente más citadas son aquellas que aparecen en la bibliografía de los documentos de nuestra muestra bibliográfica. 
+
+![Diagrama de las fuentes localmente mas citadas](MostLocalCitedSources.png)
+
+En el aspecto de las citas ECOLOGY gana a OIKOS y se introducen revistas que no aparecían antes en el análisis como NATURE o SCIENCE. Esto puede deberse a que son revistas científicas de alto impacto a lo largo de muchos campos de estudio distintos, por lo que los autores las conocen, leen sus artículos regularmente y las acaban citando en sus trabajos, pero dado que apenas poseen artículos relacionados con nuestro tema es posible que no debamos tenerlas en cuenta. 
 
 ### Ley de bradford. 
 
@@ -392,7 +415,7 @@ $$
 CAGR(t_0, t_n)=\left({\frac{V(t_n)}{V(t_0)}}\right)^{\frac{1}{t_n-t_0}}-1
 $$
 
-$CAGR$ puede tomar valores positivos, negativos o 0, para lo cual:
+En nuestro caso, $V(t_n)$ es la cantidad de artículos en el último año, $V(t_0)$ es la cantidad de artículos en el año inicial y $t_n$ y $t_0$ los años finales e inicial de nuestro marco temporal respectivamente.  $CAGR$ puede tomar valores positivos, negativos o 0, para lo cual:
 
 $$
 CAGR>0; crecimiento
