@@ -258,11 +258,29 @@ Resumidamente podemos decir que las cuatro revistas mas importantes de nuestra m
 
 ### Dinámica de las fuentes. 
 
+En la pestaña `Sources>Source Dynamics` encontramos un diagrama que nos muestra la dinámica de las fuentes a partir de la representación acumulada o por año de la cantidad de artículos. En el menú desplegable `Ocurrences` podemos alternar entre las dos representaciones. 
+
+![Diagrama del crecimiento acumulado en número de artículos de las fuentes](SourceGorwth.png)
+
+Las cuatro revistas más importantes siguen siendo las ya mencionadas. OIKOS y ECOLOGY presentan un largo historial de interés sobre este tema desde los años 2007 y 2008, donde parecen encontrarse a la carrera por quien posee mas artículos. Actualmente lleva la delantera OIKOS con 30 artículos y le sigue ECOLOGY con 25. 
+
 ## Autores. 
+
+La búsqueda de los autores más relevantes puede seguirse bajo varios criterios que observaremos a continuación. Conocer a los autores más importantes de una disciplina es uno de los aspcetos más importantes a la hora de conocer un determinado campo de estudio. 
 
 ### Autores más relevantes. 
 
+En la pestaña `Authors>Most Relevant Authors` podemos realizar 3 análisis distintos relacionados con la relevancia de los autores. Estos análisis se pueden alternar a partir del menú deplegable de la izquierda `Frequency measure`, donde podemos elegir entre representar número de documentos, porcentaje del total de documentos o frecuencia fraccionalizada. 
+
+![Diagrama de los autores mas relevantes por número de documentos](MostRelevantAuthorsND.png)
+
+Bascompte, Vazquez y Jordano son los autores más productivos, por lo que puede ser interesante prestarles atención. Con la frecuencia fraccionalizada estos autores principales no cambian su posición, por lo que podemos decir que además de presentar muchos artículos, estos presentan pocos coautores, de lo que se puede deducir que probablemente realizaron una alta contribución a sus respectivos trabajos. 
+
 ### Autores localmente más citados. 
+
+En la pestaña `Authors>Most Local Cited Documents` encontramos cuales son los autores más citados dentro de nuestra muestra bibliográfica. 
+
+![]
 
 ### Producción de los autores a lo largo del tiempo. 
 
@@ -481,6 +499,16 @@ El índice $m$ pretende contrarrestar la sobrerrepresentación que pueden presen
 $Índice m=\frac{\text{Índice h}}{t}$
 
 
+
+
+## Frecuencia fraccionalizada. 
+
+La frecuencia fraccionalizada cuantifica la contribución individual de un autor $j$ para un conjunto de artículos publicados, bajo la premisa de que todos los coautores aportan una contribución similar a cada artículo. Si tenemos un conjunto de artículos con la coautoría del autor $j$ ($AU_j$), la frecuencia fraccionalizada de $AU_j$ es:
+
+$$
+FracFreq(AU_j)=\sum_{i=1}^n{\frac{1}{\text{número de coautores del artículo}}}
+$$
+Siendo $n$ el total de artículos en los que el autor presente coautoría. La frecuencia fraccionalizada puede darnos información sobre el nivel de coautoría de los autores. Algunos autores pueden presentar un alto número de artículos publicados pero aparecer en estos como uno de muchísimos autores, de lo que se deduce un nivel de contribución menor que un autor con el mismo numero de artículos pero con menos autores por artículo. Para contrarrestar lo que podría entenderse como una relevancia sobrerrepresentada de los autores con bajo nivel de coautoria podemos comparar el diagrama de $FracFreq(AU_j)$ con el diagrama de número de artículos. 
 
 
 # Bibliografía consultada.
