@@ -493,7 +493,20 @@ Podemos observar que los dos temas mas productivos son el mutualismo y la polini
 
 ### Términos de moda. 
 
+En la pestaña `Documents>Trend Topics` podemos generar un diagrama con los terminos de moda, en qué momento aparecen y cuando desaparece, con una serie de burbujas asociadas que describen el momento en el que mas aparecen y con qué frecuencia, siendo más grandes cuanto más veces aparecieran en ese marco temporal. 
+
+![Diagrama de los términos de moda](TrendTopics.png)
+
+Podemos observar que:
+
+- Los temas iniciales del campo de estudio tienen relación con el estudio de redes complejas y redes alimentarias entre 2009 y 2012.
+- Las interacciones planta polinizador son un tema común a lo largo de todo el marco temporal. 
+- Las interacciones entre plantas y frugívoros son un tema frecuente entre 2014 y 2016.
+- Todo el marco temporal está salpicado de temas relacionados con las redes, como el anidamiento, la conectancia, el recableado etc. 
+
 ## Agrupación por acoplamiento. 
+
+
 
 ## Estructura conceptual. 
 
@@ -517,28 +530,7 @@ Podemos observar que los dos temas mas productivos son el mutualismo y la polini
 
 ### Mapa-mundi de colaboraciones. 
 
-## Artículos más relevtantes.
-
-### Artículos más citados. 
-
-
-
-#Fuentes mas relevantes. 
-
-
-
-
-# Autores más relevantes. 
-
-Identificar a los autores con mas impacto puede hacerse desde distintas estrategias(@Galvez2006):
-
-a) Medir el impacto de las fuentes en las que publica, para lo cuál puedes ver el apartado [Fuentes más relevantes](#Fuentes-mas-relevantes.). 
-
-b) A través de la cantidad de citas que recibe. 
-
-c) A través de la cantidad de trabajos que publica. 
-
-# Cluestering o agrupamiento.
+ 
 
 # Anexos. 
 
@@ -715,7 +707,32 @@ Biblioshiny puede utilizar algunos términos que pueden generar confusiones en r
 
 La espectroscopía de los años de publicación de las referencias (RPYS, Reference Publication Year Spectroscopy) es un método cuantitativo para identificar los origenes historicos de un campo de estudio y sus temas. RPYS crea un perfil temporal de las referencias citadas de un conjunto de artículos que enfatiza los años donde se publicaron descubrimientos relativamente significativos. RPYS permite identificar las raices temporales de una disciplina. 
 
-El RPYS se basa en el análisis de la frecuencia con la que se citan las referencias en las publicaciones de un campo de investigación específico en función de los años de publicación de estas referencias citadas. Los orígenes se manifiestan en forma de picos más o menos pronunciados causados principalmente por publicaciones individuales que se citan con especial frecuencia. En la representación realizada por Biblioshiny aparece en la linea azul el número de referencias citadas ese año y en naranja la desviación calculada de la mediana de las referencias citadas en un marco de 5 años. 
+El RPYS se basa en el análisis de la frecuencia con la que se citan las referencias en las publicaciones de un campo de investigación específico en función de los años de publicación de estas referencias citadas. Los orígenes se manifiestan en forma de picos más o menos pronunciados causados principalmente por publicaciones individuales que se citan con especial frecuencia. En la representación realizada por Biblioshiny aparece en la linea azul el número de referencias citadas ese año y en naranja la desviación calculada de la mediana de las referencias citadas en un marco de 5 años(Marx2014). 
+
+
+
+## Estructura conceptual. 
+
+La estructura conceptual representa las relaciones sobre conceptos y palabras de un conjunto de publicaciones. 
+
+- Palabras, las cuales aparecen juntas en un documento, estarán relacionadas en una red. Este tipo de redes son cocnocidas como redes de co-ocurrencia. Esta estructura puede ser usada para entender los temas cubiertos por un tema de estudio y definir cuales son los mas importantes o recientes (frente de investigación). También puede ayudar en el estudio de la evolución de los temas a lo largo del tiempo. 
+
+- Al igual que el análisis de redes, el análisis factorial (técnicas de reducción de datos) es útil para identificar subcampos. Pueden aplicarse diversas técnicas de reducción de la dimensionalidad, como el análisis de correspondencias (AC), el análisis de correspondencias múltiples (ACM), el escalado multidimensional (MDS) o el análisis de componentes principales (ACP). Los algoritmos de agrupación pueden utilizarse en ambos casos de análisis de redes o factoriales.
+
+- **Enfoque mixto**. Partiendo de una red conceptual, se identifican redes temáticas que se representan en una matriz bidimensional, cuyos ejes son función de la centralidad y la densidad de la red temática. Dividiendo el lapso de tiempo en cortes temporales, es posible representar la evolución temática dentro de un campo de investigación específico a través de un gráfico aluvial.
+
+Existen dos aproximaciones básicas al estudio de la estructura conceptual de un campo de estudio: La aproximación factorial y el estudio de redes. La idea básica detrás del estudio factorial consiste en reducir la dimensionalidad de los datos y representarlos en un espacio de dimensionalidad baja. Se parte de una matriz de "documentos" y "palabras clave" de la cuál se extrae información para la representación y el agrupamiento en un espacio bidimensional. El estudio de redes parte de matrices palabras clave y palabras clave tanto en filas como en columnas, para observar que palabras clave suelen aparecer juntas y ofrecer representaciones de redes de co-ocurrencia. 
+
+### Interpretación. 
+
+La proximidad entre las palabras varía con su presencia en los artículos:
+
+- las palabras clave están cerca unas de otras porque una gran proporción de artículos las trata juntas;
+
+- están distantes entre sí cuando sólo una pequeña fracción de artículos utiliza estas palabras juntas.
+
+El origen del mapa representa la posición media de todos los perfiles de las columnas y, por tanto, representa el centro del campo de investigación (es decir, los temas comunes y grandes compartidos)
+
 
 
 # Bibliografía consultada.
