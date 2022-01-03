@@ -19,3 +19,5 @@ summary(M)
 
 ln -s ~\Guiaparabiblioshiny\mnwos.txt
 
+
+2+2

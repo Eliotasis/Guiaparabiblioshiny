@@ -459,11 +459,37 @@ A través de esta espectroscopía es interesante observar los picos, ya que repr
 
 ### Palabras mas frecuentes. 
 
+En la pestaña `Documents>Most Frequent Words` aparecen las palabras que más aparecen en nuestros documentos. Entre los parámetros que pueden modificarse en el menu de la izquierda tenemos:
+
+- El campo: Las palabras mas frecuentes pueden aparecer en distintos campos de un artículo como las Keywords Plus, las Keywords del autor, el título o el resumen. En el título y el resumen puede elegirse si se quieren grupos de una, dos o tres palabras (N-Grams). 
+
+- La cantidad de palabras que aparecen en el diagrama. 
+
+![Diagrama de palabras más frecuentes](MostFrequentWords.png)
+
+Por ejemplo, entre las palabras más frecuentes de los títulos encontramos *networks*, *mutualism* e *interaction*. Puede llamarnos la atención que aparezca la palabra *plant-polinator*, lo que puede darnos una pista de uno de los tipos de interacciones ecológicas que toman protagonismo dentro del campo de las redes mutualistas. 
+
 ### Nube de palabras. 
 
-### Mapa de árbol. 
+Biblioshiny nos ofrece una herramienta para dar cuenta de las palabras mas utilizadas de una manera más vistosa, estas son las nubes de palabras. Podemos acceder a nubes de palabras mediante la pestaña `Documents>WordCloud`. Entre las opciones que podemos configurar está:
+
+- El campo: Las palabras mas frecuentes pueden aparecer en distintos campos de un artículo como las Keywords Plus, las Keywords del autor, el título o el resumen. En el título y el resumen puede elegirse si se quieren grupos de una, dos o tres palabras (N-Grams).
+
+- Número de palabras que aparecen en la nube. 
+- Medida de la ocurrencia de palabras: Podemos elegir que las palabras sean tan grandes como la frecuencia a la que aparecen o que este tamaño pase primero por una función de raiz cuadrada, de logaritmo base 2 o base 10. 
+- Forma de la nube (círculo, corazón, diamante, etc)
+- Tipo de fuente de la palabra. 
+- Colores del texto (colores oscuros o claros).
+
+![Nube de palabras](WordCloud.JPG)
 
 ### Dinámicas de las palabras. 
+
+En la pestaña `Documents>Word Dynamics` podemos encontrar un gráfico de ocurrencia acumulada de las palabras a lo largo del tiempo en nuestro conjunto de artículos. 
+
+![Diagrama de la dinámica de las palabras](WordGrowth.png)
+
+Podemos observar que los dos temas mas productivos son el mutualismo y la polinización. Le sigue ecosistemas, animales, simbiosis y dispersion de semillas. Por ultimo tenemos interaccion planta polinizador y anidamiento. Todos estos son los conceptos de moda sobre los que puede ser interesante investigar. 
 
 ### Términos de moda. 
 
@@ -516,7 +542,7 @@ c) A través de la cantidad de trabajos que publica.
 
 # Anexos. 
 
-## Información principal. 
+## Términos utilizados en la información principal. 
 
 - **Timespan**: Año del primer y el último artículo publicado.                             	
 - **Sources (Journals, Books, etc)**: Fuentes de las que provienen los documentos, revistas, libros etc. 
