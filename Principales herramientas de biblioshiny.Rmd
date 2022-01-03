@@ -369,14 +369,13 @@ En la pestaña `Authors>Most Cited Countries` nos muestra un diagrama con los pa
 Estados Unidos y Brasil son paises más productivos, pero España resulta ser la más citada, probablemente resultado de que los autores mas citados provienen de este país. 
 
 ## Documentos. 
-
 ### Documentos globalmente más citados. 
 
 Una primera aproximación a averiguar cuales son los artículos más relevantes puede ser observar cuales son los artículos más citados. En `Documents>Most Global Cited Documents` encontrarás un diagrama de barras con los artículos más citados. 
 
 ![Diagrama de barras de los artículos mas citados.](MostGlobalCitedDocuments.png) 
 
-Los artículos globalmente mas citados son los citados desde artículos que no tienen porque ser necesariamente de nuestra muestra bibliográfica. Dentro de estos artículos encontramos con Bascompte 2007 como el mas citado de sobra con 931 citas. Le sigue Ings TC 2009 y Jordano 2003 con 596 y 546 citas respectivamente.  
+Los artículos globalmente mas citados son Bascompte 2007 como el mas citado de sobra con 931 citas. Le sigue Ings TC 2009 y Jordano 2003 con 596 y 546 citas respectivamente.  
 
 | biblioshiny for bibliometrix                	|                                                 	|                 	|             	|               	|
 |---------------------------------------------	|-------------------------------------------------	|-----------------	|-------------	|---------------	|
@@ -404,11 +403,59 @@ Los artículos globalmente mas citados son los citados desde artículos que no t
 
 ### Documentos localmente más citados. 
 
+En la pestaña `Documents>Most Local Cited Documents` encontramos el diagrama de los documentos localmente más citados. 
 
+![Diagrama de los documentos localmente mas citados](MostLocalCitedDocuments.png)
 
-### Referencias localmente más citadas. 
+Bascompte 2007 sigue siendo de los documentos más citados, lo que nos indica que es un documento importante, muy citado tanto por documentos externos a nuestra colección como por documentos de nuestra colección. Ingst 2009 desaparece de los documentos localmente mas citados y es sustituido por documentos de otros autores. Jordano 2003 aparece entre los documentos mas citados ahora en segundo puesto, lo que nos indica que tambien es un documento importante. Otros artículos como Vazquez 2009 y Olessen 2002 repiten también entre los documentos más citados. 
+
+| biblioshiny for bibliometrix              	|                                                 	|      	|                 	|                  	|                 	|                            	|                             	|
+|-------------------------------------------	|-------------------------------------------------	|------	|-----------------	|------------------	|-----------------	|----------------------------	|-----------------------------	|
+| Document                                  	| DOI                                             	| Year 	| Local Citations 	| Global Citations 	| LC/GC Ratio (%) 	| Normalized Local Citations 	| Normalized Global Citations 	|
+| BASCOMPTE J, 2007, ANN REV ECOL EVOL SYST 	| 10.1146/annurev.ecolsys.38.091206.095818        	| 2007 	| 91              	| 931              	| 9.77            	| 2.61                       	| 2.85                        	|
+| JORDANO P, 2003, ECOL LETT                	| 10.1046/j.1461-0248.2003.00403.x                	| 2003 	| 69              	| 546              	| 12.64           	| 1.00                       	| 1.00                        	|
+| BASCOMPTE J, 2009, FRONTIERS ECOL ENVIR   	| 10.1890/080026                                  	| 2009 	| 69              	| 96               	| 71.88           	| 4.02                       	| 0.68                        	|
+| VZQUEZ DP, 2009, ANN BOT                  	| 10.1093/aob/mcp057                              	| 2009 	| 48              	| 379              	| 12.66           	| 2.80                       	| 2.68                        	|
+| VZQUEZ DP, 2009, ECOLOGY                  	| 10.1890/08-1837.1                               	| 2009 	| 48              	| 255              	| 18.82           	| 2.80                       	| 1.80                        	|
+| OLESEN JM, 2002, ECOLOGY                  	| 10.1890/0012-9658(2002)083[2416:GPIPPM]2.0.CO;2 	| 2002 	| 39              	| 395              	| 9.87            	| 1.00                       	| 1.00                        	|
+| OLESEN JM, 2008, ECOLOGY                  	| 10.1890/07-0451.1                               	| 2008 	| 39              	| 343              	| 11.37           	| 2.60                       	| 2.82                        	|
+| BLTHGEN N, 2007, CURR BIOL                	| 10.1016/j.cub.2006.12.039                       	| 2007 	| 36              	| 337              	| 10.68           	| 1.03                       	| 1.03                        	|
+| GUIMARES PR, 2011, ECOL LETT              	| 10.1111/j.1461-0248.2011.01649.x                	| 2011 	| 29              	| 202              	| 14.36           	| 3.01                       	| 2.58                        	|
+| BASCOMPTE J, 2013, MUTUAL NETWORKS        	| 2013                                            	| 29   	| 199             	| 14.57            	| 5.17            	| 3.50                       	|                             	|
+| FORTUNA MA, 2006, ECOL LETT               	| 10.1111/j.1461-0248.2005.00868.x                	| 2006 	| 28              	| 230              	| 12.17           	| 1.00                       	| 1.00                        	|
+| KRISHNA A, 2008, OIKOS                    	| 10.1111/j.1600-0706.2008.16540.x                	| 2008 	| 26              	| 138              	| 18.84           	| 1.73                       	| 1.14                        	|
+| OKUYAMA T, 2008, ECOL LETT                	| 10.1111/j.1461-0248.2007.01137.x                	| 2008 	| 24              	| 180              	| 13.33           	| 1.60                       	| 1.48                        	|
+| GUIMARES JR. PR, 2007, CURR BIOL          	| 10.1016/j.cub.2007.09.059                       	| 2007 	| 23              	| 152              	| 15.13           	| 0.66                       	| 0.47                        	|
+| FORTUNA MA, 2010, J ANIM ECOL             	| 10.1111/j.1365-2656.2010.01688.x                	| 2010 	| 21              	| 265              	| 7.92            	| 3.27                       	| 3.73                        	|
+| REZENDE EL, 2007, OIKOS                   	| 10.1111/j.0030-1299.2007.16029.x                	| 2007 	| 21              	| 113              	| 18.58           	| 0.60                       	| 0.35                        	|
+| VZQUEZ DP, 2005, OIKOS                    	| 10.1111/j.0030-1299.2005.13619.x                	| 2005 	| 20              	| 106              	| 18.87           	| 1.21                       	| 0.79                        	|
+| SCHLEUNING M, 2011, ECOLOGY               	| 10.1890/09-1842.1                               	| 2011 	| 18              	| 111              	| 16.22           	| 1.87                       	| 1.42                        	|
+| DAZ-CASTELAZO C, 2010, ECOLOGY            	| 10.1890/08-1883.1                               	| 2010 	| 17              	| 86               	| 19.77           	| 2.65                       	| 1.21                        	|
+| DONATTI CI, 2011, ECOL LETT               	| 10.1111/j.1461-0248.2011.01639.x                	| 2011 	| 15              	| 170              	| 8.82            	| 1.56                       	| 2.17                        	|
 
 ### Espectroscopía de las referencias. 
+
+En la pestaña `Documentos>Reference Spectroscopy` podemos realizar una espectroscopía de los años de publicación de las referencias citadas. Existe una referencia citada de 1713 que desvirtúa el gráfico. Para conseguir que el gráfico esté menos comprimido hacia la izuquierda localizamos el siguiente año más citado y hacemos el análisis a partir de él. En nuestro caso elegimos 1859, que tiene un total de 5 referencias citadas, y lo especificamos en el menú de la izquierda en `TimeSlice>Starting Year`. 
+
+![Espectroscopía de las referncias](ReferencePublicationYearSpectroscopy.png)
+
+A través de esta espectroscopía es interesante observar los picos, ya que representan años donde se publicaron referencias que fueron muy citadas. Nuestro conjunto de artículos proviene de los años 2002:2020, por lo que para localizar las racies de un tema puede ser interesante observar los artículos mas citados de los años anteriores a 2002, porque serán las influencias de nuestro campo de estudio. Entre 1955:2000 podemos localizar 11 picos cuyas referencias sería interesante revisar para localizar las fuentes de nuestro tema.  
+
+| biblioshiny for bibliometrix 	|           	|             	|
+|------------------------------	|-----------	|-------------	|
+| Year                         	| Citations 	| diffMedian5 	|
+| 2000                         	| 327       	| 109         	|
+| 1995                         	| 108       	| -5          	|
+| 1994                         	| 161       	| 48          	|
+| 1993                         	| 151       	| 41          	|
+| 1987                         	| 155       	| 94          	|
+| 1985                         	| 86        	| 25          	|
+| 1978                         	| 74        	| 39          	|
+| 1972                         	| 49        	| 31          	|
+| 1966                          | 33          | 25            |
+| 1955                          | 17          | 14            |
+
+
 
 ### Palabras mas frecuentes. 
 
@@ -637,5 +684,12 @@ Biblioshiny puede utilizar algunos términos que pueden generar confusiones en r
 - Citas globales. Se refiere al número de citas que recibe un documento del total de documentos de una base de datos bibliográfica (WOS, Scopus, etc.). Esta información es cedida por la base de datos en cuestión y se encuentra incluida en cada una de las entradas bibliográficas de nuestra colección. Las citas globales miden el impacto de un documento en toda la base de datos bibliográfica. Para muchos documentos, una gran parte de las citas globales pueden venir de otras disciplinas. 
 
 - Citas locales. Se refiere al número de citaciones que recibe un documento de los propios documentos incluidos en nuestra colección. Este valor es calculado por bibliometrix analizando la colección. Las citas locales miden el impacto de un documento dentro de nuestra muestra bibliográfica. 
+
+## Espectroscopía del año de publicación de las referencias. 
+
+La espectroscopía de los años de publicación de las referencias (RPYS, Reference Publication Year Spectroscopy) es un método cuantitativo para identificar los origenes historicos de un campo de estudio y sus temas. RPYS crea un perfil temporal de las referencias citadas de un conjunto de artículos que enfatiza los años donde se publicaron descubrimientos relativamente significativos. RPYS permite identificar las raices temporales de una disciplina. 
+
+El RPYS se basa en el análisis de la frecuencia con la que se citan las referencias en las publicaciones de un campo de investigación específico en función de los años de publicación de estas referencias citadas. Los orígenes se manifiestan en forma de picos más o menos pronunciados causados principalmente por publicaciones individuales que se citan con especial frecuencia. En la representación realizada por Biblioshiny aparece en la linea azul el número de referencias citadas ese año y en naranja la desviación calculada de la mediana de las referencias citadas en un marco de 5 años. 
+
 
 # Bibliografía consultada.
