@@ -715,7 +715,7 @@ El RPYS se basa en el análisis de la frecuencia con la que se citan las referen
 
 Dibujar la imagen general del conocimiento científico siempre ha sido deseable por varias razones. El mapeado de la ciencia intenta encontrar representaciones de las conexiones del sistema de conocimiento científico, las cuales cambian constantemente. En otras palabras, el mapeado científico apunta a mostrar la estructura y los aspectos dinámicos del conocimiento científico. 
 
-## Tres estructuras del conocimiento.
+### Tres estructuras del conocimiento.
 
 Cada comunidad de científicosp puede tener una visión completa de los principales descubrimientos relacionados con su campo de estudio, sigiendo la evolución de las distintas teorías y técnicas. El mapeado científico permite investigar el conocimiento científico desde un punto de vista estadístico. Podemos definir tres tipos de estructuras:
 
@@ -723,7 +723,7 @@ Cada comunidad de científicosp puede tener una visión completa de los principa
 - Estructura intelectual: ¿Cómo influencia el trabajo de los autores a la comunidad científica?
 - Estructura social: ¿Cómo los autores, las instituciones y los países interactúan entre sí?
 
-## Estructura conceptual. 
+### Estructura conceptual. 
 
 La estructura conceptual representa las relaciones sobre conceptos y palabras de un conjunto de publicaciones. 
 
@@ -733,9 +733,9 @@ La estructura conceptual representa las relaciones sobre conceptos y palabras de
 
 - **Enfoque mixto**. Partiendo de una red conceptual, se identifican redes temáticas que se representan en una matriz bidimensional, cuyos ejes son función de la centralidad y la densidad de la red temática. Dividiendo el lapso de tiempo en cortes temporales, es posible representar la evolución temática dentro de un campo de investigación específico a través de un gráfico aluvial.
 
-## Enfoque Factorial. 
+### Enfoque Factorial. 
 
-### Interpretación. 
+#### Interpretación. 
 
 La proximidad entre las palabras varía con su presencia en los artículos:
 
@@ -745,7 +745,7 @@ La proximidad entre las palabras varía con su presencia en los artículos:
 
 El origen del mapa representa la posición media de todos los perfiles de las columnas y, por tanto, representa el centro del campo de investigación (es decir, los temas comunes y grandes compartidos). 
 
-### Análisis de correspondencia. 
+#### Análisis de correspondencia. 
 
 El objetivo del análisis de correspondencia es transformar una tabla de datos en dos conjuntos de puntuaciones factoriales: Uno para las filas y otro para las columnas. Las puntuaciones de los factores ofrecen la mejor representación de la estructura de similitud de las filas y las columnas de la tabla. Además, las puntuaciones de los factores pueden representarse en forma de mapas, que muestran la información esencial de la tabla original. En estos mapas, las filas y las columnas se muestran como puntos cuyas coordenadas son las puntuaciones de los factores y donde las dimensiones se denominan factores. Curiosamente, las puntuaciones factoriales de las filas y las columnas tienen la misma varianza y, por lo tanto, tanto las filas como las columnas pueden representarse convenientemente en un solo mapa. Esto quiere decir que la similitud de filas y columnas se calcula por separado y se generan diagramas de dispersión separados que después se juntan en un solo gráfico[@Abdi2014]. 
 
@@ -766,13 +766,13 @@ No hay que caer en el error de observar unicamente la cercanía entre los puntos
 - Mayor valor de disimilitud: dos puntos en regiones opuestas del gráfico y muy alejados del centro (flechas largas y angulo de 180ºC). 
 - Valores cercanos a la nulidad: dos puntos muy cerca del centro. Cuando el ángulo entre las flechas que apuntan a los puntos es cercano a 90º. 
 
-### Dendrogramas. 
+##### Dendrogramas. 
 
 Un dendrograma es una representación gráfica de las relaciones jerárquicas entre un conjunto de elementos. Por sus características, los dendrogramas pueden ser utilizados para representar la similitud entre una serie de elmentos, de la misma manera que lo hacia la representación de un diagrama de dispersión que veíamos en el apartado anterior. De cada uno de los elmentos salen lineas verticcales que se unen con las lineas verticales de otros elementos a distintas alturas. Cuanto más baja sea dicha altura a la que se unen dos elementos, mayor es su similitud en el parámetro estudiado. 
 
 El dendrograma se construye de tal manera que se pueden observar facilmente los distintos grupos mas relacionados porque forman parte de ramas concretas dentro del dendrogama. 
 
-## Enfoque reticular.
+### Enfoque reticular.
 
 La teoría de grafos es el estudio de las redes, que son estructuras matemáticas usadas como modelos de relaciones recíprocas entre objetos. Una red está formada de vértices (también llamados nodos o puntos) y de aristas (también llamados uniones o lineas). Se puede hacer una distinción entre grafos no direccionales, donde las lineas unen nodos simétricamente, y grafos direccionales, donde las lineas, ahora llamadas flechas, unen nodos asimétricamente. 
 
@@ -795,7 +795,22 @@ n_{61}&n_{62} & n_{63}&n_{64}&n_{65} & n_{66} \\
 \right)
 $$
 
-### Análisis de redes. Mapas de *Callons*. 
+#### Análisis de redes. Mapas de *Callons*. 
 
+La realización de los análisis de *Callons* precisa primero de un agrupamiento de las palabras en función de su co-ocurrebcia. Esto permite dividir la red en subconjutnos, de los cuales se puede medir centralidad y densidad (@Cobo2011):  
+
+- Centralidad. Mide el grado de interacción de una red con otras redes. Su valor es mayor cuanto mayor es la cantidad de enlaces de dicha red con las redes externas. Puede interpretarse como un valor que mide la importancia de un tema en el desarrollo de todo el campo de estudio analizado. 
+
+- Densidad. Mide el grado de interacción de los nodos de la propia red. Su valor es mayor cuando mayor es la cantidad de enlaces entre los nodos de la red. Puede interpretarse como el grado de desarrollo del tema. 
+
+Medidas estas características se pueden representar en un diagrama de dispersión la posición de los distintos conjuntos en función de su centralidad (eje horizontal) y densidad (eje vertical). El diagrama puede ser dividido en cuatro cuadrantes en función de sus valores de densidad y centralidad. 
+
+- Cuadrante superior derecho (alta densidad y centralidad). Están bien desarrollados y son importantes para la estructuración de un campo de investigación. Se conocen como los temas-motor de la especialidad, dado que presentan una fuerte centralidad y una alta densidad. La ubicación de los temas en este cuadrante implica que están relacionados externamente con conceptos aplicables a otros temas que están estrechamente relacionados conceptualmente.
+
+- Cuadrante superior izquierdo(alta densidad y baja centralidad). Los temas del cuadrante superior izquierdo tienen vínculos internos bien desarrollados pero vínculos externos poco importantes, por lo que sólo tienen una importancia marginal para el campo. Estos temas son muy especializados y de carácter periférico.
+
+- Cuadrante inferior izquierdo (baja densidad y centralidad). Los temas del cuadrante inferior izquierdo están poco desarrollados y son marginales. Los temas de este cuadrante representan principalmente temas emergentes o en desaparición.
+
+- Cuadrante inferior derecho (baja densidad y alta centralidad). Temas importantes para un campo de investigación, pero no están desarrollados. Por tanto, este cuadrante agrupa temas transversales y generales, básicos.
 
 # Bibliografía consultada.
