@@ -711,17 +711,29 @@ El RPYS se basa en el análisis de la frecuencia con la que se citan las referen
 
 
 
+## Estructura del conocimiento. 
+
+Dibujar la imagen general del conocimiento científico siempre ha sido deseable por varias razones. El mapeado de la ciencia intenta encontrar representaciones de las conexiones del sistema de conocimiento científico, las cuales cambian constantemente. En otras palabras, el mapeado científico apunta a mostrar la estructura y los aspectos dinámicos del conocimiento científico. 
+
+## Tres estructuras del conocimiento.
+
+Cada comunidad de científicosp puede tener una visión completa de los principales descubrimientos relacionados con su campo de estudio, sigiendo la evolución de las distintas teorías y técnicas. El mapeado científico permite investigar el conocimiento científico desde un punto de vista estadístico. Podemos definir tres tipos de estructuras:
+
+- Estructura conceptual: ¿De qué habla nuestro campo de estudio? Los principales temas.
+- Estructura intelectual: ¿Cómo influencia el trabajo de los autores a la comunidad científica?
+- Estructura social: ¿Cómo los autores, las instituciones y los países interactúan entre sí?
+
 ## Estructura conceptual. 
 
 La estructura conceptual representa las relaciones sobre conceptos y palabras de un conjunto de publicaciones. 
 
-- Palabras, las cuales aparecen juntas en un documento, estarán relacionadas en una red. Este tipo de redes son cocnocidas como redes de co-ocurrencia. Esta estructura puede ser usada para entender los temas cubiertos por un tema de estudio y definir cuales son los mas importantes o recientes (frente de investigación). También puede ayudar en el estudio de la evolución de los temas a lo largo del tiempo. 
+- Palabras, las cuales aparecen juntas en un documento, estarán relacionadas en una red. Este tipo de redes son conocidas como **redes de co-ocurrencia**. Esta estructura puede ser usada para entender los temas cubiertos por un tema de estudio y definir cuales son los mas importantes o recientes (frentes de investigación). También puede ayudar en el estudio de la evolución de los temas a lo largo del tiempo. 
 
-- Al igual que el análisis de redes, el análisis factorial (técnicas de reducción de datos) es útil para identificar subcampos. Pueden aplicarse diversas técnicas de reducción de la dimensionalidad, como el análisis de correspondencias (AC), el análisis de correspondencias múltiples (ACM), el escalado multidimensional (MDS) o el análisis de componentes principales (ACP). Los algoritmos de agrupación pueden utilizarse en ambos casos de análisis de redes o factoriales.
+- Al igual que el análisis de redes, el **análisis factorial** (técnicas de reducción de datos) es útil para identificar subcampos. Pueden aplicarse diversas técnicas de reducción de la dimensionalidad, como el **análisis de correspondencias (AC)**, el **análisis de correspondencias múltiples (ACM)**, el **escalado multidimensional (MDS)** o el **análisis de componentes principales (ACP)**. Los algoritmos de agrupación pueden utilizarse en ambos casos de análisis de redes o factoriales.
 
 - **Enfoque mixto**. Partiendo de una red conceptual, se identifican redes temáticas que se representan en una matriz bidimensional, cuyos ejes son función de la centralidad y la densidad de la red temática. Dividiendo el lapso de tiempo en cortes temporales, es posible representar la evolución temática dentro de un campo de investigación específico a través de un gráfico aluvial.
 
-Existen dos aproximaciones básicas al estudio de la estructura conceptual de un campo de estudio: La aproximación factorial y el estudio de redes. La idea básica detrás del estudio factorial consiste en reducir la dimensionalidad de los datos y representarlos en un espacio de dimensionalidad baja. Se parte de una matriz de "documentos" y "palabras clave" de la cuál se extrae información para la representación y el agrupamiento en un espacio bidimensional. El estudio de redes parte de matrices palabras clave y palabras clave tanto en filas como en columnas, para observar que palabras clave suelen aparecer juntas y ofrecer representaciones de redes de co-ocurrencia. 
+## Enfoque Factorial. 
 
 ### Interpretación. 
 
@@ -731,8 +743,59 @@ La proximidad entre las palabras varía con su presencia en los artículos:
 
 - están distantes entre sí cuando sólo una pequeña fracción de artículos utiliza estas palabras juntas.
 
-El origen del mapa representa la posición media de todos los perfiles de las columnas y, por tanto, representa el centro del campo de investigación (es decir, los temas comunes y grandes compartidos)
+El origen del mapa representa la posición media de todos los perfiles de las columnas y, por tanto, representa el centro del campo de investigación (es decir, los temas comunes y grandes compartidos). 
 
+### Análisis de correspondencia. 
+
+El objetivo del análisis de correspondencia es transformar una tabla de datos en dos conjuntos de puntuaciones factoriales: Uno para las filas y otro para las columnas. Las puntuaciones de los factores ofrecen la mejor representación de la estructura de similitud de las filas y las columnas de la tabla. Además, las puntuaciones de los factores pueden representarse en forma de mapas, que muestran la información esencial de la tabla original. En estos mapas, las filas y las columnas se muestran como puntos cuyas coordenadas son las puntuaciones de los factores y donde las dimensiones se denominan factores. Curiosamente, las puntuaciones factoriales de las filas y las columnas tienen la misma varianza y, por lo tanto, tanto las filas como las columnas pueden representarse convenientemente en un solo mapa. Esto quiere decir que la similitud de filas y columnas se calcula por separado y se generan diagramas de dispersión separados que después se juntan en un solo gráfico[@Abdi2014]. 
+
+No nos introduciremos en las visicitudes matemáticas del análisis de correspondencia sino en la interpretación de las representaciones gráficas. Para la comprensión de este análisis fue de especial ayuda el blog de Tim Bock llamado "*[How Correspondence Analysis Works (A Simple Explanation)](https://www.displayr.com/how-correspondence-analysis-works/)*". Entre las partes de un gráfico de análisis de correspondencias podemos encontrar: 
+
+- Los ejes o dimensiones. Los ejes vienen nombrados por dimension 1 y 2 con un porcentaje entre parentesis. El porcentaje describe la cantidad de variabilidad de los datos que está pudiendo ser representada en el gráfico. Cuanto menor sea este porcentaje menos representativas serán las conclusiones que podamos hacer. 
+- Los ejes definen a su vez una superficie que describe similitud entre puntos, donde su centro (0,0) es la posición donde dos puntos no se parecen ni diferencian en el parámetro estudiado. 
+- Un patrón de puntos coloreados. Los puntos pueden representar palabras o artículos, dependiendo del análisis que se esté realizando. La cercanía de unos puntos respecto a otros, con ciertos matices que ahora detallaremos, representa su similitud. Cuando hacemos análisis de palabras la similitud viene dada por la presencia en los mismos artículos. Cuando hacemos análisis de artículos la similitud puede venir dada por aquellos que tienen niveles de contribución similar, o cantidades de citas similares. El color de los puntos vienen dado por un análisis de agrupamiento jerárquico, que permite agrupar los puntos en función de su similitud, lo que facilita la lectura de los datos. 
+
+Dos puntos se parecen más en el parámetro estudiado si:
+
+- Están muy cerca en el gráfico. 
+- Están muy alejados del 0,0.
+
+No hay que caer en el error de observar unicamente la cercanía entre los puntos para hacernos una idea de su similitud, la cercanía al centro también es importante. Si dos puntos A y B están igual de cerca entre sí que dos puntos C y D, pero A y B están mas lejos del centros, estos dos puntos A y B se parecen más entre sí que C y D. Bajo la misma lógica, dos puntos se diferencian más entre sí cuanto más alejados esten entre sí y también del centro. Para esto puede ser interesante dibujar dos flechas que vayan desde el centro hasta los puntos que queremos comprar. 
+
+- Mayor valor de similitud: dos puntos muy pegados y muy alejados del centro (flechas largas y angulo pequeño). 
+- Mayor valor de disimilitud: dos puntos en regiones opuestas del gráfico y muy alejados del centro (flechas largas y angulo de 180ºC). 
+- Valores cercanos a la nulidad: dos puntos muy cerca del centro. Cuando el ángulo entre las flechas que apuntan a los puntos es cercano a 90º. 
+
+### Dendrogramas. 
+
+Un dendrograma es una representación gráfica de las relaciones jerárquicas entre un conjunto de elementos. Por sus características, los dendrogramas pueden ser utilizados para representar la similitud entre una serie de elmentos, de la misma manera que lo hacia la representación de un diagrama de dispersión que veíamos en el apartado anterior. De cada uno de los elmentos salen lineas verticcales que se unen con las lineas verticales de otros elementos a distintas alturas. Cuanto más baja sea dicha altura a la que se unen dos elementos, mayor es su similitud en el parámetro estudiado. 
+
+El dendrograma se construye de tal manera que se pueden observar facilmente los distintos grupos mas relacionados porque forman parte de ramas concretas dentro del dendrogama. 
+
+## Enfoque reticular.
+
+La teoría de grafos es el estudio de las redes, que son estructuras matemáticas usadas como modelos de relaciones recíprocas entre objetos. Una red está formada de vértices (también llamados nodos o puntos) y de aristas (también llamados uniones o lineas). Se puede hacer una distinción entre grafos no direccionales, donde las lineas unen nodos simétricamente, y grafos direccionales, donde las lineas, ahora llamadas flechas, unen nodos asimétricamente. 
+
+En el mapeado científico, una red es usada para representar las co-ocurrencias a lo largo de la muestra bibliográfica. El punto de partida son las matrices de co-ocurrencia, donde tanto en filas como en columnas se representan una parte de los metadatos de nuestro conjunto bibliográfico, por ejemplo, todas las palabras clave que aparecen. Como tanto en filas como en columnas estamos representando lo mismo, la matriz será una matriz cuadrada. Si existen 100 palabras clave, la matriz será de 100x100. Dentro de la matriz se representarán las veces que aparecen juntas dos palabras en el mismo artículo. Podemos distinguir dos tipos de elementos en la matriz:
+
+- Elementos que forman parte de la diagonal($n_{11}, n_{22}, n_{33}$, etc). Los elementos que forman parte de la diagonal evaluan las veces que aparece una palabra clave consigo misma. Parece una pregunta estupida, si una palabra esta presente en un artículo siempre estará consigo misma. Esto podría hacernos pensar que los elementos diagonales no nos dan información relevante, pero si lo piensas nos permitirán conocer las veces que aparecen las palabras clave por separado en nuestra muestra. 
+
+- Elementos que no forman parte de la diagonal($n_{12}, n_{32}, n_{56}$, etc). Estos elementos son los que nos permitirán conocer las relaciones entre las palabras. Si dos palabras aparecen juntas en uno o más artículos su valor será distinto de 0, lo que se representará como una linea (aparecen juntos) entre dos nodos (las palabras que aparecen juntas). 
+
+$$
+\left(
+\begin{array}{llll}
+n_{11}&n_{12} & n_{13}&n_{14}&n_{15} & n_{16} \\
+n_{21}&n_{22} & n_{23}&n_{24}&n_{25} & n_{26} \\
+n_{31}&n_{32} & n_{33}&n_{34}&n_{35} & n_{36} \\
+n_{41}&n_{42} & n_{43}&n_{44}&n_{45} & n_{46} \\
+n_{51}&n_{52} & n_{53}&n_{54}&n_{55} & n_{56} \\
+n_{61}&n_{62} & n_{63}&n_{64}&n_{65} & n_{66} \\
+\end{array}
+\right)
+$$
+
+### Análisis de redes. Mapas de *Callons*. 
 
 
 # Bibliografía consultada.
