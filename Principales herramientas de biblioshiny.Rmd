@@ -504,7 +504,50 @@ Podemos observar que:
 - Las interacciones entre plantas y frugívoros son un tema frecuente entre 2014 y 2016.
 - Todo el marco temporal está salpicado de temas relacionados con las redes, como el anidamiento, la conectancia, el recableado etc. 
 
-## Agrupación por acoplamiento. 
+## Estructura conceptual. 
+### Análisis de la red. 
+
+El análisis de la red podemos realizarlo principalmente fijándonos en dos tipos de análisis, el mapa temático y la evolución temática. Para observar el mapa temático podemos acceder a `Conceptual Srtucture>Thematic Map`. En la primera pestaña `Map` podemos observar un mapa de Gallons con los principales agrupamientos de las palabras de nuestro conjunto bibliográfico. Se ha cambiado el análisis a 2000 palabras para obtener una representación con más grupos. Encontramos dos grupos básicos de temas:
+
+- Temas básicos: 
+	- Animalia, seed dispersal, aves. Tema relacionado con la dispersión de semillas y los animales relacionados. 
+	- Mutualism, nestedness, comunity structure. Tema relacionado con el mutualismo, la estructura anidada de las comunidades. 
+	- Polination, plant-polinator interaction, biodiversitiy. Tema relacionado con la polinización y su papel en la biodiversidad. 
+
+- Temas de nicho:
+	- Dos temas relacionados con la extinción (Extintion, ant, demograpghy) y (Temporal variation, extinction risk, resource availability)
+	- Abundance, body size, antropogenic effect. Tema relacionado con los ecosistemas y el efecto del ser humano en ellos. 
+	- Cohort analysis.
+	
+![Mapa temático](ThematicMap.png)
+
+Cuando pasamos a la representación de red podemos observar estos mismos grupos pero en forma de red. Los colores se corresponden con los mismos grupos del mapa de Gallons. Aunque la imagen es atractiva, la información mas relevante se puede sacar del mapa bidimensional que es una representación de como son las interacciones en esta red. Los temas básicos (rojo, morado, azul y verde) son los temas que mas se interconectan con otros grupos, mientras que las interconexiones entre los nodos del mismo grupo son bajas. Se trata de temas básicos y transversales. Los temas de nicho (rosa, naranja, marrón y gris) presentan mas interconexiones entre ellos que con otros grupos. Hacia la periferia podemos encontrar pequeñas agrupaciones pero es dificil encontrar un patrón claro dado lo intrincada que es la red. El grupo perfiérico morado de la zona inferior se corresponde con palabras de especies de plantas, todas ellas interconectando con fungi. Dado el tema de las redes mutualistas y las interacciones mutualistas que se dan entre hongos y plantas, es posible que tengamos artículos sobre micorrizas. El resto es demasiado intrincado y es mejor sacar conclusiones a partir del mapa temático. 
+
+![Red del mapa temático](networkThematicMap.png)
+
+Otro análisis que permite Biblioshiny es el de la evolución temática. La base es la misma que la del mapa temático, pero aquí podemos restringir el análisis a un marco temporal restringido, formando lo que denomina *slices* o cortes. Esto puede ser interesante porque podemos ver como los temas van evolucionando dentro del mapa temático, es decir, estamos añadiendo la dimension temporal a nuestro análisis. Para ello accedemos a la pestaña `Conceptual Structure>Thematic Evolution`, ponemos el número de palabras en 2000 y añadimos 3 cortes. Colocamos los Cutting Years aproximadamente equidistantes para obtenener marcos temporales de la misma longitud. Elejimos los años 2006, 2010, y 2014.  
+
+- TimeSlice 1. Un tema neutro en centralidad y densidad que es polinización. Animalia como un tema transversal o basico. 
+
+![Evolución temática. Primer corte.](ThematicEvolutionSlice1.png)
+
+- TimeSlice 2. Aparece plant-polinator interaction como un tema muy fructifero y relacionado. Probablemente de lugar a otros temas en el futuro. La diversidad de especies aparece como un tema de nicho poco interrelacionado. El mutualismo aparece como un tema predominantemente poco conectado tanto a nivel interno como externo. Esto puede ser indicativo de que es un tema emergente o en declive, esto depende de lo que observemos en futuros cortes. 
+
+![Evolución temática. Segundo corte.](ThematicEvolutionSlice2.png)
+
+- TimeSlice 3. El mutualismo ha derivado a un tema con centralidad y densidad medias, por lo que se trataba anteriormente de un tema emergente. Introduced species aparece como tema emergente o en declive. Animalia y nestednees aparecen como temas muy fructiferos e importantes. 
+
+![Evolución temática. Tercer corte.](ThematicEvolutionSlice3.png)
+
+- TimeSlice 4. Ahora el tema motor es el análisis de red. Los temas basicos ahora es el mutualismo que antes aparecia como tema motor, la polinización y los animales. Aparecen varios temas de nicho como la abundancia o los hongos. Las especies introducidas eran un tema emergente que derivo en un tema de nicho. Evolución aparece como un tema poco conectado dentro de su propia red pero mas interconectado con otros temas. 
+
+![Evolución temática. Cuarto corte.](ThematicEvolutionSlice4.png)
+
+En la pestaña thematic evolution podemos encontrar una representación de esto que hemos comentado pero en columnas con los temas que aparecen y con lineas de flujo que conectan los temas que derivan unos de otros. 
+
+![Visión completa de la evolución temática](ThematicEvolutionTotalView.png)
+
+### Análisis factorial. 
 
 
 
@@ -708,7 +751,6 @@ Biblioshiny puede utilizar algunos términos que pueden generar confusiones en r
 La espectroscopía de los años de publicación de las referencias (RPYS, Reference Publication Year Spectroscopy) es un método cuantitativo para identificar los origenes historicos de un campo de estudio y sus temas. RPYS crea un perfil temporal de las referencias citadas de un conjunto de artículos que enfatiza los años donde se publicaron descubrimientos relativamente significativos. RPYS permite identificar las raices temporales de una disciplina. 
 
 El RPYS se basa en el análisis de la frecuencia con la que se citan las referencias en las publicaciones de un campo de investigación específico en función de los años de publicación de estas referencias citadas. Los orígenes se manifiestan en forma de picos más o menos pronunciados causados principalmente por publicaciones individuales que se citan con especial frecuencia. En la representación realizada por Biblioshiny aparece en la linea azul el número de referencias citadas ese año y en naranja la desviación calculada de la mediana de las referencias citadas en un marco de 5 años(Marx2014). 
-
 
 
 ## Estructura del conocimiento. 
