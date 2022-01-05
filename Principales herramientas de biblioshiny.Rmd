@@ -2,13 +2,16 @@
 title: "Guía para usar Biblioshiny"
 author: "Eliot Mompean"
 date: "22/12/2021"
-csl: apa-with-abstract.csl
-bibliography: bib/biblio.bib
-output: 
+output:
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
   html_document:
-    toc: true
-    toc_depth: 3
+    toc: yes
+    toc_depth: '3'
     theme: darkly
+bibliography: bib/biblio.bib
+csl: apa-with-abstract.csl
 ---
 
 ```{r setup, include=FALSE}
@@ -610,13 +613,13 @@ El artículo A) deriva a su vez en otro artículo que habla sobre la estructura 
 
 En la pestaña `Social Structure>Collaboration Network` podemos generar una red de colaboración.  A diferencia de las redes de co-citación, las redes colaboración unen nodos (generalmente autores) cuando presentan artículos donde ambos figuran como co-autores. 
 
-![Red de colaboración]()
+![Red de colaboración](RedDeColaboracion.png)
 
 La red ha sido alterada para mostrar los conjuntos mas cercanos entre sí. Parece ser que las redes de colaboración presentan mayor tendencia a fragmentarse, probablemente porque es más sencillo citar a otro autor que colaborar con él. Las colaboraciones acaban siendo más restringidas y formando redes de autores separadas que tiene a colbaorar entre sí. Los dos grupos mas grandes son el de Bascompte y Vazquez. Bascompte tienen menos nodos pero mas grandes, son pocos autores pero más contributivos, mientras que ocurre al contrario con el de Vazquez. El grupo de Bascompte sí presenta interacciones con otros grupos como el de Thompson o el de Gonzalez Castro. 
 
 ### Mapa de colaboración. 
 
-Aunque la red de colaboración permite generar una red de colaboraciones entre los paises de los autores es preferible acceder a `Social Structure>Collaboration Map`. Esta herramienta de Biblioshiny permite generar un Mapa Mundi  donde los paises aparecen en tonos de azul en función de la cantidad de artículos producidos y aparecen lineas que unen los paises que han contribuido, mostrando en su grosor la cantidad de colaboraciones. 
+Aunque la red de colaboración permite generar una red de colaboraciones entre los paises de los autores es preferible acceder a `Social Structure>Collaboration Map`. Esta herramienta de Biblioshiny permite generar un Mapa Mundi  donde los paises aparecen en tonos de azul en función de la cantidad de artículos producidos y aparecen lineas que unen los paises que han contribuido, mostrando en su grosor la cantidad de colaboraciones. He aumentado el número minimo de enlaces a 6 para hacer el mapa más legible.  
 
 ![Mapa de colaboraciones](CountryCollaborationMap-2022-01-05.png)
 
