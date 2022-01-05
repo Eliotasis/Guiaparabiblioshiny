@@ -25,7 +25,7 @@ Son muchos los aspectos a tener en cuenta durante una revisión bibliográfica, 
 -   Sabes en qué bases de datos tienes que buscar y como hacer los primeros filtrados con las herramientas que estos te proporcionan.
 -   Sabes como descargar dicha información y conoces el formato `BibTeX`.
 
-Por tanto, partimos de la base de que ya tienes la información que quieres para tu trabajo, pero careces de las herramientas para saber cuales son los artículos mas relevantes o como ha evolucionado este campo de estudio desde sus inicios.
+Por tanto, partimos de la base de que ya tienes la información que quieres para tu trabajo, pero careces de las herramientas para saber cuales son los artículos mas relevantes o como ha evolucionado este campo de estudio desde sus inicios. En la [página web oficial de bibliometrix](https://www.bibliometrix.org/) se pueden encontrar muchos tutoriales para aprender a utilizar esta herramienta, sin embargo todos ellos los encontrarás en inglés. Independientemente de la necesidad de aprender inglés en un mundo globalizado como es el nuestro, la liberalización de la ciencia pasa por ofrecer trabajos accesibles para cualquiera, para lo cuál tenemos que luchar por una mayor presencia de la ciencia en español. Una parte importante de este trabajo, especialmente en los anexos, son traducciones literales de unas [diapositivas explicativas](https://bibliometrix.org/biblioshiny/assets/player/KeynoteDHTMLPlayer.html#1) de su página web. 
 
 # Bibliometrix y el lenguaje R.
 
@@ -138,9 +138,7 @@ En `Dataset>Main Information` obtenemos información cuantitativa sobre el set d
 De esta tabla extraemos que tenemos un total de 242 documentos de los años entre 2002 y 2020 y que son mayormente artículos científicos. Entre los tipos de archivos minoritarios podemos destacar los capítulos de libros y las revisiones, con 8 y 9 documentos respectivamente. La mayoría de los autores se encuentran en documentos con múltiples autores y muchos de ellos presente coautoría, con 4.17 coautores por documento. 
 
 
-- **Timespan**: Define el marco temporal en el que estos artículos han sido publicados. En nuestro caso el estudio de redes mutualistas es bastante reciente, el primer artículo aparece en 2002 y el último en 2022 [^2]. 
 
-[^2]: Algunos artículos pueden presentarse como borradores pendientes de revisión, con fechas de publicación a futuro. 
 
 ## Producción científica anual. 
 
@@ -549,29 +547,34 @@ En la pestaña thematic evolution podemos encontrar una representación de esto 
 
 ### Análisis factorial. 
 
+En la pestaña `Conceptual Structure>Factorial Analysis` podemos realizar un análisis factorial de distintos elementos como:
+
+- Palabras: medimos la similitud en función de la cantidad de veces que dichas palabras aparecen juntas en un artículo. 
+- Artículos: medimos su similitud en función de su nivel de influencia o el número de citas. 
+
+Podemos elegir entre un análisis de correspondencia o un análsisis de correspondencia múltiple, en nuestro caso es el segundo método el que ofrece una gráfica más representativa de la variabilidad de los datos (64.62%). 
+
+![Mapa del análisis factorial de palabras](MapaAnalisisFactorial.JPG)
+
+Podemos observar dos agrupamientos diferneciados. En azul, conceptos relacionados con las interacciones entre plantas y animales en las que se produce algún tipo de herbivoría, como la frugivoría o la dispersión de semillas. Encontramos los conceptos fruit, sedd.dispersal, bird, etc. En rojo encontramos conceptos relacionados con la polinización y el estudio de redes. Podemos discrepar de la cantidad de agrupaciones realizadas por biblioshiny. En este mapa conceptual, en el grupo de abajo parece que podemos dividirlo en otro dos grupos, uno a la derecha y otro a la izquierda. Por defecto el número de agrupamientos vienen en Auto, pero si lo cambiamos a tres nos ofrece unas agrupaciones con más sentido. 
+
+![Mapa del análisis factorial de palabras con 3 agrupaciones](MapaAnalisisFactorial3Grupos.JPG)
+
+Con este nuevo análisis encontramos un nuevo grupo con conceptos relacionados con la simbiosis, los animales, las plantas y los insectos. Podemos representar esta misma información pero en forma de dendrograma. 
+
+![Dendrograma del análisis factorial de palabras](DendrogramaAnalisisFactorial.JPG)
+
+El dendrograma ofrece esencialmente la misma información que el mapa. Podemos generar un mapa conceptual de los artículos mas contributivos o los mas citados. 
+
+![Mapa del análisis factorial de artículos mas contributivos con 3 agrupaciones](MapaAnalisisFactorialArticulosMasContributivos.JPG)
+
+Para identificar los artículos es conveniente acceder a la tabla de la pestaña `Articles By Cluster`. 
 
 
-## Estructura conceptual. 
 
-### Red de co-ocurrencia. 
+## Estructura intelectual. 
 
-### Mapa temático. 
-
-### Evolución temática. 
-
-### Análisis factorial. 
-
-## Análisis intelectual. 
-
-### Red de cocitación. 
-
-### Historiografía. 
-
-## Estructura social.
-
-### Red de colaboraciones. 
-
-### Mapa-mundi de colaboraciones. 
+### Red de cocitacion. 
 
  
 
@@ -579,7 +582,10 @@ En la pestaña thematic evolution podemos encontrar una representación de esto 
 
 ## Términos utilizados en la información principal. 
 
-- **Timespan**: Año del primer y el último artículo publicado.                             	
+- **Timespan**: Año del primer y el último artículo publicado [^2]. 
+
+[^2]: Algunos artículos pueden presentarse  borradores pendientes de revisión, con fechas de publicación a futuro. Esto explica la existencia de artículos a fecha de 2022, cuando la muestra bibliográfica se descargó en 2021. 
+
 - **Sources (Journals, Books, etc)**: Fuentes de las que provienen los documentos, revistas, libros etc. 
 - **Documents**:total de documentos                            	
 - **Average years from publication**: Promedio de años entre la publicación de un documento y sus primeras citas.     
@@ -673,11 +679,15 @@ Los tres grupos presentan un número similar de artículos a sus espaldas, pero 
 
 Así, las proporciones entre los grupos podrían excribirse como:
 
-$9:9*5:9*5^2$
+$$
+9:9*5:9*5^2
+$$
 
 Podemos escribir este caso partícular como una ley general para un conjunto de artículos de una muestra bibliográfica dividiendo cada elemento por $9$ y tomando el factor $5$ como cualquier número $m$, ya que no necesariamente tiene que ser 5. La ecuación queda de la siguiente manera:
 
-$1:m:m^2$
+$$
+1:m:m^2
+$$
 
 La secuencia de proporciones anterior equivale a decir que el grueso de los artículos sobre un tema determinado se concentra en un pequeño conjunto de revistas del núcleo y luego se dispersa por otras revistas hasta tal punto que, si el conjunto de artículos relevantes se subdivide en grupos o zonas que contienen el mismo número de artículos que el núcleo, se necesitará un número exponencialmente creciente de revistas para llenar las zonas sucesivas.
 
@@ -818,6 +828,8 @@ El dendrograma se construye de tal manera que se pueden observar facilmente los 
 
 La teoría de grafos es el estudio de las redes, que son estructuras matemáticas usadas como modelos de relaciones recíprocas entre objetos. Una red está formada de vértices (también llamados nodos o puntos) y de aristas (también llamados uniones o lineas). Se puede hacer una distinción entre grafos no direccionales, donde las lineas unen nodos simétricamente, y grafos direccionales, donde las lineas, ahora llamadas flechas, unen nodos asimétricamente. 
 
+#### Matrices de co-ocurrencia. 
+
 En el mapeado científico, una red es usada para representar las co-ocurrencias a lo largo de la muestra bibliográfica. El punto de partida son las matrices de co-ocurrencia, donde tanto en filas como en columnas se representan una parte de los metadatos de nuestro conjunto bibliográfico, por ejemplo, todas las palabras clave que aparecen. Como tanto en filas como en columnas estamos representando lo mismo, la matriz será una matriz cuadrada. Si existen 100 palabras clave, la matriz será de 100x100. Dentro de la matriz se representarán las veces que aparecen juntas dos palabras en el mismo artículo. Podemos distinguir dos tipos de elementos en la matriz:
 
 - Elementos que forman parte de la diagonal($n_{11}, n_{22}, n_{33}$, etc). Los elementos que forman parte de la diagonal evaluan las veces que aparece una palabra clave consigo misma. Parece una pregunta estupida, si una palabra esta presente en un artículo siempre estará consigo misma. Esto podría hacernos pensar que los elementos diagonales no nos dan información relevante, pero si lo piensas nos permitirán conocer las veces que aparecen las palabras clave por separado en nuestra muestra. 
@@ -837,6 +849,31 @@ n_{61}&n_{62} & n_{63}&n_{64}&n_{65} & n_{66} \\
 \right)
 $$
 
+#### Interpretar una red. 
+
+Con esta información Biblioshiny puede representar redes cuya estructura está hablando de la estructura del conocimiento al que intentamos acceder. Existen varios elementos de la red que podemos interpretar a simple vista: 
+
+- Tamaño de los nodos. Representa la cantidad de veces que aparece dicho elemento, las ocurrencias. 
+- Color de los nodos. Representa a qué agrupamiento pertenece dicho elemento. 
+- Grosor de los enlaces. Fuerza de las relaciones, puede ser veces que co-ocurren dos palabras clave o veces que se citan dos autores. 
+- Color de los enlaces. Determina si el enlace se produce entre nodos del mismo grupo, en cuyo caso será un nodo del color de dicho grupo, o si se produce entre nodos de distintos grupos, en cuyo caso aparece de colo gris. 
+
+#### Índices de centralidad. 
+
+Los índices de centralidad son respuestas a la pregunta "¿Qué caracteriza a un vértice importante?".La palabra "importancia" tiene un amplio número de significados, lo que lleva a muchas definiciones diferentes de centralidad. Muchas medidas de centralidad, aunque no todas, cuentan efectivamente el número de caminos (también llamados paseos) de algún tipo que pasan por un vértice dado; las medidas difieren en cómo se definen y cuentan los paseos relevantes(@WikiCentrality). Biblioshiny ofrece 3 índices diferentes para caracterizar cada uno de los nodos de la red:
+
+- Closeness (cercanía): La cercanía normalizada (o cercanía) de un nodo es la longitud media del camino más corto entre el nodo y todos los demás nodos del gráfico. Por tanto, cuanto más central sea un nodo, más cerca estará de todos los demás nodos.
+
+- Betweenness (interrelación): La interrelación cuantifica el número de veces que un nodo actúa como puente a lo largo del camino más corto entre otros dos nodos.
+
+- Degree (grado): El número de enlaces que inciden sobre un nodo (es decir, el número de vínculos que tiene un nodo). 
+
+- PageRank: PageRank es un algoritmo de análisis de enlaces, llamado así por Larry Page y utilizado por el motor de búsqueda de Internet Google, que asigna una ponderación numérica a cada elemento de un conjunto de documentos con hipervínculos, como la World Wide Web, con el fin de "medir" su importancia relativa dentro del conjunto. El algoritmo puede aplicarse a cualquier conjunto de entidades con citas y referencias recíprocas(@IAPageRank). 
+
+#### Diagrama nodos vs grado. 
+
+Biblioshiny ofrece con algunas de sus redes un diagrama del perfil de grado de los nodos de la red. En el eje horizontal se representan grupos de nodos, ordenados de izquierda a derecha desde los que tienen mayor grado (más enlaces) a los que tienen menor grado (menos enlaces). En el eje vertical se representa el grado de esos mismos nodos. Cuando se generan redes aleatorias todos los nodos presentan aproximadamente el mismo número de enlaces y la linea resultante en estos diagramas es casi planta. En las redes que estudiaremos aquí existen pocos grupos de nodos muy interconectaods y una mayoría de nodos poco conectados. 
+
 #### Análisis de redes. Mapas de *Callons*. 
 
 La realización de los análisis de *Callons* precisa primero de un agrupamiento de las palabras en función de su co-ocurrebcia. Esto permite dividir la red en subconjutnos, de los cuales se puede medir centralidad y densidad (@Cobo2011):  
@@ -854,5 +891,19 @@ Medidas estas características se pueden representar en un diagrama de dispersi�
 - Cuadrante inferior izquierdo (baja densidad y centralidad). Los temas del cuadrante inferior izquierdo están poco desarrollados y son marginales. Los temas de este cuadrante representan principalmente temas emergentes o en desaparición.
 
 - Cuadrante inferior derecho (baja densidad y alta centralidad). Temas importantes para un campo de investigación, pero no están desarrollados. Por tanto, este cuadrante agrupa temas transversales y generales, básicos.
+
+### Estructura intelectual. 
+
+La estructura intelectual muestra las relaciones entre los nodos que representan referencias. Los enlaces en la red pueden presentar diferentes interpretaciones dependiendo del método de cita (cocitacion o citacion directa). El análisis de cita es el análisis bibliométrico más común cuando se estudia cocitación entre autores o documentos. El análisis de cocitación, cuando se examina a lo largo del tiempo, es util detectando cambios de paradigma y de escuelas de pensamiento. 
+
+- Análisis de cocitación. Hablamos de cocitación de dos documentos cuando ambos están citados en un tercer documento. Las cocitaciones pueden ser representadas en una matriz de co-ocurrencia como en el co-word analysis. 
+
+- Mapa historiográfico. En el mapa hisotriográfico cada camino identifica un tema de investigación y sus autores/documentos núcleo. Existen algunos conceptos clave en relación a la historiografía: 1) Cada nodo representa un documento citado por otros documentos, 2) cada enlace representa una citación directa y 3) cada nodo y enlace se encientra orientado en un grafo orientado cuyo eje horizontal representa los años de publicación. Biblioshiny además ofrece una tabla donde diferencia local citations (LCS) y global citations (GCS). 
+
+### Estructura social. 
+
+La estructura social muestra como autores o instituciones se relacionan unos con otros en un campo científico de investigación. El tipo de estructura socual mas comun es la red de co-autoría. Con las redes de co-autoría se puede descubrir, por ejemplo, grupos de autores regulares, autores influyentes, comunidades de autores escondidas, instituciones relevantes en un campo de estudio, etc. 
+
+
 
 # Bibliografía consultada.
