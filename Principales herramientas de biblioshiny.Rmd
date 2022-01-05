@@ -574,9 +574,67 @@ Para identificar los artículos es conveniente acceder a la tabla de la pestaña
 
 ## Estructura intelectual. 
 
-### Red de cocitacion. 
+### Red de co-citacion. 
+
+En la pestaña `Intelectual Structure>Co-citation Network` podemos generar redes de co-citación de artículos, autores y papers. Pondremos como ejemplo una red de co-citación de autores, que puede darnos información sobre qué grupos de autores interactuan mas entre ellos. 
+
+![Red de co-citación de los autores](RedDeCocitaciónAutores.png)
+
+Podemos observar que existen 4 autores que interactúan mucho entre sí: Bascompte, Jordano, Vazquez y Olesen. Alrededor de ellos encontramos un conjunto de autores que presenta muchas conexiones con estos autores. Encontramos otrso dos grupos, uno liderado por Memmot y otro por Guimares y Thompson. Sin embargo, estos otros dos grupos parecen presentar menos conexiones entre ellos que con el grupo de Bascompte, además sus autores son menos productivos. 
+
+### Historiografía. 
+
+La historiografía uno los artículos como en la red de co-citación pero además los ordena en función de su fecha de publicación. Esto nos permite seguir la evolución de los temas. En la pestaá `Intellectual Structure>Historiograph` podemos generar una historiografía de nuestra muestra bibliográfica. Recomiendo bajar el número de nodos a 10 para hacer un diagrama más legible. Tambien es interesante cambiar la etiqueta de los nodos por el titulo del documento, ya que una rápida lectura de los titulos puede ayudarnos a inferir superficialmente la evolución de los temas. 
+
+![Historiografía](Historiografia.png)
+
+El primer artículo del que surgen muchos otros habla sobre la distribución del grado en redes mutualistas planta polinizador. Esto parede derivar en multitud de temas, entre los que tenemos:
+
+- A)Efecto de la fragmentación del habitat en las redes hormiga-planta del amazonas. 
+- B)Uniendo funcionalidad y estructura. El papel de los frugivoros. 
+- C)Coevolución y arquitectura de redes mutualistas. 
+- D)Topología de las redes planta-micorriza. 
+- E)Transferencia de nitrógeno en redes mutualistas caribeñas. 
+
+El artículo A) deriva a su vez en otro artículo que habla sobre la estructura de las redes y su papel en la estabilidad de las comunidades (A1). A1 deriva a su vez en un grupo de artículos bien interconectado:
+
+- A1a)El role de las aves frugivoras en las redes de dispersión tiene un papel en la divergencia evolutiva?
+- A1b)La presencia de peces limiadores aumenta la presencia del pez damisela en arrecifes de coral. Curiosamente este artículo no parece relacionarse con las redes mutualistas, pero dado que parece derivar de este tema puede ser interesante echarle un vistazo para ver si aporte al campo de estudio o se nos ha colado en el análisis. 
+- B) El artículo B tambien conecta con el A1. 
 
  
+
+## Estructura social. 
+
+### Red de colaboración. 
+
+En la pestaña `Social Structure>Collaboration Network` podemos generar una red de colaboración.  A diferencia de las redes de co-citación, las redes colaboración unen nodos (generalmente autores) cuando presentan artículos donde ambos figuran como co-autores. 
+
+![Red de colaboración]()
+
+La red ha sido alterada para mostrar los conjuntos mas cercanos entre sí. Parece ser que las redes de colaboración presentan mayor tendencia a fragmentarse, probablemente porque es más sencillo citar a otro autor que colaborar con él. Las colaboraciones acaban siendo más restringidas y formando redes de autores separadas que tiene a colbaorar entre sí. Los dos grupos mas grandes son el de Bascompte y Vazquez. Bascompte tienen menos nodos pero mas grandes, son pocos autores pero más contributivos, mientras que ocurre al contrario con el de Vazquez. El grupo de Bascompte sí presenta interacciones con otros grupos como el de Thompson o el de Gonzalez Castro. 
+
+### Mapa de colaboración. 
+
+Aunque la red de colaboración permite generar una red de colaboraciones entre los paises de los autores es preferible acceder a `Social Structure>Collaboration Map`. Esta herramienta de Biblioshiny permite generar un Mapa Mundi  donde los paises aparecen en tonos de azul en función de la cantidad de artículos producidos y aparecen lineas que unen los paises que han contribuido, mostrando en su grosor la cantidad de colaboraciones. 
+
+![Mapa de colaboraciones](CountryCollaborationMap-2022-01-05.png)
+
+Las 10  colaboraciones más frecuentes se pueden observar en la siguiente tabla. 
+
+| biblioshiny for bibliometrix 	|                	|           	|
+|------------------------------	|----------------	|-----------	|
+| From                         	| To             	| Frequency 	|
+| USA                          	| SPAIN          	| 16        	|
+| USA                          	| BRAZIL         	| 15        	|
+| BRAZIL                       	| MEXICO         	| 11        	|
+| BRAZIL                       	| SPAIN          	| 10        	|
+| USA                          	| ARGENTINA      	| 10        	|
+| USA                          	| MEXICO         	| 10        	|
+| USA                          	| UNITED KINGDOM 	| 10        	|
+| ARGENTINA                    	| GERMANY        	| 9         	|
+| SPAIN                        	| DENMARK        	| 9         	|
+| GERMANY                      	| UNITED KINGDOM 	| 8         	|
 
 # Anexos. 
 
