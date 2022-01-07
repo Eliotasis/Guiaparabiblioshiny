@@ -3,13 +3,13 @@ title: "Guía para usar Biblioshiny"
 author: "Eliot Mompean"
 date: "22/12/2021"
 output:
+  html_document:
+    toc: yes
+    toc_depth: '1'
+    theme: darkly
   pdf_document:
     toc: yes
     toc_depth: '3'
-  html_document:
-    toc: yes
-    toc_depth: '3'
-    theme: darkly
 bibliography: bib/biblio.bib
 csl: apa-with-abstract.csl
 ---
@@ -18,7 +18,7 @@ csl: apa-with-abstract.csl
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Introducción.
+# Introducción. 
 
 El presente trabajo pretende ser una guía para aprender a utilizar las principales herramientas que ofrece bibliometrix para realizar un buen análisis bibliográfico. No somos pocos los alumnos de carreras investigadoras que, a la hora de enfrentarnos a la realización del TFG, optamos por una revisión bibliográfica sin tener la más mínima idea de como enfrentarnos al tema. Empezamos a conocer las principales bases de datos en unos pocos días y tras las primeras búsquedas es común encontrarnos con un volumen de información inabarcable para una mente humana.
 
@@ -88,7 +88,7 @@ Para evitar tener que pasar por el uso de comandos de conversión en la consola 
 
 # Filtrar datos con Biblioshiny. 
 
-Biblioshiny nos permite eliminar algunos datos de nuestra dependiendo de nuestros intereses a través de la pestaña `Filter`. Entre las opciones que nos ofrece nos permite filtrar por:
+Biblioshiny nos permite eliminar algunos datos de nuestra muestra dependiendo de nuestros intereses a través de la pestaña `Filter`. Entre las opciones que nos ofrece nos permite filtrar por:
 
 - Tipo de documento. 
 - Año de publicación. 
@@ -101,7 +101,7 @@ En nuestro caso eliminaremos las fuentes de 2021 y 2022 ya que parecen desvirtua
 
 ## Información principal. 
 
-En `Dataset>Main Information` obtenemos información cuantitativa sobre el set de artículos que hemos cargado a través de una tabla. 
+En `Dataset>Main Information` obtenemos información cuantitativa sobre el set de artículos que hemos cargado a través de una tabla([ver anexo](#glosario)).
 
 | biblioshiny for bibliometrix         	|           	|
 |--------------------------------------	|-----------	|
@@ -155,11 +155,11 @@ El diagrama nos permite observar que el tema de estudio presenta unos años inic
 - Geographic patterns in plant–pollinator mutualistic networks. Olessen y Jordano. 2002. Con 395 citas. 
 Un buen punto de partida para nuestra lectura podrían ser estos dos artículos. 
 
-A la izquierda nos encontramos un ratio de crecimiento anual del 21.23% que es calculado utilizando la fórmula para el Compound annual growth rate (CAGR) utilizado mayormente en economía.  
+A la izquierda nos encontramos un ratio de crecimiento anual del 21.23% que es calculado utilizando la fórmula para el Compound annual growth rate (CAGR) utilizado mayormente en economía([ver anexo](#cagr)).  
 
 ## Media de citaciones al año.
 
-En la pestaña `Dataset>Average Citations per Year` encontramos un diagrama con el número de citaciones promedio que recibió nuestras citaciones promedio cada año. En nuestros datos podemos observar que existen picos de citaciones en los primeros años de las publicaciones, lo que nos indica que existen artículos muy influyentes en dichos años. 
+En la pestaña `Dataset>Average Citations per Year` encontramos un diagrama con el número de citaciones promedio que recibieron nuestros artículos cada año. En nuestros datos podemos observar que existen picos de citaciones en los primeros años de las publicaciones, lo que nos indica que existen artículos muy influyentes en dichos años. 
 
 ![Diagrama del promedio de citaciones al año](AverageCitationsPerYear.png)
 
@@ -169,7 +169,7 @@ En la pestaña `Dataset>Three-Fields Plot` encontramos el diagrama de tres campo
 
 ![Diagrama de tres campos representando a la izquierda las referencias, en el centro los autores y a la derecha palabras clave plus](ThreeFieldsPlot.png)
 
-Esta representación nos permite observar de un vistazo cuales son las referencias mas citadas, con qué autores conecta y qué palabras clave tiene relacion. Los puntos débiles de esta combinación es que la longitud de los títulos de las referncias solapan con con el campo central, lo que resulta confuso. Recomiendo interactuar con el diagrama colocando el ratón sobre las distintas unidades representadas, ya que con esta acción se acentúan las interacciones de dichos elementos y permite sacar mejores conclsuiones. 
+Esta representación nos permite observar de un vistazo cuales son las referencias mas citadas, con qué autores conecta y qué palabras clave tiene relacion. Los puntos débiles de esta combinación es que la longitud de los títulos de las referncias solapan con con el campo central, lo que resulta confuso. Recomiendo interactuar con el diagrama colocando el ratón sobre las distintas unidades representadas, ya que con esta acción se acentúan las interacciones de dichos elementos y permite sacar mejores conclusiones. 
 
 
 ## Fuentes. 
@@ -186,7 +186,7 @@ Tomando como criterio de importancia el número de documentos, las revistas OIKO
 
 ### Fuentes localmente más citadas. 
 
-En la pestaña `Sources>Most Local Cited Sources` nos muestra un diagrama con las fuentes localmente más citadas. Las fuentes localmente más citadas son aquellas que aparecen en la bibliografía de los documentos de nuestra muestra bibliográfica. 
+En la pestaña `Sources>Most Local Cited Sources` nos muestra un diagrama con las fuentes localmente más citadas. Las fuentes localmente más citadas son aquellas que aparecen en la bibliografía de los documentos de nuestra muestra bibliográfica ([ver anexo](#terminos)). 
 
 ![Diagrama de las fuentes localmente mas citadas](MostLocalCitedSources.png)
 
@@ -194,9 +194,9 @@ En el aspecto de las citas ECOLOGY gana a OIKOS y se introducen revistas que no 
 
 ### Ley de bradford. 
 
-Podemos realizar un cálculo de las resvistas que forman parte del "núcleo" a través de la ley de bradford, que se encuentra en `Sources>Bradford´s law`.  
+Podemos realizar un cálculo de las resvistas que forman parte del "núcleo" a través de la ley de bradford ([ver anexo](#bradford)), que se encuentra en `Sources>Bradford´s law`.  
 
- En biblishiny puedes aplicar la ley de bradford en la pestaña `Sources>Bradford's Law`.
+ En biblioshiny puedes aplicar la ley de bradford en la pestaña `Sources>Bradford's Law`.
 
 ![Diagrama de la Ley de Bradford](BradfordsLaw.png)
 
@@ -213,14 +213,14 @@ La pestaña `plot` nos ofrece una tabla con la misma información representada e
 
 ### Impacto de las fuentes. 
 
-Biblioshiny nos permite medir el impacto de las fuentes a través de 4 parámetros:
+Biblioshiny nos permite medir el impacto de las fuentes a través de 4 parámetros([ver anexo](#indices)):
 
 - Índice $h$
 - Índice $g$
 - Índice $m$
 - Total de citas
 
-Podemos aplicar el cálculo de estos cuatro parámetros mediante el menú desplegable ´Impact measure´. Si elegimos el índice $h$ nos aparece un diagrama con 20 revistas, pero debido a que a partir de la décimo segunda nos aparecen un total de 10 revistas con índice $h$ de 3, reducimos el total de revistas que aparecen a 12 para sobrecargar menos con información redundante.
+Podemos aplicar el cálculo de estos cuatro parámetros mediante el menú desplegable `Impact measure`. Si elegimos el índice $h$ nos aparece un diagrama con 20 revistas, pero debido a que a partir de la décimo segunda nos aparecen un total de 10 revistas con índice $h$ de 3, reducimos el total de revistas que aparecen a 12 para sobrecargar menos con información redundante.
 
 ![Diagrama índice $h$ de revistas](SourceImpactByHIndex.png)
 
@@ -265,13 +265,28 @@ En la pestaña `Sources>Source Dynamics` encontramos un diagrama que nos muestra
 
 Las cuatro revistas más importantes siguen siendo las ya mencionadas. OIKOS y ECOLOGY presentan un largo historial de interés sobre este tema desde los años 2007 y 2008, donde parecen encontrarse a la carrera por quien posee mas artículos. Actualmente lleva la delantera OIKOS con 30 artículos y le sigue ECOLOGY con 25. 
 
+### Conclusiones sobre las fuentes. 
+
+La fuente más importante de todas en el ámbito de las redes mutualistas según nuestra muestra es OIKOS por las siguientes razones: 
+
+- Mayor número de artículos. 
+- El análisis de bradford lo coloca en el centro del núcleo de las fuentes mas relevantes. 
+- Mayor indice $g$ y $m$ lo que nos habla de que presenta mas artículos muy citados y mas impacto en relación al tiempo que lleva la revista en activo, respectivamente. 
+
+La segunda fuente mas importante a la que deberíamos presentar también atención es ECOLOGY:
+
+- Presenta menos número de artículos pero localmente es mas citado que OIKOS. 
+- Presenta mayor índice $h$ que OIKOS, lo que nos informa de que sus artículos presentan en promedio más citas que OIKOS, aunque este gana a ECOLOGY en poseer algunos artículos muy citados. 
+
+La tercera y cuarta revista más importantes son ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. Esto debido a que ECOLOGY LETTERS gana en todos los aspectos estudiados (número de artículos, proximidad al nucleo de bradford, índices $h$, $g$ y $m$). Mencionar que las revistas NATURE y SCIENCE aparecen como la tercera y cuarta revista localmente mas citadas, pero no aparecen en ninguno de los otros análisis como revistas importantes. Debido al alto impacto estas revistas es posible que presenten artículos no directamente relacionados con el tema de las redes mutualistas pero que haya influido en su evolución. 
+
 ## Autores. 
 
 La búsqueda de los autores más relevantes puede seguirse bajo varios criterios que observaremos a continuación. Conocer a los autores más importantes de una disciplina es uno de los aspcetos más importantes a la hora de conocer un determinado campo de estudio. 
 
 ### Autores más relevantes. 
 
-En la pestaña `Authors>Most Relevant Authors` podemos realizar 3 análisis distintos relacionados con la relevancia de los autores. Estos análisis se pueden alternar a partir del menú deplegable de la izquierda `Frequency measure`, donde podemos elegir entre representar número de documentos, porcentaje del total de documentos o frecuencia fraccionalizada. 
+En la pestaña `Authors>Most Relevant Authors` podemos realizar 3 análisis distintos relacionados con la relevancia de los autores. Estos análisis se pueden alternar a partir del menú deplegable de la izquierda `Frequency measure`, donde podemos elegir entre representar número de documentos, porcentaje del total de documentos o frecuencia fraccionalizada([ver anexo](#frecfrac)). 
 
 ![Diagrama de los autores mas relevantes por número de documentos](MostRelevantAuthorsND.png)
 
@@ -310,7 +325,7 @@ En este diagrama es interesante enfocarse en cuales son las burbujas más grande
 
 ### Ley de lotka´s. 
 
-En la pestaña `Authors>Lotka's Law` podemos medir la productividad de los autores de nuestra muestra y observar si nuestro modelo se ajusta a Ley de Lotka. 
+En la pestaña `Authors>Lotka's Law` podemos medir la productividad de los autores de nuestra muestra y observar si nuestro modelo se ajusta a Ley de Lotka ([ver anexo](#lotka)). 
 
 ![Diagrama de la ley de Lotka](LotkasLaw.png)
 
@@ -359,7 +374,31 @@ Otra manera de observar la producción científica por países es observarla rep
 
 ![Mapamundi de la producción científica por paises.](CountryScientificProduction.png)
 
+En la pestaña `Table` nos muestra una tabla con los paises ordenados por frecuencia productiva. 
 
+| biblioshiny for bibliometrix 	|      	|   	|
+|------------------------------	|------	|---	|
+| region                       	| Freq 	|   	|
+| USA                          	| 120  	|   	|
+| BRAZIL                       	| 116  	|   	|
+| SPAIN                        	| 82   	|   	|
+| ARGENTINA                    	| 60   	|   	|
+| GERMANY                      	| 58   	|   	|
+| FRANCE                       	| 51   	|   	|
+| MEXICO                       	| 41   	|   	|
+| UK                           	| 41   	|   	|
+| SWITZERLAND                  	| 22   	|   	|
+| CANADA                       	| 21   	|   	|
+| DENMARK                      	| 20   	|   	|
+| CHILE                        	| 18   	|   	|
+| AUSTRALIA                    	| 16   	|   	|
+| JAPAN                        	| 15   	|   	|
+| NETHERLANDS                  	| 14   	|   	|
+| SOUTH AFRICA                 	| 14   	|   	|
+| NEW ZEALAND                  	| 12   	|   	|
+| CHINA                        	| 11   	|   	|
+| COLOMBIA                     	| 9    	|   	|
+| PORTUGAL                     	| 7    	|   	|
 
 ### Países más citados. 
 
@@ -367,7 +406,55 @@ En la pestaña `Authors>Most Cited Countries` nos muestra un diagrama con los pa
 
 ![Diagrama de los paises mas citados](MostCitedSources.png)
 
-Estados Unidos y Brasil son paises más productivos, pero España resulta ser la más citada, probablemente resultado de que los autores mas citados provienen de este país. 
+Estados Unidos y Brasil son paises más productivos, pero España resulta ser la más citada, probablemente resultado de que los autores mas citados provienen de este país.
+
+### Conclusiones sobre los autores. 
+
+El autor más importante según nuestra muestra bibliográfica es Bascompte ya que aparece primero en todos nuestros análisis, lo que lo convierte en:
+
+- El autor más productivo. 
+- El autor localmente más citado. 
+- El autor con mas producción a lo largo del tiempo. 
+- El autor con el mayor impacto según los índices $h$, $g$ y $m$. 
+
+El segundo autor más importantes es Vzquez debido a que es:
+
+- El segundo autor más productivo. 
+- El segundo autor con más impacto según los índices $h$ y $g$. 
+- Además aparece como el cuarto autor con más producción a lo largo del tiempo. 
+
+El tercer autor más importante es Jordano debido a que es:
+
+- El tercer autor mas productivo. 
+- El tercer autor localmente más citado. 
+- El tercer autor con más impacto según los índices $h$ y $g$. 
+- Además aparece como el segundo autor con más producción a lo largo del tiempo. 
+
+El cuarto autor más importante es Blthgen debido a que es: 
+- El cuarto autor más productivo. 
+- El cuarto autor con más impacto según los índices $h$ y $g$. 
+- Además aparece como el segundo autor localmente más citado. 
+
+Además de estos autores, caben destacar:
+
+- Olessen, que aparece como el cuarto autor localmente más citado. 
+- Chacoff, que aparece como el tercer autor con más producción a lo largo del tiempo. 
+- Burkela, Guimares y Dttilo, que aparecen segundo, tercero y cuarto en autores con más impacto según el índice $m$ respectivamente. Esto quiere decir que pueden tratarse de autores importantes pero con una trayectoria infrarrepresentada por su poca longitud en el tiempo. 
+
+En cuanto a los paises más importantes en este campo tenemos USA, Brasil, España, Argentina y Alemania. 
+
+- La mayoría de los autores son estadounidenses, además Estados Unidos es el más productivo y el segundo más citado. 
+
+- Brásil es el segundo pais con más autores y segundo más productivo. Se trata del quinto páis mas citado. 
+
+- España es el tercer pais con mas autores y el tercero más productivo. Curiosamente, se trata del pais más citado, probablemente debido a los trabajos de Bascompte. 
+
+- Argentina es el cuarto país con más autores, el cuarto más productivo y el quinto más citado. 
+
+- Alemanía es el quinto país que más autores ofrece, el quitno más productivo y el cuarto más citado. 
+
+Estados unidos presenta relativamente menos nivel de colaboración con otros paises que los demás. Brasil y España presenta una colaboración de casi el 50% de sus documentos con otros paises, mientras que Argentina y Alemania presenta colaboraciones en más de la mitad de sus artículos. 
+
 
 ## Documentos. 
 ### Documentos globalmente más citados. 
@@ -436,7 +523,7 @@ Bascompte 2007 sigue siendo de los documentos más citados, lo que nos indica qu
 
 ### Espectroscopía de las referencias. 
 
-En la pestaña `Documentos>Reference Spectroscopy` podemos realizar una espectroscopía de los años de publicación de las referencias citadas. Existe una referencia citada de 1713 que desvirtúa el gráfico. Para conseguir que el gráfico esté menos comprimido hacia la izuquierda localizamos el siguiente año más citado y hacemos el análisis a partir de él. En nuestro caso elegimos 1859, que tiene un total de 5 referencias citadas, y lo especificamos en el menú de la izquierda en `TimeSlice>Starting Year`. 
+En la pestaña `Documentos>Reference Spectroscopy` podemos realizar una espectroscopía de los años de publicación de las referencias citadas ([ver anexo](#rpys)). Existe una referencia citada de 1713 que desvirtúa el gráfico. Para conseguir que el gráfico esté menos comprimido hacia la izuquierda localizamos el siguiente año más citado y hacemos el análisis a partir de él. En nuestro caso elegimos 1859, que tiene un total de 5 referencias citadas, y lo especificamos en el menú de la izquierda en `TimeSlice>Starting Year`. 
 
 ![Espectroscopía de las referncias](ReferencePublicationYearSpectroscopy.png)
 
@@ -641,7 +728,7 @@ Las 10  colaboraciones más frecuentes se pueden observar en la siguiente tabla.
 
 # Anexos. 
 
-## Términos utilizados en la información principal. 
+## <a name="glosario">Términos utilizados en la información principal. </a>
 
 - **Timespan**: Año del primer y el último artículo publicado [^2]. 
 
@@ -702,7 +789,7 @@ $$
 \text{Collaboration Index}=\frac{\text{total de coautores}}{\text{total de documentos con coautoría}}
 $$
 
-## Ratio de crecimiento anual compuesto. 
+## <a name="cagr">Ratio de crecimiento anual compuesto. </a>
 
 El cálculo del ratio de crecimiento en la producción científica anual se realiza a través de la ecuación para el cálculo del ratio de crecimiento anual compuesto($CAGR$): 
 
@@ -724,7 +811,7 @@ $$
 CAGR<0; decrecimiento
 $$
 
-## Ley de bradford. 
+## <a name="bradford"> Ley de bradford.  </a>
 
 La siguiente explicación es una adaptación de las páginas 95-8 de @Nicola2009. La ley de bradford propone que si ordenamos las revistas en orden decreciente de procutividad (nº de artículos publicados) observaremos que existe un "núcleo" de revistas que acumulan la mayor parte de los artículos de nuestro tema de estudio, mientras que el resto de los artículos se diespersan entre un número mucho mayor de revistas menos productivas. Cuando Samuel Bradford estudiaba un caso práctico con bibliografía sobre geofísica observo que: 
 
@@ -754,7 +841,7 @@ La secuencia de proporciones anterior equivale a decir que el grueso de los art�
 
 Por lo tanto, la ley de Bradford nos puede dar información relevante sobre cuáles son las revistas científicas más importantes en nuestro campo, lo que puede guiar nuestra busqueda bibliográfica y prestar atrención a dichas fuentes.
 
-## Índices bibliométricos. 
+## <a name="indices"> Índices bibliométricos.  </a>
 
 Los índices bibliométricos son números extraídos del procesamiento estadístico de los datos bibliográficos y que pretenden resumir en un vistazo alguno de los aspectos de dicha muestra. En relación a la medición del impacto de los autores, hace tiempo que se quiere encontrar una especie de índice perfecto y universal que permita medir el impacto de cualquier autor científico en cualquier disciplina[@Galvez2006]. La realidad dista mucho de ser tan sencilla ya que el impacto de un autor es muy dependiente del contexto científico en el que se mueve. A continuación detallaremos los fundamentos de tres índices que se pueden calcular con Biblioshiny, el principal es el índice $h$, mientras que el $g$ y el $m$ pretenden corregir las deibilidades del primero. 
 
@@ -782,7 +869,7 @@ $Índice m=\frac{\text{Índice h}}{t}$
 
 
 
-## Frecuencia fraccionalizada. 
+## <a name="frecfrac">Frecuencia fraccionalizada. </a> 
 
 La frecuencia fraccionalizada cuantifica la contribución individual de un autor $j$ para un conjunto de artículos publicados, bajo la premisa de que todos los coautores aportan una contribución similar a cada artículo. Si tenemos un conjunto de artículos con la coautoría del autor $j$ ($AU_j$), la frecuencia fraccionalizada de $AU_j$ es:
 
@@ -792,7 +879,7 @@ $$
 Siendo $n$ el total de artículos en los que el autor presente coautoría. La frecuencia fraccionalizada puede darnos información sobre el nivel de coautoría de los autores. Algunos autores pueden presentar un alto número de artículos publicados pero aparecer en estos como uno de muchísimos autores, de lo que se deduce un nivel de contribución menor que un autor con el mismo numero de artículos pero con menos autores por artículo. Para contrarrestar lo que podría entenderse como una relevancia sobrerrepresentada de los autores con bajo nivel de coautoria podemos comparar el diagrama de $FracFreq(AU_j)$ con el diagrama de número de artículos. 
 
 
-## Ley de Lotka. 
+## <a name="lotka">Ley de Lotka.</a> 
 
 La ley de Lotka define que la cantidad de autores muy productivos es muy pequeña mientras que la cantidad de autores poco productivos es mucho mayor, en cualquiera que sea el campo de estudio. La relación que existe entre la productividad y la cantidad de autores con dicha productividad es inversamentre cuadrática(@Lotka1926):
 
@@ -803,7 +890,7 @@ $$
 Ecuación que se puede verbalizar como: La cantidad de autores con $n$ publicaciones es igual a la cantidad de autores que han publicado un solo artículo ($A_1$) dividido por $n^2$.  A medida que aumenta el número de artículos publicados, los autores que producen ese número de publicaciones son menos frecuentes. Hay 1/4 de autores que publican dos artículos en un periodo de tiempo determinado que los autores que publican un solo artículo, 1/9 de autores que publican tres artículos, 1/16 de autores que publican cuatro artículos, etc. Aunque la ley en sí abarca muchas disciplinas, las proporciones reales (en función de "a") son específicas de cada disciplina (@LotkasLawWiki).
 
 
-## Terminología en relación a los documentos y las referencias. 
+## <a name="terminos">Terminología en relación a los documentos y las referencias. </a>
 
 Biblioshiny puede utilizar algunos términos que pueden generar confusiones en relacion con los documentos y las referencias, por lo que conviene establecer algunas definiciones. 
 
@@ -817,7 +904,7 @@ Biblioshiny puede utilizar algunos términos que pueden generar confusiones en r
 
 - Citas locales. Se refiere al número de citaciones que recibe un documento de los propios documentos incluidos en nuestra colección. Este valor es calculado por bibliometrix analizando la colección. Las citas locales miden el impacto de un documento dentro de nuestra muestra bibliográfica. 
 
-## Espectroscopía del año de publicación de las referencias. 
+## <a name="rpys">Espectroscopía del año de publicación de las referencias.</a>
 
 La espectroscopía de los años de publicación de las referencias (RPYS, Reference Publication Year Spectroscopy) es un método cuantitativo para identificar los origenes historicos de un campo de estudio y sus temas. RPYS crea un perfil temporal de las referencias citadas de un conjunto de artículos que enfatiza los años donde se publicaron descubrimientos relativamente significativos. RPYS permite identificar las raices temporales de una disciplina. 
 
@@ -963,7 +1050,9 @@ La estructura intelectual muestra las relaciones entre los nodos que representan
 
 ### Estructura social. 
 
-La estructura social muestra como autores o instituciones se relacionan unos con otros en un campo científico de investigación. El tipo de estructura socual mas comun es la red de co-autoría. Con las redes de co-autoría se puede descubrir, por ejemplo, grupos de autores regulares, autores influyentes, comunidades de autores escondidas, instituciones relevantes en un campo de estudio, etc. 
+La estructura social muestra como autores o instituciones se relacionan unos con otros en un campo científico de investigación. El tipo de estructura socual mas comun es la red de co-autoría. Con las redes de co-autoría se puede descubrir, por ejemplo, grupos de autores regulares, autores influyentes, comunidades de autores escondidas, instituciones relevantes en un campo de estudio, etc.  
+
+
 
 
 
