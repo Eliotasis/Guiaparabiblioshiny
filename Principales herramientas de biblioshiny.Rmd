@@ -30,7 +30,7 @@ Son muchos los aspectos a tener en cuenta durante una revisión bibliográfica, 
 
 Por tanto, partimos de la base de que ya tienes la información que quieres para tu trabajo, pero careces de las herramientas para saber cuales son los artículos mas relevantes o como ha evolucionado este campo de estudio desde sus inicios. En la [página web oficial de bibliometrix](https://www.bibliometrix.org/) se pueden encontrar muchos tutoriales para aprender a utilizar esta herramienta, sin embargo todos ellos los encontrarás en inglés. Independientemente de la necesidad de aprender inglés en un mundo globalizado como es el nuestro, la liberalización de la ciencia pasa por ofrecer trabajos accesibles para cualquiera, para lo cuál tenemos que luchar por una mayor presencia de la ciencia en español. Una parte importante de este trabajo, especialmente en los anexos, son traducciones literales de unas [diapositivas explicativas](https://bibliometrix.org/biblioshiny/assets/player/KeynoteDHTMLPlayer.html#1) de su página web. 
 
-# Bibliometrix y el lenguaje R.
+# Bibliometrix y Rstudio.
 
 La bibliometría es el estudio matemático y estadístico de las distintas características de un volumen de artículos académicos, libros etc [@bibliometrics]. La bibliometría resulta útil al ofrecer un análisis estructurado de un gran volumen de información para [@Aria2017]:
 
@@ -40,7 +40,7 @@ La bibliometría es el estudio matemático y estadístico de las distintas carac
 -   Identificar los autores, revistas o instituciones que más han aportado a dicho campo.
 -   Ofrecer una imagen general del tema de estudio.
 
-Bibliometrix es un paquete de análisis bibliométrico que corre bajo lenguaje de programación R. El lenguaje de programación R es un lenguaje y un entorno para el cálculo estadístico y su representación gráfica. R ofrece una gran variedad de técnicas estadísticas (modelización lineal y no lineal, pruebas estadísticas clásicas, análisis de series temporales, clasificación, agrupación, ...) y gráficas, y es muy expansible [@whatisr]. Si bien R puede ofrecer herramientas estadísitcas similares a otros programas de este campo, la versatilidad de R reside en que es de código abierto, lo que significa que cualquiera puede [descargarlo gratuitamente](https://www.rstudio.com/products/rstudio/download/), acceder a su código fuente y elaborar sus propias herramientas. Tal es la versatilidad de R que este texto esta siendo escrito y será procesado a través de este lenguaje de programación.
+Bibliometrix es un paquete de análisis bibliométrico que corre bajo lenguaje de programación R. El lenguaje de programación R es un lenguaje y un entorno para el cálculo estadístico y su representación gráfica. R ofrece una gran variedad de técnicas estadísticas (modelización lineal y no lineal, pruebas estadísticas clásicas, análisis de series temporales, clasificación, agrupación, ...) y gráficas, y es muy expansible [@whatisr]. Si bien R puede ofrecer herramientas estadísticas similares a otros programas de este campo, la versatilidad de R reside en que es de código abierto, lo que significa que cualquiera puede [descargarlo gratuitamente](https://www.rstudio.com/products/rstudio/download/), acceder a su código fuente y elaborar sus propias herramientas. Tal es la versatilidad de R que este texto esta siendo escrito y será procesado a través de este lenguaje de programación.
 
 ![Interfaz de Rstudio](rstudiointerfaz.JPG)
 
@@ -60,23 +60,23 @@ Cuando ejecutes este comando se te abrirá una pestaña de tu navegador predeter
 
 # Bases de datos y como cargarlos. 
 
-Utilizaremos  para nuestra busqueda dos bases de datos: Scopus y Web of Science (WOS). Scopus es más amigable con el usuario novato y da la posibilidad de buscar tanto hacia adelante como hacia atrás a partir de una cita concreta. Ambos buscadores almacenan información de artículos de muy diversas disciplinas, lo que permite al investigador buscar fácilmente fuera de su campo de estudio. WOS, por su parte, presenta una mayor profunidad de cobertura, ya que la base de datos completa de WOS se remonta a 1945 y la de Scopus a 1966. El uso de estas dos bases de datos nos dará un volumen de información lo suficientemente completo para nuestra investigación[@Burnham2006]. 
+Utilizaremos  para nuestra búsqueda dos bases de datos: Scopus y Web of Science (WOS). Scopus es más amigable con el usuario novato y da la posibilidad de buscar tanto hacia adelante como hacia atrás a partir de una cita concreta. Ambos buscadores almacenan información de artículos de muy diversas disciplinas, lo que permite al investigador buscar fácilmente fuera de su campo de estudio. WOS, por su parte, presenta una mayor profundidad de cobertura, ya que la base de datos completa de WOS se remonta a 1945 y la de Scopus a 1966. El uso de estas dos bases de datos nos dará un volumen de información lo suficientemente completo para nuestra investigación[@Burnham2006]. 
 
-A la hora de exportar los datos eligiremos el formato `plaintext`(WOS) o `BibTeX`(Scopus), ya que son los que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual [aquí](https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html).
+A la hora de exportar los datos elegiremos el formato `plaintext`(WOS) o `BibTeX`(Scopus), ya que son los que menos problemas suele dar con bibliometrix. Aunque tenemos la posibilidad de usar comandos para convertir nuestros datos a objetos que puede manejar bibliometrix, partimos de la premisa de que queremos trastocar con lenguaje de programación lo menos posible. Si quisieras trastocar con distintos comandos para convertir formatos de las distintas bases de datos puedes descargarte un manual [aquí](https://www.bibliometrix.org/vignettes/Data-Importing-and-Converting.html).
 
 ## Scopus. 
 
-Acudimos a **Scopus** y buscamos información sobre *Mutualistic Newtwork* en **Article Title, Absrtract and Keywords**. El primer resultado nos arroja 406 resultados (TITLE-ABS-KEY ( "mutualistic network" )), pero realizaremos un filtrado a través del apartado **Subject Area** de aquellas disciplinas que se salen de nuestro campo de estudio, en nuestro caso queremos enfocarnos en el estudio de los ecosistemas. Tras el filtrado, la busqueda avanzada queda así:
+Acudimos a **Scopus** y buscamos información sobre *Mutualistic Newtwork* en **Article Title, Absrtract and Keywords**. El primer resultado nos arroja 406 resultados (TITLE-ABS-KEY ( "mutualistic network" )), pero realizaremos un filtrado a través del apartado **Subject Area** de aquellas disciplinas que se salen de nuestro campo de estudio, en nuestro caso queremos enfocarnos en el estudio de los ecosistemas. Tras el filtrado, la búsqueda avanzada queda así:
 
 TITLE-ABS-KEY ( "mutualistic network" )  AND  ( EXCLUDE ( SUBJAREA ,  "MULT" )  OR  EXCLUDE ( SUBJAREA ,  "PHYS" )  OR  EXCLUDE ( SUBJAREA ,  "IMMU" )  OR  EXCLUDE ( SUBJAREA ,  "MATH" )  OR  EXCLUDE ( SUBJAREA ,  "COMP" )  OR  EXCLUDE ( SUBJAREA ,  "ENGI" )  OR  EXCLUDE ( SUBJAREA ,  "NEUR" )  OR  EXCLUDE ( SUBJAREA ,  "CHEM" )  OR  EXCLUDE ( SUBJAREA ,  "CENG" )  OR  EXCLUDE ( SUBJAREA ,  "MATE" )  OR  EXCLUDE ( SUBJAREA ,  "MEDI" )  OR  EXCLUDE ( SUBJAREA ,  "DECI" )  OR  EXCLUDE ( SUBJAREA ,  "PHAR" )  OR  EXCLUDE ( SUBJAREA ,  "PSYC" )  OR  EXCLUDE ( SUBJAREA ,  "SOCI" )  OR  EXCLUDE ( SUBJAREA ,  "ECON" ) ) [^1]
 
-[^1]: La búsqueda avanzada en Scopus implica el empleo de comandos de búsqueda basados en códigos, y está destinada a realizar búsquedas muy complejas, que exijan tal combinación de elementos, que las anteriores opciones de búsqueda no sean efectivas. Dado que Scopus no permite compartir busquedas a través de enlaces, comparto aquí el código de la busqueda avanzada. Con pegar este texto en la barra de busqueda deberías obtener los mismos resultados. 
+[^1]: La búsqueda avanzada en Scopus implica el empleo de comandos de búsqueda basados en códigos, y está destinada a realizar búsquedas muy complejas, que exijan tal combinación de elementos, que las anteriores opciones de búsqueda no sean efectivas. Dado que Scopus no permite compartir búsquedas a través de enlaces, comparto aquí el código de la búsqueda avanzada. Con pegar este texto en la barra de búsqueda deberías obtener los mismos resultados. 
 
 Descargamos la bibliografía en formato `BibTeX` con toda la información que nos permite Scopus (Citation information, Bibliographical information, Abstract & keywords, Funding details y Other Information).
 
 ## Web of Science. 
 
-Acudimos a **Web of Science** y buscamos información sobre [*Mutualistic Networks*](https://www.webofscience.com/wos/alldb/summary/965e996b-ce32-4096-b23b-3d5fc1090cd3-1b146a07/relevance/1) en **Topic**. Poseo cierto conocimiento previo sobre este area, aportado gracias a artículos divulgativos que pueden encontrarse facilmente. Esto me permite realizar un filtrado de los resultados, ya que quiero enfocarme para mi TFG en el *corpus* teórico que ofrecen las redes mutualistas al estudio de los ecosistemas. Para ello eliminé los resultados que parecen desviarse demasiado de este tema, pero sin ser demasiado restrictivo, ya que el volumen de resultados original (199) tampoco es demasiado grande y un filtrado demasiado estricto podría dejarme con muy pocos datos para obtener información relevante en el posterior análisis. Sin embargo, hay que tener en cuenta que el filtrado de los datos inicial dependerá muchos de los intereses y situación de cada investigador. La busqueda quedó finalmente en [160 resultados](https://www.webofscience.com/wos/alldb/summary/96d9e399-8558-49a7-bcc4-23b8a83d4a6e-1b14ad06/relevance/1).
+Acudimos a **Web of Science** y buscamos información sobre [*Mutualistic Networks*](https://www.webofscience.com/wos/alldb/summary/965e996b-ce32-4096-b23b-3d5fc1090cd3-1b146a07/relevance/1) en **Topic**. Poseo cierto conocimiento previo sobre este área, aportado gracias a artículos divulgativos que pueden encontrarse fácilmente. Esto me permite realizar un filtrado de los resultados, ya que quiero enfocarme para mi TFG en el *corpus* teórico que ofrecen las redes mutualistas al estudio de los ecosistemas. Para ello eliminé los resultados que parecen desviarse demasiado de este tema, pero sin ser demasiado restrictivo, ya que el volumen de resultados original (199) tampoco es demasiado grande y un filtrado demasiado estricto podría dejarme con muy pocos datos para obtener información relevante en el posterior análisis. Sin embargo, hay que tener en cuenta que el filtrado de los datos inicial dependerá muchos de los intereses y situación de cada investigador. La búsqueda quedó finalmente en [160 resultados](https://www.webofscience.com/wos/alldb/summary/96d9e399-8558-49a7-bcc4-23b8a83d4a6e-1b14ad06/relevance/1).
 
 # Importar datos a biblioshiny. 
 
@@ -165,20 +165,20 @@ En la pestaña `Dataset>Average Citations per Year` encontramos un diagrama con 
 
 ## Diagrama de tres campos. 
 
-En la pestaña `Dataset>Three-Fields Plot` encontramos el diagrama de tres campos, una representación grafíca que permite mostrar en tres columnas separadas algunos de los campos asociados a cualquier documento (autores, palabras clave, titulos, fuentes etc.) e interconectarlos en función de si presentan una relación visible en nuestra muestra bibliográfica. Por ejemplo, un autor puede ser conectados con los artículos que cita, con las palabras clave que utiliza o con las fuentes en las que aparece. El menú desplegable de la izquierda nos permite elegir los elementos que ponemos en cada campo, lo que se presta a realizar múltiples combinaciones para observar las distintas redes. Propongo como ejemplo la representación de `References` en la izquierda, `Authors` en el centro y `Keywords Plus` en la derecha. Recomiendo reducir el número de unidades por campo a 10, para reducir la cantidad de datos representados y que resulte menos confuso.
+En la pestaña `Dataset>Three-Fields Plot` encontramos el diagrama de tres campos, una representación gráfica que permite mostrar en tres columnas separadas algunos de los campos asociados a cualquier documento (autores, palabras clave, títulos, fuentes etc.) e interconectarlos en función de si presentan una relación visible en nuestra muestra bibliográfica. Por ejemplo, un autor puede ser conectados con los artículos que cita, con las palabras clave que utiliza o con las fuentes en las que aparece. El menú desplegable de la izquierda nos permite elegir los elementos que ponemos en cada campo, lo que se presta a realizar múltiples combinaciones para observar las distintas redes. Propongo como ejemplo la representación de `References` en la izquierda, `Authors` en el centro y `Keywords Plus` en la derecha. Recomiendo reducir el número de unidades por campo a 10, para reducir la cantidad de datos representados y que resulte menos confuso.
 
 ![Diagrama de tres campos representando a la izquierda las referencias, en el centro los autores y a la derecha palabras clave plus](ThreeFieldsPlot.png)
 
-Esta representación nos permite observar de un vistazo cuales son las referencias mas citadas, con qué autores conecta y qué palabras clave tiene relacion. Los puntos débiles de esta combinación es que la longitud de los títulos de las referncias solapan con con el campo central, lo que resulta confuso. Recomiendo interactuar con el diagrama colocando el ratón sobre las distintas unidades representadas, ya que con esta acción se acentúan las interacciones de dichos elementos y permite sacar mejores conclusiones. 
+Esta representación nos permite observar de un vistazo cuales son las referencias mas citadas, con qué autores conecta y qué palabras clave tiene relación. Los puntos débiles de esta combinación es que la longitud de los títulos de las referencias solapan con con el campo central, lo que resulta confuso. Recomiendo interactuar con el diagrama colocando el ratón sobre las distintas unidades representadas, ya que con esta acción se acentúan las interacciones de dichos elementos y permite sacar mejores conclusiones. 
 
 
 ## Fuentes. 
 
-Una fuente es una revista, libro, capítulo de libro, conferencia o cualquiera que sea el origen de dicha información. El análisis de las fuentes puede ser interesante para observar cuales son las que más impacto tienen en nuestro campo de estudio y puede guiar busquedas futuras. Identificar cuales son las fuentes más relevantes puede hacerse siguiendo múltiples estrategias, biblioshiny nos ofrece 5 herramientas distintas para medir distintas características de lo que se puede considerar una fuente importante. 
+Una fuente es una revista, libro, capítulo de libro, conferencia o cualquiera que sea el origen de dicha información. El análisis de las fuentes puede ser interesante para observar cuales son las que más impacto tienen en nuestro campo de estudio y puede guiar búsquedas futuras. Identificar cuales son las fuentes más relevantes puede hacerse siguiendo múltiples estrategias, biblioshiny nos ofrece 5 herramientas distintas para medir distintas características de lo que se puede considerar una fuente importante. 
 
 ### Fuentes más relevantes. 
 
-En la pestaña `Sources>Most relevant Sources` nos muestra la cantidad de documentos que presentan las fuentes de nuestra muesta bibliográfica. 
+En la pestaña `Sources>Most relevant Sources` nos muestra la cantidad de documentos que presentan las fuentes de nuestra muestra bibliográfica. 
 
 ![Diagrama del número de documentos de cada una de las fuentes](MostRelevantSources.png)
 
@@ -194,7 +194,7 @@ En el aspecto de las citas ECOLOGY gana a OIKOS y se introducen revistas que no 
 
 ### Ley de bradford. 
 
-Podemos realizar un cálculo de las resvistas que forman parte del "núcleo" a través de la ley de bradford ([ver anexo](#bradford)), que se encuentra en `Sources>Bradford´s law`.  
+Podemos realizar un cálculo de las revistas que forman parte del "núcleo" a través de la ley de bradford ([ver anexo](#bradford)), que se encuentra en `Sources>Bradford´s law`.  
 
  En biblioshiny puedes aplicar la ley de bradford en la pestaña `Sources>Bradford's Law`.
 
@@ -224,7 +224,7 @@ Podemos aplicar el cálculo de estos cuatro parámetros mediante el menú desple
 
 ![Diagrama índice $h$ de revistas](SourceImpactByHIndex.png)
 
-El índice $h$ de las fuentes, así como la ley de bradford, nos vuelve a indicar que las fuentes a las que debemos prestar mas antención son ECOLOGY, OIKOS, ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. La ley de bradford nos informaba de que estas revistas son las que forman parte del núcleo de la investigación, mientras que el índice $h$ nos informa de que, además, son las que tienen más impacto. 
+El índice $h$ de las fuentes, así como la ley de bradford, nos vuelve a indicar que las fuentes a las que debemos prestar mas atención son ECOLOGY, OIKOS, ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. La ley de bradford nos informaba de que estas revistas son las que forman parte del núcleo de la investigación, mientras que el índice $h$ nos informa de que, además, son las que tienen más impacto. 
 
 
 Si elegimos `G-Index`, obtendremos un diagrama similar al obtenido cuando medíamos el índice $h$ pero para el índice $g$. 
@@ -233,7 +233,7 @@ Si elegimos `G-Index`, obtendremos un diagrama similar al obtenido cuando medía
 
 Podemos observar que ahora las dos revistas más citadas aparecen más separadas entre sí, mientras que las menos citadas no han cambiado mucho. Hemos ganado precisión para discernir entre las revistas más citadas, mientras que con el índice $h$ ECOLOGY tiene más impacto que OIKOS sin mucha diferencia, con el índice $g$ observamos que OIKOS tiene más impacto con bastante más diferencia. Probablemente, OIKOS tiene algunos artículos muy citados que hacen que gane la carrera en el índice $g$. 
 
-Si elegimos `M-Index`, obtebdremos ahora el diagrama para el índice $m$ de impacto. Existe una fuente con un nombre muy largo que nos comprime el diagrama hacia la derecha, como este es el último reducimos el númeoro de fuentes representadas a 11 para obtener un diagrama más apaisado. 
+Si elegimos `M-Index`, obtendremos ahora el diagrama para el índice $m$ de impacto. Existe una fuente con un nombre muy largo que nos comprime el diagrama hacia la derecha, como este es el último reducimos el número de fuentes representadas a 11 para obtener un diagrama más apaisado. 
 
 ![Diagrama índice $m$ de revistas](SocurceImpactByMIndex.png)
 
@@ -271,26 +271,26 @@ La fuente más importante de todas en el ámbito de las redes mutualistas según
 
 - Mayor número de artículos. 
 - El análisis de bradford lo coloca en el centro del núcleo de las fuentes mas relevantes. 
-- Mayor indice $g$ y $m$ lo que nos habla de que presenta mas artículos muy citados y mas impacto en relación al tiempo que lleva la revista en activo, respectivamente. 
+- Mayor índice $g$ y $m$ lo que nos habla de que presenta mas artículos muy citados y mas impacto en relación al tiempo que lleva la revista en activo, respectivamente. 
 
 La segunda fuente mas importante a la que deberíamos presentar también atención es ECOLOGY:
 
 - Presenta menos número de artículos pero localmente es mas citado que OIKOS. 
 - Presenta mayor índice $h$ que OIKOS, lo que nos informa de que sus artículos presentan en promedio más citas que OIKOS, aunque este gana a ECOLOGY en poseer algunos artículos muy citados. 
 
-La tercera y cuarta revista más importantes son ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. Esto debido a que ECOLOGY LETTERS gana en todos los aspectos estudiados (número de artículos, proximidad al nucleo de bradford, índices $h$, $g$ y $m$). Mencionar que las revistas NATURE y SCIENCE aparecen como la tercera y cuarta revista localmente mas citadas, pero no aparecen en ninguno de los otros análisis como revistas importantes. Debido al alto impacto estas revistas es posible que presenten artículos no directamente relacionados con el tema de las redes mutualistas pero que haya influido en su evolución. 
+La tercera y cuarta revista más importantes son ECOLOGY LETTERS y JOURNAL OF ANIMAL ECOLOGY. Esto debido a que ECOLOGY LETTERS gana en todos los aspectos estudiados (número de artículos, proximidad al núcleo de bradford, índices $h$, $g$ y $m$). Mencionar que las revistas NATURE y SCIENCE aparecen como la tercera y cuarta revista localmente mas citadas, pero no aparecen en ninguno de los otros análisis como revistas importantes. Debido al alto impacto estas revistas es posible que presenten artículos no directamente relacionados con el tema de las redes mutualistas pero que haya influido en su evolución. 
 
 ## Autores. 
 
-La búsqueda de los autores más relevantes puede seguirse bajo varios criterios que observaremos a continuación. Conocer a los autores más importantes de una disciplina es uno de los aspcetos más importantes a la hora de conocer un determinado campo de estudio. 
+La búsqueda de los autores más relevantes puede seguirse bajo varios criterios que observaremos a continuación. Conocer a los autores más importantes de una disciplina es uno de los aspectos más importantes a la hora de conocer un determinado campo de estudio. 
 
 ### Autores más relevantes. 
 
-En la pestaña `Authors>Most Relevant Authors` podemos realizar 3 análisis distintos relacionados con la relevancia de los autores. Estos análisis se pueden alternar a partir del menú deplegable de la izquierda `Frequency measure`, donde podemos elegir entre representar número de documentos, porcentaje del total de documentos o frecuencia fraccionalizada([ver anexo](#frecfrac)). 
+En la pestaña `Authors>Most Relevant Authors` podemos realizar 3 análisis distintos relacionados con la relevancia de los autores. Estos análisis se pueden alternar a partir del menú desplegable de la izquierda `Frequency measure`, donde podemos elegir entre representar número de documentos, porcentaje del total de documentos o frecuencia fraccionada([ver anexo](#frecfrac)). 
 
 ![Diagrama de los autores mas relevantes por número de documentos](MostRelevantAuthorsND.png)
 
-Bascompte, Vazquez y Jordano son los autores más productivos, por lo que puede ser interesante prestarles atención. Con la frecuencia fraccionalizada estos autores principales no cambian su posición, por lo que podemos decir que además de presentar muchos artículos, estos presentan pocos coautores, de lo que se puede deducir que probablemente realizaron una alta contribución a sus respectivos trabajos. 
+Bascompte, Vzquez y Jordano son los autores más productivos, por lo que puede ser interesante prestarles atención. Con la frecuencia fraccionada estos autores principales no cambian su posición, por lo que podemos decir que además de presentar muchos artículos, estos presentan pocos coautores, de lo que se puede deducir que probablemente realizaron una alta contribución a sus respectivos trabajos. 
 
 ### Autores localmente más citados. 
 
@@ -306,7 +306,7 @@ En la pestaña `Authors>Author's Production over Time` se representan los 20 aut
 
 ![Diagrama de la producción científica a lo largo del tiempo](TopAuthorsProductionOverTime.png)
 
-En este diagrama es interesante enfocarse en cuales son las burbujas más grandes y con el azul más intenso. Los autores que hasta ahora eran más importantes según otros análisis repiten en este diagrama siendo los mas productivos. Sin embargo, es curioso observar que otro autor al que no habíamos tenido en cuenta, a saber Chacoff, presenta un artículo muy citado en 2009 y el resto de su trayectoría es menos productiva. Para observar cuales son los autores más producitvos conviene observar la tabla de la pestaña `Table-Top Authors Production Per Year` y ordenar a los autores de mayor a menor citas por año. 
+En este diagrama es interesante enfocarse en cuales son las burbujas más grandes y con el azul más intenso. Los autores que hasta ahora eran más importantes según otros análisis repiten en este diagrama siendo los mas productivos. Sin embargo, es curioso observar que otro autor al que no habíamos tenido en cuenta, a saber Chacoff, presenta un artículo muy citado en 2009 y el resto de su trayectoria es menos productiva. Para observar cuales son los autores más productivos conviene observar la tabla de la pestaña `Table-Top Authors Production Per Year` y ordenar a los autores de mayor a menor citas por año. 
 
 | biblioshiny for bibliometrix         	|       	|      	|      	|        	|
 |--------------------------------------	|-------	|------	|------	|--------	|
@@ -358,15 +358,15 @@ Biblioshiny nos permite medir el impacto de los autores con la pestaña `Authors
 
 ![Diagrama del índice $m$ de los autores](AuthorsLocalImpactByMIndex.png)
 
-Podemos aplicar el cálculo de estos cuatro parámetros mediante el menú desplegable `Impact measure`. El índice $h$ y $g$ nos da información sobre lo que ya sabíamos, es decir, que Bascompte, Vazque y Jordano son los autores más relevantes. Sin embargo, hay que tener en cuenta que el índice $m$ propone a otros autores por delante, como Burkle o Guimares, lo que puede ser una señal de que algunos de los autores mas importantes según los indices $h$ y $g$ se encuentren sobrerrepresentados por presentar una trayectoría más larga. 
+Podemos aplicar el cálculo de estos cuatro parámetros mediante el menú desplegable `Impact measure`. El índice $h$ y $g$ nos da información sobre lo que ya sabíamos, es decir, que Bascompte, Vzquez y Jordano son los autores más relevantes. Sin embargo, hay que tener en cuenta que el índice $m$ propone a otros autores por delante, como Burkle o Guimares, lo que puede ser una señal de que algunos de los autores mas importantes según los indices $h$ y $g$ se encuentren sobrerrepresentados por presentar una trayectoria más larga. 
 
 ### Países de los correspondientes autores. 
 
-En la pestaña `Authros>Corresponding Author´s country` podemos generar un diagrama donde se representan los paises mas productivos en función del número de documentos. En naranja aparecen la cantidad de documentos donde al menos uno de sus coautores es de un país diferente (MCP, *Multiple Countries Publication*) y en azul la cantidad de documentos cuyos coautores son todos del mismo país (SCP, *Single Country Publication*). 
+En la pestaña `Authros>Corresponding Author´s country` podemos generar un diagrama donde se representan los países mas productivos en función del número de documentos. En naranja aparecen la cantidad de documentos donde al menos uno de sus coautores es de un país diferente (MCP, *Multiple Countries Publication*) y en azul la cantidad de documentos cuyos coautores son todos del mismo país (SCP, *Single Country Publication*). 
 
 ![Diagrama de la producción científica por paises](CorrespondingAuthorsCountry.png)
 
-Podemos observar que Estados Unidos, Brasil y España son los paises más productivos, seguidos de Argentina, Alemania y México. 3 de los paises más productivos son hispanohablantes, lo cuál es a destacar. Todos los paises presentan niveles de contribución con otros paises bastante altos, destacando Argentina, Alemania y México. 
+Podemos observar que Estados Unidos, Brasil y España son los países más productivos, seguidos de Argentina, Alemania y México. 3 de los países más productivos son hispanohablantes, lo cuál es a destacar. Todos los países presentan niveles de contribución con otros países bastante altos, destacando Argentina, Alemania y México. 
 
 ### Producción científica de los países. 
 
@@ -374,7 +374,7 @@ Otra manera de observar la producción científica por países es observarla rep
 
 ![Mapamundi de la producción científica por paises.](CountryScientificProduction.png)
 
-En la pestaña `Table` nos muestra una tabla con los paises ordenados por frecuencia productiva. 
+En la pestaña `Table` nos muestra una tabla con los países ordenados por frecuencia productiva. 
 
 | biblioshiny for bibliometrix 	|      	|   	|
 |------------------------------	|------	|---	|
@@ -406,7 +406,7 @@ En la pestaña `Authors>Most Cited Countries` nos muestra un diagrama con los pa
 
 ![Diagrama de los paises mas citados](MostCitedSources.png)
 
-Estados Unidos y Brasil son paises más productivos, pero España resulta ser la más citada, probablemente resultado de que los autores mas citados provienen de este país.
+Estados Unidos y Brasil son países más productivos, pero España resulta ser la más citada, probablemente resultado de que los autores mas citados provienen de este país.
 
 ### Conclusiones sobre los autores. 
 
@@ -441,19 +441,19 @@ Además de estos autores, caben destacar:
 - Chacoff, que aparece como el tercer autor con más producción a lo largo del tiempo. 
 - Burkela, Guimares y Dttilo, que aparecen segundo, tercero y cuarto en autores con más impacto según el índice $m$ respectivamente. Esto quiere decir que pueden tratarse de autores importantes pero con una trayectoria infrarrepresentada por su poca longitud en el tiempo. 
 
-En cuanto a los paises más importantes en este campo tenemos USA, Brasil, España, Argentina y Alemania. 
+En cuanto a los países más importantes en este campo tenemos USA, Brasil, España, Argentina y Alemania. 
 
 - La mayoría de los autores son estadounidenses, además Estados Unidos es el más productivo y el segundo más citado. 
 
-- Brásil es el segundo pais con más autores y segundo más productivo. Se trata del quinto páis mas citado. 
+- Brasil es el segundo país con más autores y segundo más productivo. Se trata del quinto país mas citado. 
 
-- España es el tercer pais con mas autores y el tercero más productivo. Curiosamente, se trata del pais más citado, probablemente debido a los trabajos de Bascompte. 
+- España es el tercer país con mas autores y el tercero más productivo. Curiosamente, se trata del país más citado, probablemente debido a los trabajos de Bascompte. 
 
 - Argentina es el cuarto país con más autores, el cuarto más productivo y el quinto más citado. 
 
-- Alemanía es el quinto país que más autores ofrece, el quitno más productivo y el cuarto más citado. 
+- Alemania es el quinto país que más autores ofrece, el quinto más productivo y el cuarto más citado. 
 
-Estados unidos presenta relativamente menos nivel de colaboración con otros paises que los demás. Brasil y España presenta una colaboración de casi el 50% de sus documentos con otros paises, mientras que Argentina y Alemania presenta colaboraciones en más de la mitad de sus artículos. 
+Estados unidos presenta relativamente menos nivel de colaboración con otros países que los demás. Brasil y España presenta una colaboración de casi el 50% de sus documentos con otros países, mientras que Argentina y Alemania presenta colaboraciones en más de la mitad de sus artículos. 
 
 
 ## Documentos. 
@@ -495,7 +495,7 @@ En la pestaña `Documents>Most Local Cited Documents` encontramos el diagrama de
 
 ![Diagrama de los documentos localmente mas citados](MostLocalCitedDocuments.png)
 
-Bascompte 2007 sigue siendo de los documentos más citados, lo que nos indica que es un documento importante, muy citado tanto por documentos externos a nuestra colección como por documentos de nuestra colección. Ingst 2009 desaparece de los documentos localmente mas citados y es sustituido por documentos de otros autores. Jordano 2003 aparece entre los documentos mas citados ahora en segundo puesto, lo que nos indica que tambien es un documento importante. Otros artículos como Vazquez 2009 y Olessen 2002 repiten también entre los documentos más citados. 
+Bascompte 2007 sigue siendo de los documentos más citados, lo que nos indica que es un documento importante, muy citado tanto por documentos externos a nuestra colección como por documentos de nuestra colección. Ingst 2009 desaparece de los documentos localmente mas citados y es sustituido por documentos de otros autores. Jordano 2003 aparece entre los documentos mas citados ahora en segundo puesto, lo que nos indica que también es un documento importante. Otros artículos como Vazquez 2009 y Olessen 2002 repiten también entre los documentos más citados. 
 
 | biblioshiny for bibliometrix              	|                                                 	|      	|                 	|                  	|                 	|                            	|                             	|
 |-------------------------------------------	|-------------------------------------------------	|------	|-----------------	|------------------	|-----------------	|----------------------------	|-----------------------------	|
@@ -523,17 +523,16 @@ Bascompte 2007 sigue siendo de los documentos más citados, lo que nos indica qu
 
 ### Espectroscopía de las referencias. 
 
-En la pestaña `Documentos>Reference Spectroscopy` podemos realizar una espectroscopía de los años de publicación de las referencias citadas ([ver anexo](#rpys)). Existe una referencia citada de 1713 que desvirtúa el gráfico. Para conseguir que el gráfico esté menos comprimido hacia la izuquierda localizamos el siguiente año más citado y hacemos el análisis a partir de él. En nuestro caso elegimos 1859, que tiene un total de 5 referencias citadas, y lo especificamos en el menú de la izquierda en `TimeSlice>Starting Year`. 
+En la pestaña `Documentos>Reference Spectroscopy` podemos realizar una espectroscopía de los años de publicación de las referencias citadas ([ver anexo](#rpys)). Existe una referencia citada de 1713 que desvirtúa el gráfico. Para conseguir que el gráfico esté menos comprimido hacia la izquierda localizamos el siguiente año más citado y hacemos el análisis a partir de él. En nuestro caso elegimos 1859, que tiene un total de 5 referencias citadas, y lo especificamos en el menú de la izquierda en `TimeSlice>Starting Year`. 
 
 ![Espectroscopía de las referncias](ReferencePublicationYearSpectroscopy.png)
 
-A través de esta espectroscopía es interesante observar los picos, ya que representan años donde se publicaron referencias que fueron muy citadas. Nuestro conjunto de artículos proviene de los años 2002:2020, por lo que para localizar las racies de un tema puede ser interesante observar los artículos mas citados de los años anteriores a 2002, porque serán las influencias de nuestro campo de estudio. Entre 1955:2000 podemos localizar 11 picos cuyas referencias sería interesante revisar para localizar las fuentes de nuestro tema.  
+A través de esta espectroscopía es interesante observar los picos, ya que representan años donde se publicaron referencias que fueron muy citadas. Nuestro conjunto de artículos proviene de los años 2002:2020, por lo que para localizar las raíces de un tema puede ser interesante observar los artículos mas citados de los años anteriores a 2002, porque serán las influencias de nuestro campo de estudio. Entre 1955:2000 podemos localizar 9 picos cuyas referencias sería interesante revisar para localizar las fuentes de nuestro tema.  
 
 | biblioshiny for bibliometrix 	|           	|             	|
 |------------------------------	|-----------	|-------------	|
 | Year                         	| Citations 	| diffMedian5 	|
 | 2000                         	| 327       	| 109         	|
-| 1995                         	| 108       	| -5          	|
 | 1994                         	| 161       	| 48          	|
 | 1993                         	| 151       	| 41          	|
 | 1987                         	| 155       	| 94          	|
@@ -564,7 +563,7 @@ Biblioshiny nos ofrece una herramienta para dar cuenta de las palabras mas utili
 - El campo: Las palabras mas frecuentes pueden aparecer en distintos campos de un artículo como las Keywords Plus, las Keywords del autor, el título o el resumen. En el título y el resumen puede elegirse si se quieren grupos de una, dos o tres palabras (N-Grams).
 
 - Número de palabras que aparecen en la nube. 
-- Medida de la ocurrencia de palabras: Podemos elegir que las palabras sean tan grandes como la frecuencia a la que aparecen o que este tamaño pase primero por una función de raiz cuadrada, de logaritmo base 2 o base 10. 
+- Medida de la ocurrencia de palabras: Podemos elegir que las palabras sean tan grandes como la frecuencia a la que aparecen o que este tamaño pase primero por una función de raíz cuadrada, de logaritmo base 2 o base 10. 
 - Forma de la nube (círculo, corazón, diamante, etc)
 - Tipo de fuente de la palabra. 
 - Colores del texto (colores oscuros o claros).
@@ -577,11 +576,11 @@ En la pestaña `Documents>Word Dynamics` podemos encontrar un gráfico de ocurre
 
 ![Diagrama de la dinámica de las palabras](WordGrowth.png)
 
-Podemos observar que los dos temas mas productivos son el mutualismo y la polinización. Le sigue ecosistemas, animales, simbiosis y dispersion de semillas. Por ultimo tenemos interaccion planta polinizador y anidamiento. Todos estos son los conceptos de moda sobre los que puede ser interesante investigar. 
+Podemos observar que los dos temas mas productivos son el mutualismo y la polinización. Le sigue ecosistemas, animales, simbiosis y dispersion de semillas. Por ultimo tenemos interacción planta polinizado y anidamiento. Todos estos son los conceptos de moda sobre los que puede ser interesante investigar. 
 
 ### Términos de moda. 
 
-En la pestaña `Documents>Trend Topics` podemos generar un diagrama con los terminos de moda, en qué momento aparecen y cuando desaparece, con una serie de burbujas asociadas que describen el momento en el que mas aparecen y con qué frecuencia, siendo más grandes cuanto más veces aparecieran en ese marco temporal. 
+En la pestaña `Documents>Trend Topics` podemos generar un diagrama con los términos de moda, en qué momento aparecen y cuando desaparece, con una serie de burbujas asociadas que describen el momento en el que mas aparecen y con qué frecuencia, siendo más grandes cuanto más veces aparecieran en ese marco temporal. 
 
 ![Diagrama de los términos de moda](TrendTopics.png)
 
@@ -590,12 +589,27 @@ Podemos observar que:
 - Los temas iniciales del campo de estudio tienen relación con el estudio de redes complejas y redes alimentarias entre 2009 y 2012.
 - Las interacciones planta polinizador son un tema común a lo largo de todo el marco temporal. 
 - Las interacciones entre plantas y frugívoros son un tema frecuente entre 2014 y 2016.
-- Todo el marco temporal está salpicado de temas relacionados con las redes, como el anidamiento, la conectancia, el recableado etc. 
+- Todo el marco temporal está salpicado de temas relacionados con las redes, como el anidamiento, la conectancia, el recableado etc.
+
+### Conclusiones sobre los documentos. 
+
+El análisis de citas nos ha dado información relevante sobre cuales son los artículos más citados, tanto globalmente como localmente. Algunos de los artículos interesantes podrían ser: 
+
+- Bascompte J 2007. El artículo globalmente y localmente más citado. 
+- Ings TC 2009. El segundo artículo globalmente más citado. 
+- Jordano P 2009. El tercer artículo globalmente más citado y el segundo localmente más citado. 
+- Olessen JM 2002. El cuarto artículo globalmente más citado.
+- Bascompte J 2009. Tercer artículo localmente más citado. 
+- Vzquez 2009. Cuarto artículo localmente más citado. 
+
+El análisis de los artículos más citados parece arrojar artículos que se encuentran principalmente en el año 2009 y otros de años anteriores. Para hacernos una mejor idea de la evolución completa del tema de las redes mutualistas hasta la actualidad sería aconsejable realizar un análisis pormenorizado de cada uno de los años, o de marcos temporales de varios años entre 2002 y 2020. 
+
+La espectroscopía de las referencias nos ha dado información sobre los años con mas citas en las referencias de nuestros artículos. Puede ser interesante visitar cada uno de esos años para observar cuales son los artículos más citados y consultarlos. Esto nos puede permitir hacernos una idea de cuales fueron las raíces teóricas de nuestro tema. Esto, complementado con una lectura de los artículos mas relevantes entre 2002 y 2020, junto con los análisis de las palabras más frecuentes, dinámica de las palabras y términos de moda, nos ofrece una oportunidad para realizar un análisis de la evolución teórica de nuestro campo. Estos últimos análisis relacionados con las palabras usadas en nuestros artículos parecen darnos pistas sobre los temas mas relevantes, entre ellos las interacciones, el  en modelos reticulares, el mutualismo y las interacciones entre plantas y animales. 
 
 ## Estructura conceptual. 
 ### Análisis de la red. 
 
-El análisis de la red podemos realizarlo principalmente fijándonos en dos tipos de análisis, el mapa temático y la evolución temática. Para observar el mapa temático podemos acceder a `Conceptual Srtucture>Thematic Map`. En la primera pestaña `Map` podemos observar un mapa de Gallons con los principales agrupamientos de las palabras de nuestro conjunto bibliográfico. Se ha cambiado el análisis a 2000 palabras para obtener una representación con más grupos. Encontramos dos grupos básicos de temas:
+El análisis de la red podemos realizarlo principalmente fijándonos en dos tipos de análisis, el mapa temático y la evolución temática. Para observar el mapa temático podemos acceder a `Conceptual Srtucture>Thematic Map`. En la primera pestaña `Map` podemos observar un mapa de densidad vs centralidad ([ver anexo](#callon)) con los principales agrupamientos de las palabras de nuestro conjunto bibliográfico. Se ha cambiado el análisis a 2000 palabras para obtener una representación con más grupos. Encontramos dos grupos básicos de temas:
 
 - Temas básicos: 
 	- Animalia, seed dispersal, aves. Tema relacionado con la dispersión de semillas y los animales relacionados. 
@@ -609,7 +623,7 @@ El análisis de la red podemos realizarlo principalmente fijándonos en dos tipo
 	
 ![Mapa temático](ThematicMap.png)
 
-Cuando pasamos a la representación de red podemos observar estos mismos grupos pero en forma de red. Los colores se corresponden con los mismos grupos del mapa de Gallons. Aunque la imagen es atractiva, la información mas relevante se puede sacar del mapa bidimensional que es una representación de como son las interacciones en esta red. Los temas básicos (rojo, morado, azul y verde) son los temas que mas se interconectan con otros grupos, mientras que las interconexiones entre los nodos del mismo grupo son bajas. Se trata de temas básicos y transversales. Los temas de nicho (rosa, naranja, marrón y gris) presentan mas interconexiones entre ellos que con otros grupos. Hacia la periferia podemos encontrar pequeñas agrupaciones pero es dificil encontrar un patrón claro dado lo intrincada que es la red. El grupo perfiérico morado de la zona inferior se corresponde con palabras de especies de plantas, todas ellas interconectando con fungi. Dado el tema de las redes mutualistas y las interacciones mutualistas que se dan entre hongos y plantas, es posible que tengamos artículos sobre micorrizas. El resto es demasiado intrincado y es mejor sacar conclusiones a partir del mapa temático. 
+Cuando pasamos a la representación de red podemos observar estos mismos grupos pero en forma de red. Los colores se corresponden con los mismos grupos del mapa de densidad vs centralidad. Aunque la imagen es atractiva, la información mas relevante se puede sacar del mapa bidimensional que es una representación de como son las interacciones en esta red. Los temas básicos (rojo, morado, azul y verde) son los temas que mas se interconectan con otros grupos, mientras que las interconexiones entre los nodos del mismo grupo son bajas. Se trata de temas básicos y transversales. Los temas de nicho (rosa, naranja, marrón y gris) presentan mas interconexiones entre ellos que con otros grupos. Hacia la periferia podemos encontrar pequeñas agrupaciones pero es dificil encontrar un patrón claro dado lo intrincada que es la red. El grupo perfiérico morado de la zona inferior se corresponde con palabras de especies de plantas, todas ellas interconectando con fungi. Dado el tema de las redes mutualistas y las interacciones mutualistas que se dan entre hongos y plantas, es posible que tengamos artículos sobre micorrizas. El resto es demasiado intrincado y es mejor sacar conclusiones a partir del mapa temático. 
 
 ![Red del mapa temático](networkThematicMap.png)
 
@@ -637,7 +651,7 @@ En la pestaña thematic evolution podemos encontrar una representación de esto 
 
 ### Análisis factorial. 
 
-En la pestaña `Conceptual Structure>Factorial Analysis` podemos realizar un análisis factorial de distintos elementos como:
+En la pestaña `Conceptual Structure>Factorial Analysis` podemos realizar un análisis factorial ([ver anexo](#factorial)) de distintos elementos como:
 
 - Palabras: medimos la similitud en función de la cantidad de veces que dichas palabras aparecen juntas en un artículo. 
 - Artículos: medimos su similitud en función de su nivel de influencia o el número de citas. 
@@ -666,7 +680,7 @@ Para identificar los artículos es conveniente acceder a la tabla de la pestaña
 
 ### Red de co-citacion. 
 
-En la pestaña `Intelectual Structure>Co-citation Network` podemos generar redes de co-citación de artículos, autores y papers. Pondremos como ejemplo una red de co-citación de autores, que puede darnos información sobre qué grupos de autores interactuan mas entre ellos. 
+En la pestaña `Intelectual Structure>Co-citation Network` podemos generar redes de co-citación de artículos ([ver anexo](#cocita)), autores y papers. Pondremos como ejemplo una red de co-citación de autores, que puede darnos información sobre qué grupos de autores interactuan mas entre ellos. 
 
 ![Red de co-citación de los autores](RedDeCocitaciónAutores.png)
 
@@ -674,7 +688,7 @@ Podemos observar que existen 4 autores que interactúan mucho entre sí: Bascomp
 
 ### Historiografía. 
 
-La historiografía uno los artículos como en la red de co-citación pero además los ordena en función de su fecha de publicación. Esto nos permite seguir la evolución de los temas. En la pestaá `Intellectual Structure>Historiograph` podemos generar una historiografía de nuestra muestra bibliográfica. Recomiendo bajar el número de nodos a 10 para hacer un diagrama más legible. Tambien es interesante cambiar la etiqueta de los nodos por el titulo del documento, ya que una rápida lectura de los titulos puede ayudarnos a inferir superficialmente la evolución de los temas. 
+La historiografía([ver anexo](#historiografia)) une los artículos como en la red de co-citación pero además los ordena en función de su fecha de publicación. Esto nos permite seguir la evolución de los temas. En la pestaá `Intellectual Structure>Historiograph` podemos generar una historiografía de nuestra muestra bibliográfica. Recomiendo bajar el número de nodos a 10 para hacer un diagrama más legible. Tambien es interesante cambiar la etiqueta de los nodos por el titulo del documento, ya que una rápida lectura de los titulos puede ayudarnos a inferir superficialmente la evolución de los temas. 
 
 ![Historiografía](Historiografia.png)
 
@@ -698,7 +712,7 @@ El artículo A) deriva a su vez en otro artículo que habla sobre la estructura 
 
 ### Red de colaboración. 
 
-En la pestaña `Social Structure>Collaboration Network` podemos generar una red de colaboración.  A diferencia de las redes de co-citación, las redes colaboración unen nodos (generalmente autores) cuando presentan artículos donde ambos figuran como co-autores. 
+En la pestaña `Social Structure>Collaboration Network` podemos generar una red de colaboración ([ver anexo](#colaboracion)).  A diferencia de las redes de co-citación, las redes colaboración unen nodos (generalmente autores) cuando presentan artículos donde ambos figuran como co-autores. 
 
 ![Red de colaboración](RedDeColaboracion.png)
 
@@ -706,7 +720,7 @@ La red ha sido alterada para mostrar los conjuntos mas cercanos entre sí. Parec
 
 ### Mapa de colaboración. 
 
-Aunque la red de colaboración permite generar una red de colaboraciones entre los paises de los autores es preferible acceder a `Social Structure>Collaboration Map`. Esta herramienta de Biblioshiny permite generar un Mapa Mundi  donde los paises aparecen en tonos de azul en función de la cantidad de artículos producidos y aparecen lineas que unen los paises que han contribuido, mostrando en su grosor la cantidad de colaboraciones. He aumentado el número minimo de enlaces a 6 para hacer el mapa más legible.  
+Aunque la red de colaboración permite generar una red de colaboraciones entre los paises de los autores es preferible acceder a `Social Structure>Collaboration Map`. Esta herramienta de Biblioshiny permite generar un Mapa Mundi  donde los paises aparecen en tonos de azul en función de la cantidad de artículos producidos y aparecen lineas que unen los países que han contribuido, mostrando en su grosor la cantidad de colaboraciones. He aumentado el número mínimo de enlaces a 6 para hacer el mapa más legible.  
 
 ![Mapa de colaboraciones](CountryCollaborationMap-2022-01-05.png)
 
@@ -908,7 +922,7 @@ Biblioshiny puede utilizar algunos términos que pueden generar confusiones en r
 
 La espectroscopía de los años de publicación de las referencias (RPYS, Reference Publication Year Spectroscopy) es un método cuantitativo para identificar los origenes historicos de un campo de estudio y sus temas. RPYS crea un perfil temporal de las referencias citadas de un conjunto de artículos que enfatiza los años donde se publicaron descubrimientos relativamente significativos. RPYS permite identificar las raices temporales de una disciplina. 
 
-El RPYS se basa en el análisis de la frecuencia con la que se citan las referencias en las publicaciones de un campo de investigación específico en función de los años de publicación de estas referencias citadas. Los orígenes se manifiestan en forma de picos más o menos pronunciados causados principalmente por publicaciones individuales que se citan con especial frecuencia. En la representación realizada por Biblioshiny aparece en la linea azul el número de referencias citadas ese año y en naranja la desviación calculada de la mediana de las referencias citadas en un marco de 5 años(Marx2014). 
+El RPYS se basa en el análisis de la frecuencia con la que se citan las referencias en las publicaciones de un campo de investigación específico en función de los años de publicación de estas referencias citadas. Los orígenes se manifiestan en forma de picos más o menos pronunciados causados principalmente por publicaciones individuales que se citan con especial frecuencia. En la representación realizada por Biblioshiny aparece en la linea azul el número de referencias citadas ese año y en naranja la desviación calculada de la mediana de las referencias citadas en un marco de 5 años(Marx2014). Este valor permite saber si dicho año es un año importante en relación con los años de alrededor. Si la linea naranja presenta un pico junto a la linea azul quiere decir que estamos ante un año importante en cuanto a frecuencia de citas. Si el pico de la linea azul viene acompañada de una linea naranja plana o incluso hacia abajo quiere decir que, aunque la frecuencia de citas es importante aisladamente, no lo es tanto en relación a los años anteriores y posteriores. 
 
 
 ## Estructura del conocimiento. 
@@ -933,7 +947,7 @@ La estructura conceptual representa las relaciones sobre conceptos y palabras de
 
 - **Enfoque mixto**. Partiendo de una red conceptual, se identifican redes temáticas que se representan en una matriz bidimensional, cuyos ejes son función de la centralidad y la densidad de la red temática. Dividiendo el lapso de tiempo en cortes temporales, es posible representar la evolución temática dentro de un campo de investigación específico a través de un gráfico aluvial.
 
-### Enfoque Factorial. 
+### <a name="factorial">Enfoque Factorial.</a>
 
 #### Interpretación. 
 
@@ -1022,7 +1036,7 @@ Los índices de centralidad son respuestas a la pregunta "¿Qué caracteriza a u
 
 Biblioshiny ofrece con algunas de sus redes un diagrama del perfil de grado de los nodos de la red. En el eje horizontal se representan grupos de nodos, ordenados de izquierda a derecha desde los que tienen mayor grado (más enlaces) a los que tienen menor grado (menos enlaces). En el eje vertical se representa el grado de esos mismos nodos. Cuando se generan redes aleatorias todos los nodos presentan aproximadamente el mismo número de enlaces y la linea resultante en estos diagramas es casi planta. En las redes que estudiaremos aquí existen pocos grupos de nodos muy interconectaods y una mayoría de nodos poco conectados. 
 
-#### Análisis de redes. Mapas de *Callons*. 
+#### <a name="callon">Análisis de redes. Densidad vs Centralidad.</a>
 
 La realización de los análisis de *Callons* precisa primero de un agrupamiento de las palabras en función de su co-ocurrebcia. Esto permite dividir la red en subconjutnos, de los cuales se puede medir centralidad y densidad (@Cobo2011):  
 
@@ -1044,16 +1058,13 @@ Medidas estas características se pueden representar en un diagrama de dispersi�
 
 La estructura intelectual muestra las relaciones entre los nodos que representan referencias. Los enlaces en la red pueden presentar diferentes interpretaciones dependiendo del método de cita (cocitacion o citacion directa). El análisis de cita es el análisis bibliométrico más común cuando se estudia cocitación entre autores o documentos. El análisis de cocitación, cuando se examina a lo largo del tiempo, es util detectando cambios de paradigma y de escuelas de pensamiento. 
 
-- Análisis de cocitación. Hablamos de cocitación de dos documentos cuando ambos están citados en un tercer documento. Las cocitaciones pueden ser representadas en una matriz de co-ocurrencia como en el co-word analysis. 
+- <a name="cocita">Análisis de cocitación.</a> Hablamos de cocitación de dos documentos cuando ambos están citados en un tercer documento. Las cocitaciones pueden ser representadas en una matriz de co-ocurrencia como en el co-word analysis. 
 
-- Mapa historiográfico. En el mapa hisotriográfico cada camino identifica un tema de investigación y sus autores/documentos núcleo. Existen algunos conceptos clave en relación a la historiografía: 1) Cada nodo representa un documento citado por otros documentos, 2) cada enlace representa una citación directa y 3) cada nodo y enlace se encientra orientado en un grafo orientado cuyo eje horizontal representa los años de publicación. Biblioshiny además ofrece una tabla donde diferencia local citations (LCS) y global citations (GCS). 
+- <a name="historiografia">Mapa historiográfico.</a> En el mapa hisotriográfico cada camino identifica un tema de investigación y sus autores/documentos núcleo. Existen algunos conceptos clave en relación a la historiografía: 1) Cada nodo representa un documento citado por otros documentos, 2) cada enlace representa una citación directa y 3) cada nodo y enlace se encientra orientado en un grafo orientado cuyo eje horizontal representa los años de publicación. Biblioshiny además ofrece una tabla donde diferencia local citations (LCS) y global citations (GCS). 
 
-### Estructura social. 
+### <a name="colaboracion">Estructura social.</a> 
 
 La estructura social muestra como autores o instituciones se relacionan unos con otros en un campo científico de investigación. El tipo de estructura socual mas comun es la red de co-autoría. Con las redes de co-autoría se puede descubrir, por ejemplo, grupos de autores regulares, autores influyentes, comunidades de autores escondidas, instituciones relevantes en un campo de estudio, etc.  
-
-
-
 
 
 # Bibliografía consultada.
