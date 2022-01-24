@@ -8,6 +8,8 @@ file
 file2<-"bib/mnwosFake.txt"
 file2
 
+
+
 M <- convert2df(file, dbsource = "scopus", format = "bibtex") #formato plaintext
 M
 
@@ -19,5 +21,20 @@ summary(M)
 
 ln -s ~\Guiaparabiblioshiny\mnwos.txt
 
+git config --get remote.origin.url
 
-2+2
+sssss
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Wang, Bo
+AU Lu, Min
+AU Cook, James M.
+AU Yang, Da-Rong
+AU Dunn, Derek W.
+AU Wang, Rui-Wu
+TI Chemical camouflage: a key process in shaping an ant-treehopper and
+TI   fig-fig wasp mutualistic network
+SO SCIENTIFIC REPORTS
+VL 8
+AR 1833
+DI 10.1038/s41598-018-20310-7
+PD JAN 30 2018
+PY 2018
+AB Different types of mutualisms may interact, co-evolve and form complex
+AB networks of interdependences, but how species interact in networks of a
+AB mutualistic community and maintain its stability remains unclear. In a
+AB mutualistic network between treehoppers-weaver ants and fig-pollinating
+AB wasps, we found that the cuticular hydrocarbons of the treehoppers are
+AB more similar to the surface chemical profiles of fig inflorescence
+AB branches (FIB) than the cuticular hydrocarbons of the fig wasps.
+AB Behavioral assays showed that the cuticular hydrocarbons from both
+AB treehoppers and FIBs reduce the propensity of weaver ants to attack
+AB treehoppers even in the absence of honeydew rewards, suggesting that
+AB chemical camouflage helps enforce the mutualism between weaver ants and
+AB treehoppers. High levels of weaver ant and treehopper abundances help
+AB maintain the dominance of pollinating fig wasps in the fig wasp
+AB community and also increase fig seed production, as a result of
+AB discriminative predation and disturbance by weaver ants of ovipositing
+AB non-pollinating fig wasps (NPFWs). Ants therefore help preserve this
+AB fig-pollinating wasp mutualism from over exploitation by NPFWs. Our
+AB results imply that in this mutualistic network chemical camouflage plays
+AB a decisive role in regulating the behavior of a key species and
+AB indirectly shaping the architecture of complex arthropod-plant
+AB interactions.
+RI Cook, James/S-2128-2019; Cook, James M/D-6423-2011; Wang, Bo/
+OI Cook, James/0000-0001-8447-6126; Cook, James M/0000-0001-8447-6126;
+OI Wang, Bo/0000-0002-3541-4639
+Z8 2
+ZA 0
+ZB 6
+TC 6
+ZR 0
+ZS 0
+Z9 8
+U1 5
+U2 32
+SN 2045-2322
+UT WOS:000423508900004
+PM 29382931
+ER
+DE 1
+EF 1
+C1 1
+RP 1
+CR 1

@@ -1,0 +1,2539 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Wang, Bo
+   Lu, Min
+   Cook, James M.
+   Yang, Da-Rong
+   Dunn, Derek W.
+   Wang, Rui-Wu
+TI Chemical camouflage: a key process in shaping an ant-treehopper and
+   fig-fig wasp mutualistic network
+SO SCIENTIFIC REPORTS
+VL 8
+AR 1833
+DI 10.1038/s41598-018-20310-7
+PD JAN 30 2018
+PY 2018
+AB Different types of mutualisms may interact, co-evolve and form complex
+   networks of interdependences, but how species interact in networks of a
+   mutualistic community and maintain its stability remains unclear. In a
+   mutualistic network between treehoppers-weaver ants and fig-pollinating
+   wasps, we found that the cuticular hydrocarbons of the treehoppers are
+   more similar to the surface chemical profiles of fig inflorescence
+   branches (FIB) than the cuticular hydrocarbons of the fig wasps.
+   Behavioral assays showed that the cuticular hydrocarbons from both
+   treehoppers and FIBs reduce the propensity of weaver ants to attack
+   treehoppers even in the absence of honeydew rewards, suggesting that
+   chemical camouflage helps enforce the mutualism between weaver ants and
+   treehoppers. High levels of weaver ant and treehopper abundances help
+   maintain the dominance of pollinating fig wasps in the fig wasp
+   community and also increase fig seed production, as a result of
+   discriminative predation and disturbance by weaver ants of ovipositing
+   non-pollinating fig wasps (NPFWs). Ants therefore help preserve this
+   fig-pollinating wasp mutualism from over exploitation by NPFWs. Our
+   results imply that in this mutualistic network chemical camouflage plays
+   a decisive role in regulating the behavior of a key species and
+   indirectly shaping the architecture of complex arthropod-plant
+   interactions.
+RI Cook, James/S-2128-2019; Cook, James M/D-6423-2011; Wang, Bo/
+OI Cook, James/0000-0001-8447-6126; Cook, James M/0000-0001-8447-6126;
+   Wang, Bo/0000-0002-3541-4639
+Z8 2
+ZA 0
+ZB 6
+TC 6
+ZR 0
+ZS 0
+Z9 8
+U1 5
+U2 32
+SN 2045-2322
+UT WOS:000423508900004
+PM 29382931
+ER
+
+PT J
+AU Goulet, Tamar L.
+TI Nitrogen transfer in a Caribbean mutualistic network: editorial comment
+   on the feature article by Cantrell et al.
+SO MARINE BIOLOGY
+VL 162
+IS 12
+BP 2325
+EP 2325
+DI 10.1007/s00227-015-2764-z
+PD DEC 2015
+PY 2015
+ZS 0
+ZR 0
+ZA 0
+TC 0
+Z8 0
+ZB 0
+Z9 0
+U1 0
+U2 23
+SN 0025-3162
+EI 1432-1793
+UT WOS:000365790600001
+ER
+
+PT J
+AU Dattilo, Wesley
+   Lara-Rodriguez, Nubia
+   Jordano, Pedro
+   Guimaraes, Paulo R., Jr.
+   Thompson, John N.
+   Marquis, Robert J.
+   Medeiros, Lucas P.
+   Ortiz-Pulido, Raul
+   Marcos-Garcia, Maria A.
+   Rico-Gray, Victor
+TI Unravelling Darwin's entangled bank: architecture and robustness of
+   mutualistic networks with multiple interaction types (vol 283, 20161564,
+   2016)
+SO PROCEEDINGS OF THE ROYAL SOCIETY B-BIOLOGICAL SCIENCES
+VL 284
+IS 1846
+AR 20162635
+DI 10.1098/rspb.2016.2635
+PD JAN 11 2017
+PY 2017
+RI Ortiz-Pulido, Raul/E-2671-2013; Guimaraes-Junior, Paulo R/M-1298-2016; Guimaraes, Paulo R./E-1915-2016; , WD/A-6371-2012; Jordano, Pedro/A-5162-2008
+OI Ortiz-Pulido, Raul/0000-0001-9898-5386; Guimaraes, Paulo
+   R./0000-0001-9161-8305; , WD/0000-0002-4758-4379; Jordano,
+   Pedro/0000-0003-2142-9116
+ZB 0
+ZS 0
+ZA 0
+Z8 0
+TC 0
+ZR 0
+Z9 0
+U1 0
+U2 5
+SN 0962-8452
+EI 1471-2954
+UT WOS:000393400500022
+ER
+
+PT J
+AU Lever, J. Jelle
+   van de Leemput, Ingrid A.
+   Weinans, Els
+   Quax, Rick
+   Dakos, Vasilis
+   van Nes, Egbert H.
+   Bascompte, Jordi
+   Scheffer, Marten
+TI Foreseeing the future of mutualistic communities beyond collapse
+SO ECOLOGY LETTERS
+VL 23
+IS 1
+BP 2
+EP 15
+DI 10.1111/ele.13401
+PD JAN 2020
+PY 2020
+AB Changing conditions may lead to sudden shifts in the state of ecosystems
+   when critical thresholds are passed. Some well-studied drivers of such
+   transitions lead to predictable outcomes such as a turbid lake or a
+   degraded landscape. Many ecosystems are, however, complex systems of
+   many interacting species. While detecting upcoming transitions in such
+   systems is challenging, predicting what comes after a critical
+   transition is terra incognita altogether. The problem is that complex
+   ecosystems may shift to many different, alternative states. Whether an
+   impending transition has minor, positive or catastrophic effects is thus
+   unclear. Some systems may, however, behave more predictably than others.
+   The dynamics of mutualistic communities can be expected to be relatively
+   simple, because delayed negative feedbacks leading to oscillatory or
+   other complex dynamics are weak. Here, we address the question of
+   whether this relative simplicity allows us to foresee a community's
+   future state. As a case study, we use a model of a bipartite mutualistic
+   network and show that a network's post-transition state is indicated by
+   the way in which a system recovers from minor disturbances. Similar
+   results obtained with a unipartite model of facilitation suggest that
+   our results are of relevance to a wide range of mutualistic systems.
+RI Bascompte, Jordi/B-7596-2008; Lever, Jelle/; van Nes, Egbert/; Weinans, Els/; Scheffer, Marten/; Quax, Rick/; Dakos, Vasilis/
+OI Bascompte, Jordi/0000-0002-0108-6411; Lever, Jelle/0000-0002-6313-2663;
+   van Nes, Egbert/0000-0002-6345-104X; Weinans, Els/0000-0001-6423-9510;
+   Scheffer, Marten/0000-0002-2100-0312; Quax, Rick/0000-0002-0299-0074;
+   Dakos, Vasilis/0000-0001-8862-718X
+Z8 0
+ZB 2
+TC 6
+ZA 0
+ZS 0
+ZR 0
+Z9 6
+U1 2
+U2 7
+SN 1461-023X
+EI 1461-0248
+UT WOS:000619335400001
+PM 31707763
+ER
+
+PT J
+AU Thebault, Elisa
+   Fontaine, Colin
+TI Stability of Ecological Communities and the Architecture of Mutualistic
+   and Trophic Networks
+SO SCIENCE
+VL 329
+IS 5993
+BP 853
+EP 856
+DI 10.1126/science.1188321
+PD AUG 13 2010
+PY 2010
+AB Research on the relationship between the architecture of ecological
+   networks and community stability has mainly focused on one type of
+   interaction at a time, making difficult any comparison between different
+   network types. We used a theoretical approach to show that the network
+   architecture favoring stability fundamentally differs between trophic
+   and mutualistic networks. A highly connected and nested architecture
+   promotes community stability in mutualistic networks, whereas the
+   stability of trophic networks is enhanced in compartmented and weakly
+   connected architectures. These theoretical predictions are supported by
+   a meta-analysis on the architecture of a large series of real
+   pollination (mutualistic) and herbivory (trophic) networks. We conclude
+   that strong variations in the stability of architectural patterns
+   constrain ecological networks toward different architectures, depending
+   on the type of interaction.
+RI Fontaine, Colin/N-6469-2015; Thebault, Elisa/
+OI Fontaine, Colin/0000-0001-5367-5675; Thebault, Elisa/0000-0002-9669-5227
+ZB 737
+ZA 0
+Z8 17
+ZR 0
+TC 816
+ZS 3
+Z9 833
+U1 44
+U2 580
+SN 0036-8075
+UT WOS:000280809900054
+PM 20705861
+ER
+
+PT J
+AU Sheykhali, Somaye
+   Fernandez-Gracia, Juan
+   Traveset, Anna
+   Eguiluz, Victor M.
+TI Extinction-induced community reorganization in bipartite networks
+SO APPLIED NETWORK SCIENCE
+VL 4
+IS 1
+AR 23
+DI 10.1007/s41109-019-0131-6
+PD MAY 21 2019
+PY 2019
+AB We study how the community structure of bipartite mutualistic networks
+   changes in a dynamic context. First, we consider a real mutualistic
+   network and introduce extinction events according to several scenarios.
+   We model extinctions as node or interaction removals. For node removal,
+   we consider random, directed and sequential extinctions; for interaction
+   removal, we consider random extinctions. The bipartite network
+   reorganizes showing an increase of the effective modularity and a fast
+   decrease of the persistence of the species in the original communities
+   with increasing number of extinction events. Second, we compare
+   extinctions in a real mutualistic network with the growth of a bipartite
+   network model. The modularity reaches a stationary value and nodes
+   remain in the same community after joining the network. Our results show
+   that perturbations and disruptive events affect the connectivity pattern
+   of mutualistic networks at the mesoscale level. The increase of the
+   effective modularity observed in some scenarios could provide some
+   protection to the remaining ecosystem.
+RI Fernandez-Gracia, Juan/S-4344-2018; Eguiluz, Victor M./B-9655-2008
+OI Fernandez-Gracia, Juan/0000-0001-9728-7666; Eguiluz, Victor
+   M./0000-0003-1133-1289
+ZB 0
+ZR 0
+ZA 0
+ZS 0
+Z8 0
+TC 0
+Z9 0
+U1 0
+U2 0
+EI 2364-8228
+UT WOS:000684639800001
+ER
+
+PT J
+AU Manuel Pastor, Juan
+   Garcia-Algarra, Javier
+   Iriondo, Jose M.
+   Ramasco, Jose J.
+   Galeano, Javier
+TI DRAGGING IN MUTUALISTIC NETWORKS
+SO NETWORKS AND HETEROGENEOUS MEDIA
+VL 10
+IS 1
+SI SI
+BP 37
+EP 52
+DI 10.3934/nhm.2015.10.37
+PD MAR 2015
+PY 2015
+AB Mutualistic networks are considered an example of resilience against
+   perturbations. Mutualistic interactions are beneficial for the two sets
+   of species involved. Network robustness has been usually measured in
+   terms of extinction sequences, i.e., nodes are removed from the
+   empirical bipartite network one subset (primary extinctions) and the
+   number of extinctions on the other subset (secondary extinction) is
+   computed. This is a first approach to study ecosystems extinction.
+   However, each interacting species, depicted as a node of the mutualistic
+   network, is really composed by certain number of individuals
+   (population) and its shortage can diminish dramatically the population
+   of its interacting partners, i.e. the population dynamics plays an
+   important role in the robustness of the ecological networks. Although
+   different models of population dynamics for mutualistic interacting
+   species have been addressed, like Type II models, only recently a new
+   mutualistic model has been proposed exhibiting bounded solutions and
+   good properties for simulation. In this paper we show that population
+   dynamics is as important as network topology when we are interested in
+   the resilience of the community.
+CT International Conference Net-Works
+CY DEC 11-13, 2013
+CL Soc Ind Appl Math / Am Inst Math Sci, El Escorial, SPAIN
+HO Soc Ind Appl Math / Am Inst Math Sci
+RI Garcia-Algarra, Javier/AAA-1907-2019; Galeano, Javier/B-2933-2009; Iriondo, Jose M/B-3112-2008; Ramasco, Jose Javier/F-2860-2010; RUIZ, JUAN MANUEL PASTOR/H-1359-2015; Pastor, Juan Manuel/ABG-9310-2020
+OI Garcia-Algarra, Javier/0000-0003-1505-7053; Galeano,
+   Javier/0000-0003-0706-4317; Iriondo, Jose M/0000-0003-2710-3889;
+   Ramasco, Jose Javier/0000-0003-2499-6095; RUIZ, JUAN MANUEL
+   PASTOR/0000-0002-1067-3642; Pastor, Juan Manuel/0000-0002-1067-3642
+ZB 2
+ZR 0
+ZS 0
+TC 2
+ZA 0
+Z8 0
+Z9 2
+U1 0
+U2 14
+SN 1556-1801
+EI 1556-181X
+UT WOS:000351557200004
+ER
+
+PT J
+AU Zhang, Feng
+   Hui, Cang
+   Terblanche, John S.
+TI An interaction switch predicts the nested architecture of mutualistic
+   networks
+SO ECOLOGY LETTERS
+VL 14
+IS 8
+BP 797
+EP 803
+DI 10.1111/j.1461-0248.2011.01647.x
+PD AUG 2011
+PY 2011
+AB Nested architecture is distinctive in plant-animal mutualistic networks.
+   However, to date an integrative and quantitative explanation has been
+   lacking. It is evident that species often switch their interactive
+   partners in real-world mutualistic networks such as pollination and
+   seed-dispersal networks. By incorporating an interaction switch into a
+   novel multi-population model, we show that the nested architecture
+   rapidly emerges from an initially random network. The model allowing
+   interaction switches between partner species produced predictions which
+   fit remarkably well with observations from 81 empirical networks. Thus,
+   the nested architecture in mutualistic networks could be an intrinsic
+   physical structure of dynamic networks and the interaction switch is
+   likely a key ecological process that results in nestedness of real-world
+   networks. Identifying the biological processes responsible for network
+   structures is thus crucial for understanding the architecture of
+   ecological networks.
+RI Terblanche, John/AAB-4457-2020; Hui, Cang/A-1781-2008; Terblanche, John/; Olesen, Jens/A-3011-2009
+OI Hui, Cang/0000-0002-3660-8160; Terblanche, John/0000-0001-9665-9405;
+   Olesen, Jens/0000-0003-1998-1083
+ZS 0
+ZA 0
+ZR 0
+ZB 49
+TC 58
+Z8 1
+Z9 59
+U1 1
+U2 62
+SN 1461-023X
+EI 1461-0248
+UT WOS:000292864400010
+PM 21707903
+ER
+
+PT B
+AU Bascompte, Jordi
+   Ferrera, Antonio
+BE McCann, KS
+   Gellner, G
+TI A structural theory of mutualistic networks
+SO THEORETICAL ECOLOGY: CONCEPTS AND APPLICATIONS
+BP 93
+EP 115
+DI 10.1093/oso/9780198824282.003.0007
+PD 2020
+PY 2020
+RI Bascompte, Jordi/B-7596-2008
+OI Bascompte, Jordi/0000-0002-0108-6411
+ZB 1
+TC 2
+ZS 0
+ZR 0
+Z8 0
+ZA 0
+Z9 2
+U1 1
+U2 3
+BN 978-0-19-882428-2; 978-0-19-882429-9
+UT WOS:000573493900007
+D2 10.1093/oso/9780198824282.001.0001
+ER
+
+PT J
+AU Maeng, Seong Eun
+   Lee, Jae Woo
+   Lee, Deok-Sun
+TI Interspecific Competition Underlying Mutualistic Networks
+SO PHYSICAL REVIEW LETTERS
+VL 108
+IS 10
+AR 108701
+DI 10.1103/PhysRevLett.108.108701
+PD MAR 9 2012
+PY 2012
+AB Multiple classes of interactions may exist affecting one another in a
+   given system. For the mutualistic networks of plants and pollinating
+   animals, it has been known that the degree distribution is broad but
+   often deviates from power-law form more significantly for plants than
+   animals. To illuminate the origin of such asymmetry, we study a model
+   network in which links are assigned under generalized
+   preferential-selection rules between two groups of nodes and find the
+   sensitive dependence of the resulting connectivity pattern on the model
+   parameters. The nonlinearity of preferential selection can come from
+   interspecific interactions among animals and among plants. The
+   model-based analysis of real-world mutualistic networks suggests that a
+   new animal determines its partners not only by their abundance but also
+   under the competition with existing animal species, which leads to the
+   stretched-exponential degree distributions of plants.
+RI Lee, Deok-Sun/D-1335-2011; Lee, Deok-Sun/; Lee, Jae W/G-7717-2012
+OI Lee, Deok-Sun/0000-0002-5093-6582; Lee, Jae W/0000-0002-8756-0195
+Z8 0
+ZS 0
+TC 5
+ZR 0
+ZA 0
+ZB 1
+Z9 5
+U1 0
+U2 13
+SN 0031-9007
+EI 1079-7114
+UT WOS:000301343600013
+PM 22463463
+ER
+
+PT J
+AU Maeng, Seong Eun
+   Lee, Jae Woo
+   Lee, Deok-Sun
+TI Impact of compatibility on the organization of mutualistic networks
+SO PHYSICAL REVIEW E
+VL 88
+IS 2
+AR 022804
+DI 10.1103/PhysRevE.88.022804
+PD AUG 5 2013
+PY 2013
+AB Distinct relationships such as activation, inhibition, cooperation, and
+   competition are not established independently but in a correlated manner
+   in complex systems. Thus the patterns of one type of interaction may
+   reflect the impacts of other classes of interactions, but its
+   quantitative understanding remains to be done. Referring to the
+   plant-pollinator mutualistic networks, here we propose and investigate
+   the structural features of a model bipartite network, in which the
+   mutualistic relationship between two different types of nodes is
+   established under the influence of the compatibility among the nodes of
+   the same type. Interestingly, we find that the degree distributions
+   obtained for extremely broad compatibility distributions are similar to
+   those for a constant compatibility, both of which deviate from those for
+   the Gaussian compatibility distributions. We present the analytic
+   arguments to explain this finding. Also the dependence of the
+   topological similarity of two nodes on their compatibility is
+   illustrated. We discuss the application of our findings to complex
+   systems.
+RI Lee, Jae Woo/D-2326-2010; Lee, Deok-Sun/D-1335-2011; Lee, Deok-Sun/; Lee, Jae W/G-7717-2012
+OI Lee, Deok-Sun/0000-0002-5093-6582; Lee, Jae W/0000-0002-8756-0195
+ZR 0
+ZA 0
+ZB 0
+TC 2
+ZS 0
+Z8 0
+Z9 2
+U1 1
+U2 22
+SN 1539-3755
+EI 1550-2376
+UT WOS:000322798400008
+PM 24032880
+ER
+
+PT J
+AU Zhang, Huixin
+   Liu, Xueming
+   Wang, Qi
+   Zhang, Weidong
+   Gao, Jianxi
+TI Co-adaptation enhances the resilience of mutualistic networks
+SO JOURNAL OF THE ROYAL SOCIETY INTERFACE
+VL 17
+IS 168
+AR 20200236
+DI 10.1098/rsif.2020.0236
+PD JUL 29 2020
+PY 2020
+AB Mutualistic networks, which describe the ecological interactions between
+   multiple types of species such as plants and pollinators, play a
+   paramount role in the generation of Earth's biodiversity. The resilience
+   of a mutualistic network denotes its ability to retain basic
+   functionality when errors and failures threaten the persistence of the
+   community. Under the disturbances of mass extinctions and human-induced
+   disasters, it is crucial to understand how mutualistic networks respond
+   to changes, which enables the system to increase resilience and tolerate
+   further damages. Despite recent advances in the modelling of the
+   structure-based adaptation, we lack mathematical and computational
+   models to describe and capture the co-adaptation between the structure
+   and dynamics of mutualistic networks. In this paper, we incorporate
+   dynamic features into the adaptation of structure and propose a
+   co-adaptation model that drastically enhances the resilience of
+   non-adaptive and structure-based adaptation models. Surprisingly, the
+   reason for the enhancement is that the co-adaptation mechanism
+   simultaneously increases the heterogeneity of the mutualistic network
+   significantly without changing its connectance. Owing to the broad
+   applications of mutualistic networks, our findings offer new ways to
+   design mechanisms that enhance the resilience of many other systems,
+   such as smart infrastructures and social-economical systems.
+RI gao, jianxi/I-1300-2013; Zhang, Huixin/AAK-1444-2020; Liu, Xueming/
+OI gao, jianxi/0000-0002-3952-208X; Zhang, Huixin/0000-0001-9020-1997; Liu,
+   Xueming/0000-0003-0676-9745
+ZR 0
+TC 1
+ZS 0
+Z8 0
+ZA 0
+ZB 0
+Z9 1
+U1 7
+U2 15
+SN 1742-5689
+EI 1742-5662
+UT WOS:000555368200007
+PM 32693741
+ER
+
+PT C
+AU Bascompte, Jordi
+   Jordano, Pedro
+BE Pascual, M
+   Dunne, JA
+TI The structure of plant-animal mutualistic networks
+SO ECOLOGICAL NETWORKS: LINKING STRUCTURE TO DYNAMICS IN FOOD WEBS
+SE SANTA FE INSTITUTE STUDIES IN THE SCIENCES OF COMPLEXITY - PROCEEDINGS
+   VOLUMES
+BP 143
+EP +
+PD 2006
+PY 2006
+AB Plant-animal mutualistic networks can be described as bipartite graphs
+   depicting the interactions between two distinct sets: plants and
+   animals. These mutualistic networks have been found to be highly
+   structured. Specifically, they show a nested pattern in which
+   specialists interact with proper subsets of the set of species with
+   which generalists interact. This pattern is important for understanding
+   coevolution in species-rich communities, which can be reduced neither to
+   pairs of coevolving species nor to diffuse, randomly interacting
+   assemblages. We discuss the dynamic implications of network structure
+   from the points of view of coevolution, community ecology, and
+   conservation biology.
+CT Workshop on From Structure to Dynamics in Complex Ecological Networks
+CY FEB, 2004
+CL Santa Fe Inst, Santa Fe, NM
+HO Santa Fe Inst
+RI Bascompte, Jordi/B-7596-2008; Vazquez-Dominguez, Guillermo GVD/L-7818-2014; Jordano, Pedro/A-5162-2008
+OI Bascompte, Jordi/0000-0002-0108-6411; Jordano, Pedro/0000-0003-2142-9116
+ZB 57
+ZA 0
+ZR 0
+ZS 2
+TC 63
+Z8 0
+Z9 65
+U1 1
+U2 28
+BN 0-19-518816-0
+UT WOS:000242170500008
+ER
+
+PT J
+AU Gilarranz, Luis J.
+   Sabatino, Malena
+   Aizen, Marcelo A.
+   Bascompte, Jordi
+TI Hot spots of mutualistic networks
+SO JOURNAL OF ANIMAL ECOLOGY
+VL 84
+IS 2
+BP 407
+EP 413
+DI 10.1111/1365-2656.12304
+PD MAR 2015
+PY 2015
+AB 1. Incorporating interactions into a biogeographical framework may serve
+   to understand how interactions and the services they provide are
+   distributed in space. We begin by simulating the spatiotemporal dynamics
+   of realistic mutualistic networks inhabiting spatial networks of habitat
+   patches. We proceed by comparing the predicted patterns with the
+   empirical results of a set of pollination networks in isolated hills of
+   the Argentinian Pampas. We first find that one needs to sample up to
+   five times as much area to record interactions as would be needed to
+   sample the same proportion of species. Secondly, we find that peripheral
+   patches have fewer interactions and harbour less nested networks -
+   therefore potentially less resilient communities - compared to central
+   patches. Our results highlight the important role played by the
+   structure of dispersal routes on the spatial distribution of community
+   patterns. This may help to understand the formation of biodiversity hot
+   spots.
+RI Bascompte, Jordi/B-7596-2008; Aizen, Marcelo/
+OI Bascompte, Jordi/0000-0002-0108-6411; Aizen, Marcelo/0000-0001-9079-9749
+Z8 0
+ZR 0
+ZA 0
+ZS 1
+ZB 22
+TC 23
+Z9 24
+U1 0
+U2 54
+SN 0021-8790
+EI 1365-2656
+UT WOS:000349968700009
+PM 25402941
+ER
+
+PT J
+AU Encinas-Viso, Francisco
+   Revilla, Tomas A.
+   Etienne, Rampal S.
+TI Phenology drives mutualistic network structure and diversity
+SO ECOLOGY LETTERS
+VL 15
+IS 3
+BP 198
+EP 208
+DI 10.1111/j.1461-0248.2011.01726.x
+PD MAR 2012
+PY 2012
+AB Several network properties have been identified as determinants of the
+   stability and complexity of mutualistic networks. However, it is unclear
+   which mechanisms give rise to these network properties. Phenology seems
+   important, because it shapes the topology of mutualistic networks, but
+   its effects on the dynamics of mutualistic networks have scarcely been
+   studied. Here, we study these effects with a general dynamical model of
+   mutualistic and competitive interactions where the interaction strength
+   depends on the temporal overlap between species resulting from their
+   phenologies. We find a negative complexitystability relationship, where
+   phenologies maximising mutualistic interactions and minimising
+   intraguild competitive interactions generate speciose, nested and poorly
+   connected networks with moderate asymmetry and low resilience. Moreover,
+   lengthening the season increases diversity and resilience. This
+   highlights the fragility of real mutualistic communities with short
+   seasons (e.g. Arctic environments) to drastic environmental changes.
+RI Encinas-Viso, Francisco/M-8408-2013; Rimbach, Tomas Augusto Revilla/K-6470-2015; Etienne, Rampal S./F-5835-2012
+OI Rimbach, Tomas Augusto Revilla/0000-0001-6772-3412; Etienne, Rampal
+   S./0000-0003-2142-7612
+TC 82
+ZR 0
+Z8 1
+ZB 78
+ZS 2
+ZA 0
+Z9 85
+U1 5
+U2 133
+SN 1461-023X
+EI 1461-0248
+UT WOS:000299946200004
+PM 22236277
+ER
+
+PT J
+AU Resasco, Julian
+   Chacoff, Natacha P.
+   Vazquez, Diego P.
+TI Plant-pollinator interactions between generalists persist over time and
+   space
+SO ECOLOGY
+VL 102
+IS 6
+AR e03359
+DI 10.1002/ecy.3359
+EA MAY 2021
+PD JUN 2021
+PY 2021
+AB Generalist species are the linchpins of networks, as they are important
+   for maintaining network structure and function. Previous studies have
+   shown that interactions between generalists tend to occur consistently
+   across years and sites. However, the link between temporal and spatial
+   interaction persistence across scales remains unclear. To address this
+   gap, we collected data on plant-pollinator interactions throughout the
+   flowering period for 5 yr across six plots in a subalpine meadow in the
+   Rocky Mountains. We found that interactions between generalists tended
+   to persist more in time and space such that interactions near the
+   network core were more frequently recorded across years, within seasons,
+   and among plots. We posit that species' tolerance of environmental
+   variation across time and space plays a key role in generalization by
+   regulating spatiotemporal overlap with interaction partners. Our results
+   imply a role of spatiotemporal environmental variation in organizing
+   species interactions, marrying niche concepts that emphasize species
+   environmental constraints and their community role.
+OI Chacoff, Natacha/0000-0002-1115-6989; Resasco,
+   Julian/0000-0003-1605-3038; Vazquez, Diego P./0000-0002-3449-5748
+ZR 0
+ZS 0
+TC 1
+Z8 0
+ZA 0
+ZB 1
+Z9 1
+U1 8
+U2 12
+SN 0012-9658
+EI 1939-9170
+UT WOS:000648862300001
+PM 33819351
+ER
+
+PT J
+AU Robson, D. B.
+TI Insect visitors to the rare silky prairie-clover (Dalea villosa) plant
+SO BOTANY-BOTANIQUE
+VL 92
+IS 9
+BP 672
+EP 672
+PD SEP 2014
+PY 2014
+Z8 0
+ZR 0
+TC 0
+ZB 0
+ZS 0
+ZA 0
+Z9 0
+U1 1
+U2 5
+SN 1916-2790
+EI 1916-2804
+UT WOS:000341518800103
+ER
+
+PT J
+AU Gaiarsa, Marilia P.
+   Guimaraes, Paulo R., Jr.
+TI Interaction strength promotes robustness against cascading effects in
+   mutualistic networks
+SO SCIENTIFIC REPORTS
+VL 9
+AR 676
+DI 10.1038/s41598-018-35803-8
+PD JAN 24 2019
+PY 2019
+AB Perturbations, such as fluctuations in abundance, can ripple across
+   species assemblages through ecological interactions. Furthermore, the
+   way in which ecological interactions are organized into a network and
+   the interaction strengths connecting species may be important for
+   cascading effects. Previous work revealed that network structure
+   determines how cascading effects spread across species assemblages. A
+   next step is to understand how interaction strengths influence cascading
+   effects. Here, we assume that perturbations have negative effects, and
+   we evaluate whether interaction strength affects network robustness to
+   cascading effects in mutualistic interactions, and examine the role of
+   network structure in mediating perturbation cascades when interaction
+   strength is incorporated. We combine empirical data on 18 mutualistic
+   networks, two simulations scenarios, and network theory, to investigate
+   how network structure affects perturbation spreading time, a proxy of
+   network robustness to cascading effects. Simulations in which we
+   included interaction strength presented higher mean spreading time,
+   indicating that interaction strength increases network robustness.
+   Richness, modularity, and nestedness had a strong, positive effect, on
+   mean perturbation spreading time regardless of the interaction
+   strengths. We found that network structure and the distribution of
+   interaction strengths affected communities' robustness to perturbation
+   spreading. Our results contribute to the discussion on the danger that
+   ecosystems face when species, and interactions alike, become extinct.
+RI Gaiarsa, Marilia P/B-1211-2013; Guimaraes-Junior, Paulo R/M-1298-2016; Guimaraes, Paulo R./E-1915-2016
+OI Guimaraes, Paulo R./0000-0001-9161-8305
+TC 8
+ZR 0
+ZA 0
+Z8 0
+ZB 7
+ZS 0
+Z9 8
+U1 0
+U2 7
+SN 2045-2322
+UT WOS:000456554600115
+PM 30679559
+ER
+
+PT J
+AU Gomez, Jose M.
+   Perfectti, Francisco
+   Jordano, Pedro
+TI The Functional Consequences of Mutualistic Network Architecture
+SO PLOS ONE
+VL 6
+IS 1
+AR e16143
+DI 10.1371/journal.pone.0016143
+PD JAN 25 2011
+PY 2011
+AB The architecture and properties of many complex networks play a
+   significant role in the functioning of the systems they describe.
+   Recently, complex network theory has been applied to ecological
+   entities, like food webs or mutualistic plant-animal interactions.
+   Unfortunately, we still lack an accurate view of the relationship
+   between the architecture and functioning of ecological networks. In this
+   study we explore this link by building individual-based pollination
+   networks from eight Erysimum mediohispanicum (Brassicaceae) populations.
+   In these individual-based networks, each individual plant in a
+   population was considered a node, and was connected by means of
+   undirected links to conspecifics sharing pollinators. The architecture
+   of these unipartite networks was described by means of nestedness,
+   connectivity and transitivity. Network functioning was estimated by
+   quantifying the performance of the population described by each network
+   as the number of per-capita juvenile plants produced per population. We
+   found a consistent relationship between the topology of the networks and
+   their functioning, since variation across populations in the average
+   per-capita production of juvenile plants was positively and
+   significantly related with network nestedness, connectivity and
+   clustering. Subtle changes in the composition of diverse pollinator
+   assemblages can drive major consequences for plant population
+   performance and local persistence through modifications in the structure
+   of the inter-plant pollination networks.
+RI Perfectti, Francisco/C-5087-2008; Gomez, Jose M/K-8061-2017; Jordano, Pedro/A-5162-2008
+OI Perfectti, Francisco/0000-0002-5551-213X; Gomez, Jose
+   M/0000-0002-2487-4664; Jordano, Pedro/0000-0003-2142-9116
+TC 46
+Z8 2
+ZA 0
+ZB 42
+ZR 0
+ZS 0
+Z9 47
+U1 1
+U2 51
+SN 1932-6203
+UT WOS:000286661400028
+PM 21283583
+ER
+
+PT J
+AU Coux, Camille
+   Rader, Romina
+   Bartomeus, Ignasi
+   Tylianakis, Jason M.
+TI Linking species functional roles to their network roles
+SO ECOLOGY LETTERS
+VL 19
+IS 7
+BP 762
+EP 770
+DI 10.1111/ele.12612
+PD JUL 2016
+PY 2016
+AB Species roles in ecological networks combine to generate their
+   architecture, which contributes to their stability. Species trait
+   diversity also affects ecosystem functioning and resilience, yet it
+   remains unknown whether species' contributions to functional diversity
+   relate to their network roles. Here, we use 21 empirical pollen
+   transport networks to characterise this relationship. We found that,
+   apart from a few abundant species, pollinators with original traits
+   either had few interaction partners or interacted most frequently with a
+   subset of these partners. This suggests that narrowing of interactions
+   to a subset of the plant community accompanies pollinator niche
+   specialisation, congruent with our hypothesised trade-off between having
+   unique traits vs. being able to interact with many mutualist partners.
+   Conversely, these effects were not detected in plants, potentially
+   because key aspects of their flowering traits are conserved at a family
+   level. Relating functional and network roles can provide further insight
+   into mechanisms underlying ecosystem functioning.
+RI rader, romina/AAL-8067-2020; Rader, Romina/X-6428-2019; Bartomeus, Ignasi/
+OI Rader, Romina/0000-0001-9056-9118; Bartomeus, Ignasi/0000-0001-7893-4389
+ZS 1
+Z8 1
+TC 59
+ZB 57
+ZA 0
+ZR 0
+Z9 60
+U1 10
+U2 158
+SN 1461-023X
+EI 1461-0248
+UT WOS:000377532200006
+PM 27169359
+ER
+
+PT J
+AU Gruchowski-Woitowicz, Francielli Cristiane
+   da Silva, Claudia Ines
+   Ramalho, Mauro
+TI Experimental field test of the influence of generalist stingless bees
+   (Meliponini) on the topology of a bee-flower mutualistic network in the
+   tropics
+SO ECOLOGICAL ENTOMOLOGY
+VL 45
+IS 4
+BP 854
+EP 866
+DI 10.1111/een.12862
+EA MAR 2020
+PD AUG 2020
+PY 2020
+AB 1. Generalists are assumed to play a key role in structuring and
+   stabilising animal-plant mutualistic networks. Until now, analyses on
+   the effects of generalists have been based on empirical field data or
+   simulations. The present natural field experiment manipulated the
+   abundance of a generalist and abundant stingless bee [Melipona
+   (Eomelipona) marginata] to determine the effects on the mutualistic
+   network.
+   2. Networks were generated, and associated metrics were used for
+   comparing replicate plots with and without the insertion of stingless
+   bee nests.
+   3. Unweighted metrics and the basic qualitative structural pattern of
+   networks (high nestedness, very low modularity and specialisation) was
+   not affected by experimental variation in stingless bee abundance
+   because they exert strong basal effects on the plant-pollinator
+   community under natural conditions of abundance. Still, increased
+   abundance caused significant variation in weighted nestedness and
+   modularity and community-level specialisation.
+   4. Supporting predictions of neutral models, increased abundance of the
+   stingless bee led to an increase in most of its specific metrics,
+   expressing the expansion of its realised trophic niche.
+   5. During this process, specialist and other generalist bees were
+   affected in different ways. More plant species became even more
+   dependent on this stingless bee (increased asymmetry).
+   6. Long-term effects could not be inferred directly from instantaneous
+   values of network metrics. Nonetheless, the increased abundance of the
+   generalist stingless bee may both reduce the local level of ecological
+   specialisation in the short term and affect the spatial distribution of
+   less abundant and/or specialist bee species and plants in the long term.
+RI da Silva, Claudia Ines/V-1249-2019; Ramalho, Mauro/K-7178-2014
+OI da Silva, Claudia Ines/0000-0003-0836-8662; Ramalho,
+   Mauro/0000-0001-8287-7479
+ZS 1
+Z8 0
+TC 2
+ZR 0
+ZB 1
+ZA 0
+Z9 2
+U1 0
+U2 10
+SN 0307-6946
+EI 1365-2311
+UT WOS:000520561700001
+ER
+
+PT J
+AU Fricke, Evan C.
+   Bender, John
+   Rehm, Evan M.
+   Rogers, Haldre S.
+TI Functional outcomes of mutualistic network interactions: A
+   community-scale study of frugivore gut passage on germination
+SO JOURNAL OF ECOLOGY
+VL 107
+IS 2
+BP 757
+EP 767
+DI 10.1111/1365-2745.13108
+PD MAR 2019
+PY 2019
+AB Current understanding of mutualistic networks is grounded largely in
+   data on interaction frequency, yet mutualistic network dynamics are also
+   shaped by interaction quality-the functional outcomes of individual
+   interactions on reproduction and survival. The difficulty of obtaining
+   data on functional outcomes has resulted in limited understanding of
+   functional variation among a network's pairwise species interactions, of
+   the study designs that are necessary to capture major sources of
+   functional variation, and of predictors of functional variation that may
+   allow generalization across networks. In this community-scale study, we
+   targeted a key functional outcome in plant-frugivore networks: the
+   impact of frugivore gut passage on seed germination. We used captive
+   frugivore feeding trials and germination experiments in an island
+   ecosystem, attaining species-level coverage across all extant native
+   frugivores and the plants they consume to (a) assess sources of
+   functional variation, (b) separate effects of pulp removal from those of
+   scarification via gut passage, and (c) test trait-based correlates of
+   gut passage effect sizes. We found antagonistic seed predation effects
+   of a frugivore previously assumed to be a seed disperser, highlighting
+   the need to consider functional outcomes rather than interaction
+   frequency alone. The other frugivores each exhibited similar impacts for
+   individual plant species, with benefits primarily caused by pulp removal
+   rather than scarification, supporting the use of animal functional
+   groups in this context. In contrast, plant species varied widely in
+   impacts of gut passage on germination. Species with smaller seeds and
+   more frugivore partners had larger benefits of gut passage, showing
+   promise for network metrics and functional traits to predict functional
+   variation among plants. Synthesis. Combining network and demographic
+   approaches, we assessed the degree and sources of variation in a key
+   functional outcome of plant-frugivore interactions across an entire
+   network. Using a detailed study design, our work shows how simpler study
+   designs can capture primary sources of functional variation and that
+   functional traits and network metrics may allow generalization across
+   networks. Efficiently measuring and generalizing sources of functional
+   variation within mutualistic networks will strengthen our ability to
+   model network dynamics and predict mutualist responses to global change.
+OI Rogers, Haldre/0000-0003-4763-5006; Rehm, Evan/0000-0002-5804-0027
+ZB 11
+ZS 0
+ZA 0
+TC 16
+ZR 0
+Z8 0
+Z9 16
+U1 0
+U2 19
+SN 0022-0477
+EI 1365-2745
+UT WOS:000458616400022
+ER
+
+PT J
+AU Diaz-Castelazo, Cecilia
+   Guimaraes, Paulo R., Jr.
+   Jordano, Pedro
+   Thompson, John N.
+   Marquis, Robert J.
+   Rico-Gray, Victor
+TI Changes of a mutualistic network over time: reanalysis over a 10-year
+   period
+SO ECOLOGY
+VL 91
+IS 3
+BP 793
+EP 801
+DI 10.1890/08-1883.1
+PD MAR 2010
+PY 2010
+AB We analyzed the structure of a multispecific network or interacting ants
+   and plants bearing extrafloral nectaries recorded in 1990 and again in
+   2000 in La Mancha, Veracruz, Mexico. We assessed the replicability of
+   the number of interactions found among species and also whether there
+   had been changes in the network structure associated with appearance of
+   new ant and plant species during. that 10-year period. Our results show
+   that the nested topology of the network was similar between sampling
+   dates, group dissimilarity increased, mean number of interactions for
+   ant species increased, the frequency distribution of standardized
+   degrees reached higher values for plant species, more ant species and
+   fewer plant species constituted the core of the more recent network, and
+   the presence of new ant and plant species increased while their
+   contribution to nestedness remained the same. Generalist species (i.e.,
+   those with the most links or interactions) appeared to maintain the
+   stability of the network because the new species incorporated into the
+   communities were linked to this core of generalists. Camponotus planatus
+   was the most extreme generalist ant species (the one with the most
+   links) in both networks, followed by four other ant species; but other
+   species changed either their position along the continuum of generalists
+   relative to specialists or their presence or absence within the network.
+   Even though new species moved into the area during the decade between
+   the surveys, the overall network structure remained unmodified.
+RI Guimaraes, Paulo/B-1099-2008; Guimaraes-Junior, Paulo R/M-1298-2016; Guimaraes, Paulo R./E-1915-2016; Diaz Castelazo, Cecilia/Q-8973-2018; Jordano, Pedro/A-5162-2008
+OI Guimaraes, Paulo R./0000-0001-9161-8305; Diaz Castelazo,
+   Cecilia/0000-0002-0185-6607; Jordano, Pedro/0000-0003-2142-9116
+ZR 0
+ZA 0
+ZB 80
+Z8 0
+TC 82
+ZS 3
+Z9 83
+U1 0
+U2 38
+SN 0012-9658
+EI 1939-9170
+UT WOS:000276635500016
+PM 20426337
+ER
+
+PT J
+AU Chacoff, Natacha P.
+   Resasco, Julian
+   Vazquez, Diego P.
+TI Interaction frequency, network position, and the temporal persistence of
+   interactions in a plant-pollinator network
+SO ECOLOGY
+VL 99
+IS 1
+BP 21
+EP 28
+DI 10.1002/ecy.2063
+PD JAN 2018
+PY 2018
+AB Ecological interactions are highly dynamic in time and space. Previous
+   studies of plant-animal mutualistic networks have shown that the
+   occurrence of interactions varies substantially across years. We
+   analyzed interannual variation of a quantitative mutualistic network, in
+   which links are weighted by interaction frequency. The network was
+   sampled over six consecutive years, representing one of the longest time
+   series for a community-wide mutualistic network. We estimated the
+   interannual similarity in interactions and assessed the determinants of
+   their persistence. The occurrence of interactions varied greatly among
+   years, with most interactions seen in only one year (64%) and few (20%)
+   in more than two years. This variation was associated with the frequency
+   and position of interactions relative to the network core, so that the
+   network consisted of a persistent core of frequent interactions and many
+   peripheral, infrequent interactions. Null model analyses suggest that
+   species abundances play a substantial role in generating these patterns.
+   Our study represents an important step in the study of ecological
+   networks, furthering our mechanistic understanding of the ecological
+   processes driving the temporal persistence of interactions.
+RI Chacoff, Natacha/K-7595-2019; Vazquez, Diego P./; Resasco, Julian/
+OI Chacoff, Natacha/0000-0002-1115-6989; Vazquez, Diego
+   P./0000-0002-3449-5748; Resasco, Julian/0000-0003-1605-3038
+ZA 0
+ZR 0
+ZS 1
+Z8 0
+TC 43
+ZB 39
+Z9 44
+U1 2
+U2 46
+SN 0012-9658
+EI 1939-9170
+UT WOS:000419240900003
+PM 29082521
+ER
+
+PT J
+AU Takemoto, Kazuhiro
+   Kanamaru, Saori
+   Feng, Wenfeng
+TI Climatic seasonality may affect ecological network structure: Food webs
+   and mutualistic networks
+SO BIOSYSTEMS
+VL 121
+BP 29
+EP 37
+DI 10.1016/j.biosystems.2014.06.002
+PD JUL 2014
+PY 2014
+AB Ecological networks exhibit non-random structural patterns, such as
+   modularity and nestedness, which determine ecosystem stability with
+   species diversity and connectance. Such structure-stability
+   relationships are well known. However, another important perspective is
+   less well understood: the relationship between the environment and
+   structure. Inspired by theoretical studies that suggest that network
+   structure can change due to environmental variability, we collected data
+   on a number of empirical food webs and mutualistic networks and
+   evaluated the effect of climatic seasonality on ecological network
+   structure. As expected, we found that climatic seasonality affects
+   ecological network structure. In particular, an increase in modularity
+   due to climatic seasonality was observed in food webs; however, it is
+   debatable whether this occurs in mutualistic networks. Interestingly,
+   the type of climatic seasonality that affects network structure differs
+   with ecosystem type. Rainfall and temperature seasonality influence
+   freshwater food webs and mutualistic networks, respectively; food webs
+   are smaller, and more modular, with increasing rainfall seasonality.
+   Mutualistic networks exhibit a higher diversity (particularly of
+   animals) with increasing temperature seasonality. These results confirm
+   the theoretical prediction that the stability increases with greater
+   perturbation. Although these results are still debatable because of
+   several limitations in the data analysis, they may enhance our
+   understanding of environment-structure relationships. (C) 2014 Elsevier
+   Ireland Ltd. All rights reserved.
+RI Takemoto, Kazuhiro/H-2915-2019
+OI Takemoto, Kazuhiro/0000-0002-6355-1366
+ZA 0
+ZB 11
+TC 13
+ZS 0
+ZR 0
+Z8 0
+Z9 13
+U1 1
+U2 36
+SN 0303-2647
+EI 1872-8324
+UT WOS:000341482200003
+PM 24907523
+ER
+
+PT C
+AU Hwang, Jun Kyung
+   Maeng, Seong Eun
+   Cha, Moon Yong
+   Lee, Jae Woo
+BE Zhou, J
+TI Structure of Mutualistic Complex Networks
+SO COMPLEX SCIENCES, PT 1
+SE Lecture Notes of the Institute for Computer Sciences Social Informatics
+   and Telecommunications Engineering
+VL 4
+BP 954
+EP 959
+PD 2009
+PY 2009
+AB We consider the structures of six plant-pollinator mutualistic networks.
+   The plants and pollinators are linked by the plant-pollinating relation.
+   We assigned the visiting frequency of pollinators to a plant as a weight
+   of each link. We calculated the cumulative distribution functions of the
+   degree and strength for the networks. We observed a power-law, linear,
+   and stretched exponential dependence of the cumulative distribution
+   function. We also calculated the disparity and the strength of the nodes
+   s(k) with degree k. We observed that the plant-pollinator networks
+   exhibit an disassortative behaviors and nonlinear dependence of the
+   strength on the nodes. In mutualistic networks links with large weight
+   are connected to the neighbors with small degrees.
+CT 1st International Conference on Complex Sciences: Theory and
+   Applications (Complex 2009)
+CY FEB 23-25, 2009
+CL Shanghai, PEOPLES R CHINA
+RI Lee, Jae Woo/D-2326-2010; Lee, Jae W/G-7717-2012
+OI Lee, Jae W/0000-0002-8756-0195
+ZA 0
+ZR 0
+ZS 0
+Z8 0
+TC 1
+ZB 1
+Z9 1
+U1 0
+U2 5
+SN 1867-8211
+BN 978-3-642-02465-8
+UT WOS:000307413400095
+ER
+
+PT J
+AU Zografou, Konstantina
+   Swartz, Mark T.
+   Tilden, Virginia P.
+   McKinney, Ereka N.
+   Eckenrode, Julie A.
+   Sewall, Brent J.
+TI Stable generalist species anchor a dynamic pollination network
+SO ECOSPHERE
+VL 11
+IS 8
+AR e03225
+DI 10.1002/ecs2.3225
+PD AUG 2020
+PY 2020
+AB The application of complex network theory to community ecology has
+   enabled quantification of interactions among large suites of species and
+   clarified patterns of community structure across systems. Past analyses,
+   however, have assumed that ecological networks are temporally static and
+   persistent and spatially homogeneous, which could confound inference if
+   species interactions vary over time and space. To evaluate temporal and
+   spatial variation in mutualistic networks, therefore, we evaluated the
+   consistency of a nectarivory/pollination network across years, by
+   season, and over space. We tracked nectaring interactions among 37
+   butterfly and 58 flowering plant taxa during an 11-yr period
+   (2007-2017), across each summer and over a grassland landscape in
+   Pennsylvania, USA. The composition of butterflies, plants, and their
+   interactions varied markedly across years, months, and sites. Despite
+   this compositional variation, one metric of network structure,
+   nestedness, was invariant, with interactions much more nested than
+   random across all years, months, and sites. Together with previous
+   studies, this result suggests ecological interaction networks are
+   generally more nested than expected by chance. Other measures of network
+   structure were more variable, especially over time. Numbers of plants
+   and interactions varied by year, month, and site. Connectance and
+   numbers of butterflies varied annually and seasonally. Temporal
+   variation in specialization was also evident for some species at an
+   annual level and for the community across the season. We further found
+   highly stable species were almost always generalists, while highly
+   specialized species were almost always temporally and spatially
+   variable, with few exceptions. Together, these results suggest
+   communities are comprised of a reliable core of generalist species,
+   accompanied by a changing suite of specialist species that, when
+   participating in the network, primarily interact with the reliable core
+   species. Our finding of nested mutualistic network centered on
+   stable-generalist species accompanied by a changing suite of sporadic
+   specialists indicates dynamic changes in ecological communities vary
+   with topological position. This finding further suggests that, even as
+   rare species are highly threatened by species invasion, climate change,
+   and other anthropogenic perturbations, network structure may be robust
+   to species loss and compositional change from these perturbations.
+ZR 0
+ZB 3
+Z8 0
+ZS 0
+ZA 0
+TC 4
+Z9 4
+U1 2
+U2 10
+SN 2150-8925
+UT WOS:000567504400002
+ER
+
+PT J
+AU Nagaishi, Ellie
+   Takemoto, Kazuhiro
+TI Network resilience of mutualistic ecosystems and environmental changes:
+   an empirical study
+SO ROYAL SOCIETY OPEN SCIENCE
+VL 5
+IS 9
+AR 180706
+DI 10.1098/rsos.180706
+PD SEP 2018
+PY 2018
+AB It is theorized that a mutualistic ecosystem's resilience against
+   perturbations (e.g. species extinction) is determined by a single
+   macroscopic parameter (network resilience), calculable from the network.
+   Given that such perturbations occur owing to environmental changes (e.g.
+   climate change and human impact), it has been predicted that mutualistic
+   ecosystems that exist despite extensive environmental changes exhibit
+   higher network resilience; however, such a prediction has not been
+   confirmed using real-world data. Thus, in this study, the effects of
+   climate change velocity and human activities on mutualistic network
+   resilience were investigated. A global dataset of plant-animal
+   mutualistic networks was used, and spatial analysis was performed to
+   examine the effects. Moreover, the potential confounding effects of
+   network size, current climate and altitude were statistically
+   controlled. It was demonstrated that mutualistic network resilience was
+   globally influenced by warming velocity and human impact, in addition to
+   current climate. Specifically, pollination network resilience increased
+   in response to human impact, and seed-dispersal network resilience
+   increased with warming velocity. The effect of environmental changes on
+   network resilience for plants was remarkable. The results confirmed the
+   prediction obtained based on the theory and imply that real-world
+   mutualistic networks have a structure that increases ecosystem
+   resilience against environmental changes. These findings will enhance
+   the understanding of ecosystem resilience.
+RI Takemoto, Kazuhiro/H-2915-2019
+OI Takemoto, Kazuhiro/0000-0002-6355-1366
+ZA 0
+ZB 3
+Z8 0
+ZS 0
+TC 4
+ZR 0
+Z9 4
+U1 2
+U2 11
+SN 2054-5703
+UT WOS:000446259700034
+PM 30839716
+ER
+
+PT J
+AU Kishi, Shigeki
+   Sakura, Nasa
+   Yoshikawa, Tetsuro
+   Hiraiwa, Masayoshi K.
+   Katoh, Kazuhiro
+TI Interaction between insects and insect-pollinated plants on Miyake
+   Island after a recent volcanic eruption: A comparison between vegetation
+   types
+SO JOURNAL OF ASIA-PACIFIC ENTOMOLOGY
+VL 20
+IS 3
+BP 964
+EP 970
+DI 10.1016/j.aspen.2017.07.006
+PD SEP 2017
+PY 2017
+AB In habitats after natural disturbance, mutualistic interaction between
+   plant and flower-visiting insects is critical for maintenance and
+   recovery of communities. However, the detailed characteristics of the
+   plant-insect interactions that occur after a natural disturbance remain
+   to be identified. We investigated the network structure of these
+   interactions on the oceanic and volcanic island of Miyake, Japan. Large
+   vegetated areas of this island were disturbed by a massive volcanic
+   eruption during 2000. In 2012, we sampled insects visiting the flowering
+   plants along the roadsides bordering six sites in the 3 vegetation
+   types, which represent the island's vegetation after the volcanic
+   disturbance; (1) shrubland colonizing accumulated ash (SL), (2) mature
+   broad-leaved forests with partial damage (BF), and (3) coastal
+   vegetation with partial damage (CV). Network properties, such as
+   specialization, nestedness, and modularity did not differ among the
+   three vegetation categories. We found the same specialized, modular, and
+   anti-nested structures in five networks. The largest variation in
+   insect/plant assemblages was observed between CV and the other
+   vegetation types, but we did not find distinctive variations between SL
+   and BF sites. Our study suggests that network structure is constant in
+   the varying vegetation types, and raises the possibility that this
+   island's mutualistic interactions are robust to volcanic disturbance.
+RI Kishi, Shigeki/AAR-1886-2021; Yoshikawa, Tetsuro/; Kishi, Shigeki/
+OI Yoshikawa, Tetsuro/0000-0001-6998-275X; Kishi,
+   Shigeki/0000-0002-7871-4746
+ZA 0
+ZR 0
+ZS 0
+ZB 3
+TC 3
+Z8 0
+Z9 3
+U1 2
+U2 7
+SN 1226-8615
+EI 1876-7990
+UT WOS:000419749200032
+ER
+
+PT J
+AU Bane, Miranda S.
+   Pocock, Michael J. O.
+   James, Richard
+TI Effects of model choice, network structure, and interaction strengths on
+   knockout extinction models of ecological robustness
+SO ECOLOGY AND EVOLUTION
+VL 8
+IS 22
+BP 10794
+EP 10804
+DI 10.1002/ece3.4529
+PD NOV 2018
+PY 2018
+AB Analysis of ecological networks is a valuable approach to understanding
+   the vulnerability of systems to disturbance. The tolerance of ecological
+   networks to coextinctions, resulting from sequences of primary
+   extinctions (here termed "knockout extinction models", in contrast with
+   other dynamic approaches), is a widely used tool for modeling network
+   "robustness". Currently, there is an emphasis to increase biological
+   realism in these models, but less attention has been given to the effect
+   of model choices and network structure on robustness measures. Here, we
+   present a suite of knockout extinction models for bipartite ecological
+   networks (specifically plant-pollinator networks) that can all be
+   analyzed on the same terms, enabling us to test the effects of
+   extinction rules, interaction weights, and network structure on
+   robustness. We include two simple ecologically plausible models of
+   propagating extinctions, one new and one adapted from existing models.
+   All models can be used with weighted or binary interaction data. We
+   found that the choice of extinction rules impacts robustness; our two
+   propagating models produce opposing effects in all tests on observed
+   plant-pollinator networks. Adding weights to the interactions tends to
+   amplify the opposing effects and increase the variation in robustness.
+   Variation in robustness is a key feature of these extinction models and
+   is driven by the structural heterogeneity of nodes (specifically, the
+   skewness of the plant degree distribution) in the network. Our analysis
+   therefore reveals the mechanisms and fundamental network properties that
+   drive observed trends in robustness.
+RI Pocock, Michael/A-5632-2012; Bane, Miranda/
+OI Pocock, Michael/0000-0003-4375-0445; Bane, Miranda/0000-0002-2570-4915
+ZS 0
+Z8 0
+ZA 0
+ZB 5
+TC 6
+ZR 0
+Z9 6
+U1 4
+U2 17
+SN 2045-7758
+UT WOS:000451611000014
+PM 30519407
+ER
+
+PT J
+AU Rico-Gray, Victor
+   Diaz-Castelazo, Cecilia
+   Ramirez-Hernandez, Alfredo
+   Guimaraes, Paulo R., Jr.
+   Holland, J. Nathaniel
+TI Abiotic factors shape temporal variation in the structure of an
+   ant-plant network
+SO ARTHROPOD-PLANT INTERACTIONS
+VL 6
+IS 2
+BP 289
+EP 295
+DI 10.1007/s11829-011-9170-3
+PD JUN 2012
+PY 2012
+AB Despite recognition of key biotic processes in shaping the structure of
+   biological communities, few empirical studies have explored the
+   influences of abiotic factors on the structural properties of
+   mutualistic networks. We tested whether temperature and precipitation
+   contribute to temporal variation in the nestedness of mutualistic
+   ant-plant networks. While maintaining their nested structure, nestedness
+   increased with mean monthly precipitation and, particularly, with
+   monthly temperature. Moreover, some species changed their role in
+   network structure, shifting from peripheral to core species within the
+   nested network. We could summarize that abiotic factors affect plant
+   species in the vegetation (e.g., phenology), meaning presence/absence of
+   food sources, consequently an increase/decrease of associations with
+   ants, and finally, these variations to fluctuations in nestedness. While
+   biotic factors are certainly important, greater attention needs to be
+   given to abiotic factors as underlying determinants of the structures of
+   ecological networks.
+RI Diaz Castelazo, Cecilia/Q-8973-2018; Ramirez-Hernandez, Alfredo/P-1866-2014; Holland, Julian Nathaniel/AAD-2116-2021; Guimaraes, Paulo R./E-1915-2016; Guimaraes-Junior, Paulo R/M-1298-2016; Guimaraes, Paulo/B-1099-2008
+OI Diaz Castelazo, Cecilia/0000-0002-0185-6607; Ramirez-Hernandez,
+   Alfredo/0000-0002-7261-7443; Holland, Julian
+   Nathaniel/0000-0001-5525-8816; Guimaraes, Paulo R./0000-0001-9161-8305; 
+ZS 1
+ZB 54
+TC 57
+ZA 0
+Z8 1
+ZR 0
+Z9 59
+U1 0
+U2 42
+SN 1872-8855
+EI 1872-8847
+UT WOS:000304300100015
+ER
+
+PT J
+AU Ramos-Robles, Michelle
+   Andresen, Ellen
+   Diaz-Castelazo, Cecilia
+TI Temporal changes in the structure of a plant-frugivore network are
+   influenced by bird migration and fruit availability
+SO PEERJ
+VL 4
+AR e2048
+DI 10.7717/peerj.2048
+PD JUN 8 2016
+PY 2016
+AB Background. Ecological communities are dynamic collections whose
+   composition and structure change over time, making up complex
+   interspecific interaction networks. Mutualistic plant-animal networks
+   can be approached through complex network analysis; these networks are
+   characterized by a nested structure consisting of a core of generalist
+   species, which endows the network with stability and robustness against
+   disturbance. Those mutualistic network structures can vary as a
+   consequence of seasonal fluctuations and food availability, as well as
+   the arrival of new species into the system that might disorder the
+   mutualistic network structure (e.g., a decrease in nested pattern).
+   However, there is no assessment on how the arrival of migratory species
+   into seasonal tropical systems can modify such patterns. Emergent and
+   fine structural temporal patterns are adressed here for the first time
+   for plant-frugivorous bird networks in a highly seasonal tropical
+   environment.
+   Methods. In a plant-frugivorous bird community, we analyzed the temporal
+   turnover of bird species comprising the network core and periphery of
+   ten temporal interaction networks resulting from different bird
+   migration periods. Additionally, we evaluated how fruit abundance and
+   richness, as well as the arrival of migratory birds into the system,
+   explained the temporal changes in network parameters such as network
+   size, connectance, nestedness, specialization, interaction strength
+   asymmetry and niche overlap. The analysis included data from 10
+   quantitative plant-frugivorous bird networks registered from November
+   2013 to November 2014.
+   Results. We registered a total of 319 interactions between 42 plant
+   species and 44 frugivorous bird species; only ten bird species were part
+   of the network core. We witnessed a noteworthy turnover of the species
+   comprising the network periphery during migration periods, as opposed to
+   the network core, which did not show significant temporal changes in
+   species composition. Our results revealed that migration and fruit
+   richness explain the temporal variations in network size, connectance,
+   nestedness and interaction strength asymmetry. On the other hand, fruit
+   abundance only explained connectance and nestedness.
+   Discussion. By means of a fine-resolution temporal analysis, we
+   evidenced for the first time how temporal changes in the interaction
+   network structure respond to the arrival of migratory species into the
+   system and to fruit availability. Additionally, few migratory bird
+   species are important links for structuring networks, while most of them
+   were peripheral species. We showed the relevance of studying bird-plant
+   interactions at fine temporal scales, considering changing scenarios of
+   species composition with a quantitative network approach.
+RI Michelle, Ramos-Robles/S-6567-2019; Diaz Castelazo, Cecilia/Q-8973-2018; Andresen, Ellen/
+OI Michelle, Ramos-Robles/0000-0002-0692-5608; Diaz Castelazo,
+   Cecilia/0000-0002-0185-6607; Andresen, Ellen/0000-0001-8957-4454
+ZA 0
+Z8 0
+TC 28
+ZR 0
+ZS 2
+ZB 28
+Z9 31
+U1 0
+U2 37
+SN 2167-8359
+UT WOS:000378027000002
+PM 27330852
+ER
+
+PT J
+AU Dattilo, Wesley
+   Marquitti, Flavia M. D.
+   Guimaraes, Paulo R.
+   Izzo, Thiago J.
+TI The structure of ant-plant ecological networks: Is abundance enough?
+SO ECOLOGY
+VL 95
+IS 2
+BP 475
+EP 485
+DI 10.1890/12-1647.1
+PD FEB 2014
+PY 2014
+AB Knowledge of the mechanisms that shape biodiversity is essential to
+   understand the ecological and evolutionary dynamics of interacting
+   species. Recent studies posit that most of the organization of
+   mutualistic networks is shaped by differences in species abundance among
+   interacting species. In this study, we examined the mutualism involving
+   plants with extrafloral nectaries and their associated ants. We show
+   empirically that the difference in abundance among ants on vegetation
+   partially explains the network structure of mutualistic interactions and
+   that it is independent of ant species compositions: an ant species that
+   is abundant usually interacts with more plant species. Moreover, nested
+   networks are generated by simple variation in ant abundance on foliage.
+   However, in ant-plant mutualistic networks, nestedness was higher than
+   in networks describing the occurrence of ants on plants without a food
+   resource. Additionally, the plant and ant species with the highest
+   number of interactions within these networks interacted more among
+   themselves than expected under the assumption of an abundance-based,
+   random mixing of individuals. We hypothesize that the dominance of these
+   ant species occurs because these ants are able to outcompete other ant
+   species when feeding on extrafloral nectaries and because of the
+   presence of ecophysiological adaptations to utilize liquid food.
+RI Guimaraes, Paulo R./E-1915-2016; Marquitti, Flavia Maria/B-2697-2013; Izzo, Thiago/K-7405-2012; Guimaraes-Junior, Paulo R/M-1298-2016; , WD/A-6371-2012
+OI Guimaraes, Paulo R./0000-0001-9161-8305; Marquitti, Flavia
+   Maria/0000-0003-0510-3992; Izzo, Thiago/0000-0002-4613-3787; ,
+   WD/0000-0002-4758-4379
+TC 50
+ZR 0
+ZS 1
+Z8 1
+ZA 0
+ZB 45
+Z9 51
+U1 0
+U2 67
+SN 0012-9658
+EI 1939-9170
+UT WOS:000331429500021
+PM 24669740
+ER
+
+PT J
+AU Guimares Fernandes Vilhena, Alice Maria
+   Rabelo, Laice Souza
+   Alves Ferreira Bastos, Esther Margarida
+   Augusto, Solange Cristina
+TI Acerola pollinators in the savanna of Central Brazil: temporal
+   variations in oil-collecting bee richness and a mutualistic network
+SO APIDOLOGIE
+VL 43
+IS 1
+BP 51
+EP 62
+DI 10.1007/s13592-011-0081-1
+PD JAN 2012
+PY 2012
+AB We present parameters to support the conservation and management of
+   Acerola pollinators. We monitored pollinator visits to this fruit shrub
+   in a Brazilian savanna and identified the pollinator's other food
+   resources. Twenty-three species of pollinators were sampled. Although
+   there were temporal variations in visitor frequency, satisfactory levels
+   of fruit set were obtained. This temporal variation promoted a
+   compensatory effect on plant reproduction as the pollinator species were
+   replaced during the course of flowering. The analysis of pollen loads
+   showed grains of 16 plant species and four pollen types belonging to
+   seven families that formed a network with a nested pattern. Such a
+   network suggests that generalist plants must be available in the crop
+   vicinity. The data presented suggest the natural viability of
+   cultivating Acerola in the savannas of Central Brazil and the importance
+   of natural lands for providing nesting resources and to enhance the bee
+   diversity in agroecosystems.
+RI Virtual, Inct Herbario/J-8725-2013; Augusto, Solange C/I-7564-2013; Augusto, Solange/AAE-2827-2021; Augusto, Solange/
+OI Augusto, Solange/0000-0003-2560-4516
+ZR 0
+ZB 22
+TC 25
+Z8 0
+ZS 2
+ZA 0
+Z9 27
+U1 0
+U2 16
+SN 0044-8435
+EI 1297-9678
+UT WOS:000298604500005
+ER
+
+PT J
+AU Manuel Pastor, Juan
+   Garcia-Algarra, Javier
+   Galeano, Javier
+   Maria Iriondo, Jose
+   Ramasco, Jose J.
+TI A SIMPLE AND BOUNDED MODEL OF POPULATION DYNAMICS FOR MUTUALISTIC
+   NETWORKS
+SO NETWORKS AND HETEROGENEOUS MEDIA
+VL 10
+IS 1
+SI SI
+BP 53
+EP 70
+DI 10.3934/nhm.2015.10.53
+PD MAR 2015
+PY 2015
+AB Dynamic population models are based on the Verhulst's equation
+   (logisitic equation), where the classic Malthusian growth rate is damped
+   by intraspecific competition terms. Mainstream population models for
+   mutualism are modifications of the logistic equation with additional
+   terms to account for the benefits produced by the interspecies
+   interactions. These models have shortcomings as the population
+   divergence under some conditions (May's equations) or a mathematical
+   complexity that difficults their analytical treatment (Wright's type II
+   models). In this work, we introduce a model for the population dynamics
+   in mutualism inspired by the logistic equation but cured of divergences.
+   The model is also mathematically more simple than the type II. We use
+   numerical simulations to study the model stability in more general
+   interaction scenarios. Despite its simplicity, our results suggest that
+   the model dynamics are rich and may be used to gain further insights in
+   the dynamics of mutualistic interactions.
+CT International Conference Net-Works
+CY DEC 11-13, 2013
+CL Soc Ind Appl Math / Am Inst Math Sci, El Escorial, SPAIN
+HO Soc Ind Appl Math / Am Inst Math Sci
+RI Garcia-Algarra, Javier/AAA-1907-2019; Galeano, Javier/B-2933-2009; Iriondo, Jose M/B-3112-2008; Ramasco, Jose Javier/F-2860-2010; RUIZ, JUAN MANUEL PASTOR/H-1359-2015; Pastor, Juan Manuel/ABG-9310-2020
+OI Garcia-Algarra, Javier/0000-0003-1505-7053; Galeano,
+   Javier/0000-0003-0706-4317; Iriondo, Jose M/0000-0003-2710-3889;
+   Ramasco, Jose Javier/0000-0003-2499-6095; RUIZ, JUAN MANUEL
+   PASTOR/0000-0002-1067-3642; Pastor, Juan Manuel/0000-0002-1067-3642
+ZS 0
+ZA 0
+Z8 0
+ZB 0
+TC 0
+ZR 0
+Z9 0
+U1 0
+U2 8
+SN 1556-1801
+EI 1556-181X
+UT WOS:000351557200005
+ER
+
+PT J
+AU Cantrell, C. E.
+   Henry, R. P.
+   Chadwick, N. E.
+TI Nitrogen transfer in a Caribbean mutualistic network
+SO MARINE BIOLOGY
+VL 162
+IS 12
+BP 2327
+EP 2338
+DI 10.1007/s00227-015-2767-9
+PD DEC 2015
+PY 2015
+AB Coral reef symbioses are well-established models for studying
+   multi-level networks of species interactions that provide nutritional
+   benefits to partners. While the contributions of endosymbionts to
+   cnidarian hosts have been extensively documented, relatively little is
+   known about how exosymbionts contribute to nutrient cycling in coral
+   reef cnidarians. We investigated exosymbiotic sources of ammonia and
+   their contributions to physiological processes in Caribbean corkscrew
+   sea anemones Bartholomea annulata. In laboratory experiments, anemones
+   absorbed ammonia from seawater, which significantly enhanced the mitotic
+   index of their endosymbiotic microalgae Symbiodinium, while anemone
+   shrimp presence alone had no effect. Anemone shrimps excreted ammonia at
+   much slower rates than anemones were able to absorb it, indicating that
+   shrimp alone were not able to meet host nitrogen demand. Client fishes
+   excreted ammonia similar to 10x more rapidly than did associated
+   shrimps. On Caribbean coral reefs, anemone shrimps attract diverse
+   client fishes through their parasite-cleaning behavior; these fishes
+   excrete substantial ammonia near anemones while being cleaned.
+   Exosymbiotic anemone shrimps thus may provide nutritional benefits to
+   host anemones and microalgae indirectly, through their attraction of
+   nitrogen-excreting fishes. This multi-level mutualistic network
+   facilitates tight nutrient cycling among diverse species belonging to
+   several phyla on coral reefs. While we assessed the rates and benefits
+   of nutrient transfer under laboratory conditions, further research is
+   needed to quantify the contributions of ammonia and other nutrients from
+   client fishes through cleaner shrimps to host sea anemones in the field.
+OI Chadwick, Nanette/0000-0003-3559-2248
+Z8 0
+ZB 10
+TC 10
+ZR 0
+ZS 0
+ZA 0
+Z9 10
+U1 0
+U2 55
+SN 0025-3162
+EI 1432-1793
+UT WOS:000365790600002
+ER
+
+PT J
+AU Bennett, Alison Elizabeth
+   Daniell, Tim John
+   Oepik, Maarja
+   Davison, John
+   Moora, Mari
+   Zobel, Martin
+   Selosse, Marc-Andre
+   Evans, Darren
+TI Arbuscular Mycorrhizal Fungal Networks Vary throughout the Growing
+   Season and between Successional Stages
+SO PLOS ONE
+VL 8
+IS 12
+AR e83241
+DI 10.1371/journal.pone.0083241
+PD DEC 17 2013
+PY 2013
+AB To date, few analyses of mutualistic networks have investigated
+   successional or seasonal dynamics. Combining interaction data from
+   multiple time points likely creates an inaccurate picture of the
+   structure of networks (because these networks are aggregated across
+   time), which may negatively influence their application in ecosystem
+   assessments and conservation. Using a replicated bipartite mutualistic
+   network of arbuscular mycorrhizal (AM) fungal-plant associations,
+   detected using large sample numbers of plants and AM fungi identified
+   through molecular techniques, we test whether the properties of the
+   network are temporally dynamic either between different successional
+   stages or within the growing season. These questions have never been
+   directly tested in the AM fungal-plant mutualism or the vast majority of
+   other mutualisms. We demonstrate the following results: First, our
+   examination of two different successional stages (young and old forest)
+   demonstrated that succession increases the proportion of specialists
+   within the community and decreases the number of interactions. Second,
+   AM fungal-plant mutualism structure changed throughout the growing
+   season as the number of links between partners increased. Third, we
+   observed shifts in associations between AM fungal and plant species
+   throughout the growing season, potentially reflecting changes in biotic
+   and abiotic conditions. Thus, this analysis opens up two entirely new
+   areas of research: 1) identifying what influences changes in plant-AM
+   fungal associations in these networks, and 2) what aspects of temporal
+   variation and succession are of general importance in structuring
+   bipartite networks and plant-AM fungal communities.
+RI Daniell, Tim J/E-8482-2011; Zobel, Martin/H-1336-2015; Moora, Mari/D-1961-2009; Evans, Darren Mark/J-9782-2012; Opik, Maarja/A-1765-2008; Evans, Darren/
+OI Daniell, Tim J/0000-0003-0435-4343; Zobel, Martin/0000-0001-7957-6704;
+   Moora, Mari/0000-0002-4819-7506; Opik, Maarja/0000-0001-8025-7460;
+   Evans, Darren/0000-0003-4061-6726
+TC 40
+ZR 0
+ZS 0
+ZA 0
+Z8 1
+ZB 41
+Z9 43
+U1 2
+U2 109
+SN 1932-6203
+UT WOS:000328737700052
+PM 24358265
+ER
+
+PT J
+AU Rodrigues, Barbara Nobrega
+   Boscolo, Danilo
+TI Do bipartite binary antagonistic and mutualistic networks have different
+   responses to the taxonomic resolution of nodes?
+SO ECOLOGICAL ENTOMOLOGY
+VL 45
+IS 3
+BP 709
+EP 717
+DI 10.1111/een.12844
+EA FEB 2020
+PD JUN 2020
+PY 2020
+AB 1. Bipartite network analyses are increasingly being used to better
+   understand mutualistic and antagonistic plant-insect interactions at the
+   community level. As a result of taxonomic limitations, it is usually
+   very difficult to identify all nodes of a network down to the species
+   level and many studies leave some specimens identified as lower
+   resolution taxa. Accordingly, we do not know how much a lower resolution
+   taxonomic representation changes the network structure compared with a
+   representation with all nodes at species level.
+   2. The present study aimed to test whether insect-plant networks built
+   using different combinations of taxonomic levels can still preserve the
+   same basic structure of networks built only with species.
+   3. In total, 73 bipartite published interaction networks (mutualistic
+   and antagonistic) were selected, which were turned into binary networks
+   and reconstructed using the nodes classified as species, genus, family
+   or order (representing different levels of classification difficulty).
+   The network structures were compared using their binary representations
+   mainly using connectance, NODF (Nestedness metric based on Overlap and
+   Decreasing Fill) and modularity.
+   4. The mutualistic network structure was strongly linearly related to
+   the original network structures if all nodes were grouped up to genus
+   level. In antagonistic networks, the structure was related to the
+   original network only if nodes were only grouped at the species level.
+   5. The findings of the present study are especially helpful for
+   comparative network studies, such as those assessing the effects of
+   environmental gradients. For mutualistic networks, Citizen Science
+   programmes can provide useful ecological indicators, even with its
+   taxonomic limitations.
+RI Boscolo, Danilo/I-8655-2019; Rodrigues, Barbara N/D-2173-2019
+OI Boscolo, Danilo/0000-0002-0741-501X; Rodrigues, Barbara
+   N/0000-0001-8097-7871
+TC 1
+ZS 0
+ZA 0
+ZR 0
+ZB 1
+Z8 0
+Z9 1
+U1 2
+U2 6
+SN 0307-6946
+EI 1365-2311
+UT WOS:000511333400001
+ER
+
+PT J
+AU Hui, Cang
+TI Introduced species shape insular mutualistic networks
+SO PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF
+   AMERICA
+VL 118
+IS 5
+AR e2026396118
+DI 10.1073/pnas.2026396118
+PD FEB 2 2021
+PY 2021
+RI Hui, Cang/A-1781-2008
+OI Hui, Cang/0000-0002-3660-8160
+ZS 0
+ZB 0
+Z8 0
+ZA 0
+ZR 0
+TC 0
+Z9 0
+U1 1
+U2 4
+SN 0027-8424
+UT WOS:000615345200059
+PM 33483416
+ER
+
+PT J
+AU Martinez-Garcia, Vanessa
+   Gonzalez, Oscar
+   Ortiz-Pulido, Raul
+TI Hummingbird-Plant Network in a Lowland Dry Forest in Yucatan, Mexico
+SO TROPICAL CONSERVATION SCIENCE
+VL 13
+AR 1940082920973830
+DI 10.1177/1940082920973830
+PD NOV 2020
+PY 2020
+AB Pollination by animals contributes to the production of nearly 87.5% of
+   the seeds and fruits in the world. Hummingbirds are one of the main
+   groups of pollinating birds in the Americas, and they form pollination
+   networks with the plants they visit. Few hummingbird-plant networks have
+   been studied in tropical dry forest, which is one of the vegetation
+   types most affected by deforestation worldwide. In this study, we
+   describe the characteristics of the core species of a mutualistic
+   hummingbird-plant network in a lowland dry forest located on the Yucatan
+   Peninsula of Mexico. The study lasted a full year, from August 2017 to
+   June 2018. Using point counts and focal observations, we identified
+   three species of hummingbirds that visited eight plant species. The
+   network was highly connected and had three modules-one for each
+   hummingbird species. The core hummingbird species was Chlorostilbon
+   canivetii, and the key plants were Cordia dodecandra, Senna racemosa and
+   Psittacanthus mayanus. This hummingbird-plant network is apparently
+   driven by water availability, which determines plant phenology, which in
+   turn, determines hummingbird activity. In the context of global
+   extinction, the conservation of core species will be critical to
+   maintain the interactions that support all of the species in the
+   network.
+RI Ortiz-Pulido, Raul/E-2671-2013; Gonzalez, Oscar/D-7631-2014
+OI Ortiz-Pulido, Raul/0000-0001-9898-5386; Gonzalez,
+   Oscar/0000-0002-8686-3119
+Z8 0
+ZR 0
+ZA 0
+TC 0
+ZS 0
+ZB 0
+Z9 0
+U1 2
+U2 3
+SN 1940-0829
+UT WOS:000593480700001
+ER
+
+PT J
+AU Hwang, Jun Kyung
+   Lee, Kyoung Eun
+   Maeng, Seong Eun
+   Lee, Jae Woo
+TI Scaling Behaviors of Plant-Pollinator Mutualistic Networks
+SO JOURNAL OF THE KOREAN PHYSICAL SOCIETY
+VL 53
+IS 6
+BP 3151
+EP 3155
+DI 10.3938/jkps.53.3151
+PD DEC 2008
+PY 2008
+AB We consider three plant-pollinator mutualistic networks, including a
+   montane forest, a beech forest and a meadow. The plant and the
+   pollinator connect by links of interacting strengths between species. We
+   obtained cumulative distribution functions (CDFs) of the degree and the
+   strength for the networks. The CDFs of the degree for all species,
+   pollinators and plant, follow a power law or a stretched exponential
+   function. The CDF of the degree for a meadow food web, MEM food web
+   (Mommett 1999), is well fitted by a stretched exponential function.
+   However, the CDF of the degree for the montane forest food web, INO food
+   web (Inouye and Pkye 1998) and for the beech forest food web, KAT food
+   web (Kato et al. 1990) show a power law. The CDFs of the strength also
+   follow a power law, except for the CDF of the pollinator for the KAT
+   food web. The CDFs of the degree and the strength for mutualistic
+   networks depend on the types and the locations of the food webs.
+RI Lee, Jae Woo/D-2326-2010; Lee, Jae W/G-7717-2012
+OI Lee, Jae W/0000-0002-8756-0195
+ZA 0
+TC 2
+Z8 0
+ZR 0
+ZB 0
+ZS 0
+Z9 2
+U1 0
+U2 8
+SN 0374-4884
+UT WOS:000261731900005
+ER
+
+PT J
+AU Robson, Diana Bizecki
+TI Mutualistic and antagonistic networks involving the rare silky
+   prairie-clover (Dalea villosa var. villosa) and its co-flowering plants
+   and insect visitors
+SO BOTANY
+VL 92
+IS 1
+BP 47
+EP 58
+DI 10.1139/cjb-2013-0231
+PD JAN 2014
+PY 2014
+AB In Canada, silky prairie-clover (Dalea villosa var. villosa (Nutt.)
+   Spreng) is a nationally rare plant, growing only in sand dunes in
+   Saskatchewan and Manitoba. Previous research indicates that this species
+   is incapable of self-pollination, making it dependent on insect
+   pollinators for successful reproduction. The insect visitor community to
+   D. villosa in Spruce Woods Provincial Park (SWPP), Manitoba, was
+   documented and compared with that of 13 co-flowering plants that share
+   some of its insect visitors. In total, 29 insect taxa were observed
+   feeding on nectar or pollen from D. villosa. Hymenoptera were the most
+   frequent visitors, comprising 60.7% of the taxa and making 93.5% of all
+   visits. The visitation rate per stem to D. villosa (0.0042
+   stems.min(-1)) was the second highest of all of the plants with which it
+   was compared. The insect visitor diversity was 4.0 (Simpson's reciprocal
+   index), and the constancy index was 0.72. The high visitation rate,
+   diversity, and constancy to this species may be due to a lack of
+   competition for pollinators. Over half of the insect visitor taxa (54%)
+   and visits (68%) were by omnivorous insects, as opposed to herbivorous
+   ones. This means that there is interconnectivity between a mutualistic
+   network involving D. villosa and several antagonistic networks.
+ZR 0
+ZA 0
+Z8 0
+ZS 0
+ZB 2
+TC 2
+Z9 2
+U1 1
+U2 29
+SN 1916-2790
+EI 1916-2804
+UT WOS:000331829200004
+ER
+
+PT J
+AU McQuaid, C. Finn
+   Britton, Nicholas F.
+TI Network Dynamics Contribute to Structure: Nestedness in Mutualistic
+   Networks
+SO BULLETIN OF MATHEMATICAL BIOLOGY
+VL 75
+IS 12
+BP 2372
+EP 2388
+DI 10.1007/s11538-013-9896-4
+PD DEC 2013
+PY 2013
+AB Both ecological and evolutionary timescales are of importance when
+   considering an ecological system; population dynamics affect the
+   evolution of species traits, and vice versa. Recently, these two
+   timescales have been used to explain structural patterns in
+   host-parasite networks, where the evolution of the manner in which
+   species balance the use of their resources in interactions with each
+   other was examined.
+   One of these patterns was nestedness, in which the set of parasite
+   species within a particular host forms a subset of those within a more
+   species-rich host. Patterns of both nestedness and anti-nestedness have
+   been observed significantly more often than expected due to chance in
+   host-parasite networks. In contrast, mutualistic networks tend to
+   display a significant degree of nestedness, but are rarely anti-nested.
+   Within networks with different interaction types, therefore, there
+   appears to be a feature promoting non-random structural patterns, such
+   as nestedness and anti-nestedness, depending on the interaction types
+   involved.
+   Here, we invoke the co-evolution of species trait-values when allocating
+   resources to interactions to explain the structural pattern of
+   nestedness in a mutualistic community. We look at a bipartite,
+   multi-species system, in which the strength of an interaction between
+   two species is determined by the resources that each species invests in
+   that relationship. We then analyze the evolution of these interactions
+   using adaptive dynamics.
+   We found that the evolution of these interactions, reflecting the
+   trade-off of resources, could be used to accurately predict that
+   nestedness occurs significantly more often than expect due to chance
+   alone in a mutualistic network. This complements previous results
+   applying the same concept to an antagonistic network. We conclude that
+   population dynamics and resource trade-offs could be important promoters
+   of structural patterns in ecological networks of different types.
+RI Britton, Nicholas F/B-3413-2014; McQuaid, Christopher/F-9633-2015
+OI Britton, Nicholas F/0000-0002-1422-6487; McQuaid,
+   Christopher/0000-0001-6199-0931
+TC 7
+ZR 0
+ZA 0
+ZS 0
+ZB 6
+Z8 0
+Z9 7
+U1 0
+U2 41
+SN 0092-8240
+EI 1522-9602
+UT WOS:000327073000004
+PM 24222037
+ER
+
+PT J
+AU Williams, Sara D.
+   Patterson, Mark R.
+TI Resistance and robustness of the global coral-symbiont network
+SO ECOLOGY
+VL 101
+IS 5
+DI 10.1002/ecy.2990
+EA FEB 2020
+PD MAY 2020
+PY 2020
+AB Increasing ocean temperatures have widespread consequences for coral
+   reefs, one of which is coral bleaching. We analyzed a global network of
+   associations between coral species and Symbiodiniaceae for resistance to
+   temperature stress and robustness to perturbations. Null networks were
+   created by changing either the physiological parameters of the nodes or
+   the structures of the networks. We developed a bleaching model in which
+   each link, association, is given a weight based on temperature
+   thresholds for specific host-symbiont pairs and links are removed as
+   temperature increases. Resistance to temperature stress was determined
+   from the response of the networks to the bleaching model. Ecological
+   robustness, defined by how much perturbation is needed to decrease the
+   number of nodes by 50%, was determined for multiple removal models that
+   considered traits of the hosts, symbionts, and their associations.
+   Network resistance to bleaching and robustness to perturbations differed
+   from the null networks and varied across spatial scales, supporting that
+   thermal tolerances, local association patterns, and environment play an
+   important role in network persistence. Networks were more robust to
+   attacks on associations than to attacks on species. Although the global
+   network was fairly robust to random link removals, when links are
+   removed according to the bleaching model, robustness decreases by about
+   20%. Specific environmental attacks, in the form of increasing
+   temperatures, destabilize the global network of coral species and
+   Symbiodiniaceae. On a global scale, the network was more robust to
+   removals of links with susceptible Symbiodiniaceae than it was to
+   removals of links with susceptible hosts. Thus, the symbionts convey
+   more stability to the symbiosis than the hosts when the system is under
+   an environmental attack. However, our results also provide evidence that
+   the environment of the networks affects robustness to link
+   perturbations. Our work shows that ecological resistance and robustness
+   can be assessed through network analysis that considers specific
+   biological traits and functional weaknesses. The global network of
+   associations between corals and Symbiodiniaceae and its distribution of
+   thermal tolerances are non-random, and the evolution of this
+   architecture has led to higher sensitivity to environmental
+   perturbations.
+OI Williams, Sara/0000-0002-6667-6332; Patterson, Mark/0000-0002-1949-7139
+Z8 0
+ZB 2
+ZS 0
+ZA 0
+ZR 0
+TC 2
+Z9 2
+U1 3
+U2 34
+SN 0012-9658
+EI 1939-9170
+UT WOS:000513288500001
+PM 31961452
+ER
+
+PT J
+AU Garcia-Morales, Rodrigo
+   Chapa-Vargas, Leonardo
+   Galindo-Gonzalez, Jorge
+   Ivan Badano, Ernesto
+TI Seed dispersal among three different vegetation communities in the
+   Huasteca region, Mexico, analyzed from bat feces
+SO ACTA CHIROPTEROLOGICA
+VL 14
+IS 2
+BP 357
+EP 367
+DI 10.3161/150811012X661675
+PD 2012
+PY 2012
+AB Seed dispersal is a key process for plant colonization and for the
+   establishment of many plant populations in tropical environments. A
+   large proportion of all tropical woody plants with fruits and seeds
+   depend on frugivorous vertebrates for their dispersal, and frugivorous
+   bats are essential for the dispersal of seeds from many tropical plants.
+   Many of these plants are important for vegetative regeneration after
+   disturbances. Our main goal was to document the process of seed
+   dispersal through feces-seed analysis by the bat community among
+   semi-deciduous, evergreen, and secondary forests in the 'Huasteca'
+   region of San Luis Potosi, Mexico. We hypothesized that bats would
+   disperse seeds among all three forest types, and thus predicted that we
+   would find seeds from both early and late successional stages in bat
+   feces in all three forest types. In each of three replicate sites
+   representative of each of these forest types, we trapped bats with
+   mist-nets and collected their feces with seeds. A total of 558
+   individuals from eight frugivorous bat species were captured. The most
+   abundant species were Sturnira ludovici, Glossophaga soricina and
+   Artibeus jamaicensis. We documented seeds in bat feces from 16 plant
+   species belonging to four families: Moraceae, Piperaceae, Solanaceae,
+   and Myrtaceae; 43% were pioneer species, and thus important for the
+   initial stages of regeneration, and 37% were species of late
+   successional stages. Seeds in bat feces were found in similar
+   proportions in all forest types, thus contributing to the regeneration
+   of highly deforested habitats in the Huasteca region. To maintain the
+   entire mutualistic network between bats and plant species, diverse bat
+   communities are important.
+RI Galindo-Gonzalez, Jorge/M-2585-2014; Badano, Ernesto I./C-3585-2013; Garcia Morales, Rodrigo/; Chapa-Vargas, Leonardo/; Monzalvo, Karina/
+OI Galindo-Gonzalez, Jorge/0000-0003-2583-2754; Badano, Ernesto
+   I./0000-0002-9591-0984; Garcia Morales, Rodrigo/0000-0001-7417-8192;
+   Chapa-Vargas, Leonardo/0000-0001-5827-4328; Monzalvo,
+   Karina/0000-0002-3389-5133
+Z8 0
+TC 13
+ZR 0
+ZA 0
+ZS 2
+ZB 17
+Z9 17
+U1 0
+U2 42
+SN 1508-1109
+EI 1733-5329
+UT WOS:000314855400009
+ER
+
+PT J
+AU Burgos, Enrique
+   Ceva, Horacio
+   Hernandez, Laura
+   Perazzo, R. P. J.
+   Devoto, Mariano
+   Medan, Diego
+TI Two classes of bipartite networks: Nested biological and social systems
+SO PHYSICAL REVIEW E
+VL 78
+IS 4
+AR 046113
+DI 10.1103/PhysRevE.78.046113
+PN 2
+PD OCT 2008
+PY 2008
+AB Bipartite graphs have received some attention in the study of social
+   networks and of biological mutualistic systems. A generalization of a
+   previous model is presented, that evolves the topology of the graph in
+   order to optimally account for a given contact preference rule between
+   the two guilds of the network. As a result, social and biological graphs
+   are classified as belonging to two clearly different classes. Projected
+   graphs, linking the agents of only one guild, are obtained from the
+   original bipartite graph. The corresponding evolution of its statistical
+   properties is also studied. An example of a biological mutualistic
+   network is analyzed in detail, and it is found that the model provides a
+   very good fitting of all the main statistical features. The model also
+   provides a proper qualitative description of the same features observed
+   in social webs, suggesting the possible reasons underlying the
+   difference in the organization of these two kinds of bipartite networks.
+RI Hernandez, Laura/AAY-3648-2021
+OI Hernandez, Laura/0000-0002-3159-0053
+ZB 5
+ZS 0
+ZA 0
+Z8 0
+TC 14
+ZR 0
+Z9 14
+U1 1
+U2 6
+SN 2470-0045
+EI 2470-0053
+UT WOS:000260573900023
+PM 18999499
+ER
+
+PT J
+AU Okuyama, Toshinori
+TI Do mutualistic networks follow pourer distributions?
+SO ECOLOGICAL COMPLEXITY
+VL 5
+IS 1
+BP 59
+EP 65
+DI 10.1016/j.ecocom.2007.06.006
+PD MAR 2008
+PY 2008
+AB Species interactions are central to the structure and dynamics of
+   biological communities. Recently, of particular interest, is the
+   analysis of ecological networks where the number of species to species
+   interactions vary depending on the degree of specialization. For
+   mutualistic networks, species degree has been. suggested to follows a
+   power distribution or a truncated power distribution. In this paper, I
+   discuss previously estimated parameters and associated model selection
+   may be unreliable. I use the likelihood approach and compare the results
+   from previous findings and show that the parameter estimates as well as
+   model selection results are indeed very different. Furthermore, the
+   likelihood approach reveals that many mutualistic networks do not follow
+   either power distribution or truncated power distribution. (C) 2007
+   Elsevier B.V. All rights reserved.
+OI OKUYAMA, TOSHINORI/0000-0002-9893-4797
+ZR 0
+ZS 0
+ZB 6
+Z8 0
+ZA 0
+TC 7
+Z9 7
+U1 0
+U2 12
+SN 1476-945X
+EI 1476-9840
+UT WOS:000253034800007
+ER
+
+PT J
+AU Schleuning, Matthias
+   Fruend, Jochen
+   Klein, Alexandra-Maria
+   Abrahamczyk, Stefan
+   Alarcon, Ruben
+   Albrecht, Matthias
+   Andersson, Georg K. S.
+   Bazarian, Simone
+   Boehning-Gaese, Katrin
+   Bommarco, Riccardo
+   Dalsgaard, Bo
+   Dehling, D. Matthias
+   Gotlieb, Ariella
+   Hagen, Melanie
+   Hickler, Thomas
+   Holzschuh, Andrea
+   Kaiser-Bunbury, Christopher N.
+   Kreft, Holger
+   Morris, Rebecca J.
+   Sandel, Brody
+   Sutherland, William J.
+   Svenning, Jens-Christian
+   Tscharntke, Teja
+   Watts, Stella
+   Weiner, Christiane N.
+   Werner, Michael
+   Williams, Neal M.
+   Winqvist, Camilla
+   Dormann, Carsten F.
+   Bluethgen, Nico
+TI Specialization of Mutualistic Interaction Networks Decreases toward
+   Tropical Latitudes
+SO CURRENT BIOLOGY
+VL 22
+IS 20
+BP 1925
+EP 1931
+DI 10.1016/j.cub.2012.08.015
+PD OCT 23 2012
+PY 2012
+AB Species-rich tropical communities are expected to be more specialized
+   than their temperate counterparts [1-3]. Several studies have reported
+   increasing biotic specialization toward the tropics [4-7], whereas
+   others have not found latitudinal trends once accounting for sampling
+   bias [8, 9] or differences in plant diversity [10, 11]. Thus, the
+   direction of the latitudinal Specialization gradient remains
+   contentious. With an unprecedented global data set, we investigated how
+   biotic specialization between plants and animal pollinators or seed
+   dispersers is associated with latitude, past and contemporary climate,
+   and plant diversity. We show that in contrast to expectation, biotic
+   specialization of mutualistic networks is significantly lower at
+   tropical than at temperate latitudes. Specialization was more closely
+   related to contemporary climate than to past climate stability,
+   suggesting that current conditions have a stronger effect on biotic
+   specialization than historical community stability. Biotic
+   specialization decreased with increasing local and regional plant
+   diversity. This suggests that high specialization of mutualistic
+   interactions is a response of pollinators and seed dispersers to low
+   plant diversity. This could explain why the latitudinal specialization
+   gradient is reversed relative to the latitudinal diversity gradient. Low
+   mutualistic network specialization in the tropics suggests higher
+   tolerance against extinctions in tropical than in temperate communities.
+RI Sutherland, William/B-1291-2013; Tscharntke, Teja/N-5123-2014; Andersson, Georg/AAD-5985-2021; Bommarco, Riccardo/E-7109-2016; Svenning, Jens-Christian/C-8977-2012; Kreft, Holger/A-4736-2008; Holzschuh, Andrea/X-8989-2018; Abrahamczyk, Stefan/D-7316-2011; Klein, Alexandra-Maria/J-5871-2016; Sandel, Brody/I-8009-2013; Kaiser-Bunbury, Christopher/C-5038-2012; Bluthgen, Nico/F-5983-2010; Bohning-Gaese, Katrin/W-2601-2019; Frund, Jochen/AAV-3105-2020; Hickler, Thomas/S-6287-2016; Kreft, Holger/AAY-7573-2020; Hagen, Melanie/I-7939-2013; Schleuning, Matthias/H-2154-2015; Dalsgaard, Bo/; Dormann, Carsten/; Weiner, Christiane/; Sutherland, William/
+OI Andersson, Georg/0000-0002-9669-6895; Bommarco,
+   Riccardo/0000-0001-8888-0476; Svenning,
+   Jens-Christian/0000-0002-3415-0862; Kreft, Holger/0000-0003-4471-8236;
+   Holzschuh, Andrea/0000-0002-5235-4746; Klein,
+   Alexandra-Maria/0000-0003-2139-8575; Kaiser-Bunbury,
+   Christopher/0000-0001-7254-3491; Bohning-Gaese,
+   Katrin/0000-0003-0477-5586; Frund, Jochen/0000-0002-7079-3478; Hickler,
+   Thomas/0000-0002-4668-7552; Kreft, Holger/0000-0003-4471-8236;
+   Schleuning, Matthias/0000-0001-9426-045X; Dalsgaard,
+   Bo/0000-0003-2867-2805; Dormann, Carsten/0000-0002-9835-1794; Weiner,
+   Christiane/0000-0003-4013-4663; Sutherland, William/0000-0002-6498-0437
+Z8 2
+ZB 188
+TC 200
+ZS 1
+ZR 0
+ZA 0
+Z9 202
+U1 7
+U2 201
+SN 0960-9822
+EI 1879-0445
+UT WOS:000311882600026
+PM 22981771
+ER
+
+PT J
+AU Nogales, M.
+   Heleno, R.
+   Rumeu, B.
+   Gonzalez-Castro, A.
+   Traveset, A.
+   Vargas, P.
+   Olesen, J. M.
+TI Seed-dispersal networks on the Canaries and the Galapagos archipelagos:
+   interaction modules as biogeographical entities
+SO GLOBAL ECOLOGY AND BIOGEOGRAPHY
+VL 25
+IS 7
+SI SI
+BP 912
+EP 922
+DI 10.1111/geb.12315
+PD JUL 2016
+PY 2016
+AB Aim Mutualistic network parameters, such as modularity and nestedness,
+   show non-random linkage patterns. Both increase network stability in
+   different ways. Modularity hampers extinction cascades, whereas
+   nestedness resists network disassembly. We explore these parameters in
+   seed-dispersal networks in two archipelagos and the significance of life
+   history, habitat, geography and phylogeny as drivers of linkage patterns
+   and the applicability of modules as biogeographical entities.
+   Location Canaries (Atlantic Ocean) and Galapagos (Pacific Ocean).
+   Methods We compiled data on plant-seed disperser interactions from own
+   observations and the literature, estimated network parameters describing
+   interaction patterns (connectance, nestedness and modularity) and
+   constructed a backbone phylogeny for the analyses.
+   Results The Canarian network was highly nested but weakly modular,
+   whereas the Galapagos network showed the opposite characteristics. Most
+   key network species are native and have a favourable conservation
+   status. Modularity in the Canaries is correlated with habitats
+   (indirectly affected by altitude and orientation), whereas in the
+   Galapagos it mainly reflects the functional roles of species.
+   Main conclusions The divergent link patterns for the archipelagos imply
+   that the highly nested Canarian network is stable against disassembly,
+   whereas the modular Galapagos network may show strong resistance against
+   extinction cascades. This difference may be driven by the specific
+   evolutionary dynamics on the archipelagos.
+RI Heleno, Ruben Huttel/A-5778-2011; Gonzalez-Castro, Aaron/K-3290-2016; Olesen, Jens M/A-3011-2009; Nogales, Manuel/I-9831-2014; Rumeu, Beatriz/ABF-6936-2020; Traveset, Anna V/D-7802-2011
+OI Heleno, Ruben Huttel/0000-0002-4808-4907; Gonzalez-Castro,
+   Aaron/0000-0002-5311-1017; Olesen, Jens M/0000-0003-1998-1083; Nogales,
+   Manuel/0000-0002-5327-3104; Rumeu, Beatriz/0000-0002-9017-5466; 
+TC 34
+Z8 2
+ZB 31
+ZR 0
+ZA 0
+ZS 1
+Z9 35
+U1 0
+U2 42
+SN 1466-822X
+EI 1466-8238
+UT WOS:000383516500014
+ER
+
+PT J
+AU Machado-de-Souza, Tiago
+   Campos, Ricardo Pamplona
+   Devoto, Mariano
+   Varassin, Isabela Galarda
+TI Local drivers of the structure of a tropical bird-seed dispersal network
+SO OECOLOGIA
+VL 189
+IS 2
+BP 421
+EP 433
+DI 10.1007/s00442-018-4322-0
+PD FEB 2019
+PY 2019
+AB One of the major challenges in ecology is to understand the relative
+   importance of neutral- and niche-based processes structuring species
+   interactions within communities. The concept of neutral-based processes
+   posits that network structure is a result of interactions between
+   species based on their abundance. On the other hand, niche-based
+   processes presume that network structure is shaped by constraints to
+   interactions. Here, we evaluated the relative importance of
+   neutral-based process, represented by species' abundance (A) and fruit
+   production (F) models, and niche-based process, represented by spatial
+   overlap (S), temporal overlap (T) and morphological barrier (M) models,
+   in shaping the structure of a bird-seed dispersal network from the
+   Brazilian Atlantic Forest. We evaluated the ability of each model,
+   singly or in combination, to predict the general structure [represented
+   by connectance, nestedness (NODF), weight nestedness (WNODF),
+   interaction evenness and complementary specialization] and
+   microstructure of the network (i.e., the frequency of pairwise
+   interactions). Only nestedness (both NODF and WNODF) was predicted by at
+   least one model. NODF and WNODF were predicted by a neutral-based
+   process (A), by a combination of niche-based processes (ST and STM) and
+   by both neutral- and niche-based processes (AM). NODF was also predicted
+   by F and FM model. Regarding microstructure, temporal overlap (T) was
+   the most parsimonious model able to predict it. Our findings reveal that
+   a combination of neutral- and niche-based processes is a good predictor
+   of the general structure (NODF and WNODF) of the bird-seed dispersal
+   network and a niche-based process is the best predictor of the network's
+   microstructure.
+RI Varassin, Isabela Galarda/A-7655-2012
+OI Varassin, Isabela Galarda/0000-0001-9189-8765
+ZB 8
+ZA 0
+TC 10
+ZR 0
+ZS 0
+Z8 0
+Z9 10
+U1 2
+U2 20
+SN 0029-8549
+EI 1432-1939
+UT WOS:000460033700013
+PM 30612225
+ER
+
+EF
